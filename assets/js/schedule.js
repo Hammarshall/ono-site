@@ -1,11 +1,14 @@
 // schedule.js
 import { artistsdata } from "./artistdata.js";
 
-// DOM-referenser
+// ▼ DOM-referenser
 const tabsContainer = document.getElementById("venue-tabs");
 const scheduleContainer = document.getElementById("venue-schedules");
 
-// Skapa unika venue-grupper baserat på venueName och venueLocation
+// ▼ Standardbild om artist saknar bild
+const fallbackImage = "assets/img/speaker/speakers-2.jpg";
+
+// ▼ Steg 1: Skapa unika venue-flikar baserat på venueName + venueLocation
 const venues = [
   ...new Set(artistsdata.map((a) => `${a.venueName}|||${a.venueLocation}`)),
 ].map((v) => {
@@ -13,7 +16,7 @@ const venues = [
   return { name, location };
 });
 
-// Skapa flikar
+// ▼ Steg 2: Skapa navigeringsflikar för varje unikt venue
 venues.forEach((venue, i) => {
   const tab = document.createElement("li");
   tab.className = "nav-item";
@@ -34,7 +37,7 @@ venues.forEach((venue, i) => {
   tabsContainer.appendChild(tab);
 });
 
-// Skapa innehåll för varje venue-flik
+// ▼ Steg 3: Skapa varje innehållspanel med artister för respektive flik
 venues.forEach((venue, i) => {
   const pane = document.createElement("div");
   pane.className = `tab-pane fade ${i === 0 ? "show active" : ""}`;
@@ -45,19 +48,22 @@ venues.forEach((venue, i) => {
     .filter(
       (a) => a.venueName === venue.name && a.venueLocation === venue.location
     )
-    .sort((a, b) => parseTime(a.time) - parseTime(b.time));
+    .sort((a, b) => parseTime(a.time) - parseTime(b.time)); // sortera efter tid
 
   const wrapper = document.createElement("div");
   wrapper.className = "accordion";
 
+  // ▼ Skapa artistkort
   artistGroup.forEach((artist, j) => {
     const card = document.createElement("div");
     card.className = "card";
 
+    const artistImg = artist.img?.trim() ? artist.img : fallbackImage;
+
     card.innerHTML = `
       <div class="card-header">
         <div class="images-box">
-          <img class="img-fluid" src="${artist.img}" alt="${artist.name}">
+          <img class="img-fluid" src="${artistImg}" alt="${artist.name}">
         </div>
         <span class="time">${artist.time}</span>
         <h4>${artist.name}</h4>
@@ -71,7 +77,7 @@ venues.forEach((venue, i) => {
   scheduleContainer.appendChild(pane);
 });
 
-// Hjälpfunktion för att sortera tider korrekt
+// ▼ Hjälpfunktion: konvertera "hh:mm" till minuter sedan midnatt (för sortering)
 function parseTime(str) {
   const hhmm = str.split("–")[0] || str;
   const [h, m] = hhmm.split(":").map((n) => parseInt(n, 10));

@@ -33,10 +33,10 @@ const artistsdata = [
     desc: "Afro house / Keinemusik på TG.",
     time: "21:00–22:00",
     genre: "Afro house / Keinemusik",
-    venueName: "Förfest",
-    venueLocation: "Teatergatan uteservering",
+    venueName:"Förfest",
+    venueLocation:"Teatergatan uteservering",
 
-    img: "https://via.placeholder.com/350x200?text=Julius",
+    img: "",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_JULIUS",
       instagram: "julius.dj",
@@ -50,10 +50,10 @@ const artistsdata = [
     desc: "Afro house / Keinemusik på TG.",
     time: "22:00–23:00",
     genre: "Afro house / Keinemusik",
-    venueName: "Förfest",
-    venueLocation: "Teatergatan uteservering ",
+    venueName:"Förfest",
+    venueLocation:"Teatergatan uteservering",
 
-    img: "https://via.placeholder.com/350x200?text=Linnea+Alfons",
+    img: "",
     social: {
       spotify: "#",
       instagram: "#",
@@ -70,7 +70,7 @@ const artistsdata = [
     venueName: "Röda Rummet",
     venueLocation: "Valand",
 
-    img: "https://via.placeholder.com/350x200?text=Kevine",
+    img: "",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_KEVINE",
       instagram: "kevine.dj",
@@ -87,7 +87,7 @@ const artistsdata = [
     venueName: "Röda Rummet",
     venueLocation: "Valand",
 
-    img: "https://via.placeholder.com/350x200?text=Kim+%C3%96hman",
+    img: "",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_KIM",
       instagram: "kim.ohman",
@@ -105,7 +105,7 @@ const artistsdata = [
     venueName: "Röda Rummet",
     venueLocation: "Valand",
 
-    img: "https://via.placeholder.com/350x200?text=Ingrid+Boras",
+    img: "",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_INGRID",
       instagram: "ingrid.boras",
@@ -122,7 +122,7 @@ const artistsdata = [
     venueName: "Röda Rummet",
     venueLocation: "Valand",
 
-    img: "https://via.placeholder.com/350x200?text=Thilly+%26+Kimya",
+    img: "",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_THILLY",
       instagram: "thillyandkimya",
@@ -139,7 +139,7 @@ const artistsdata = [
     venueName: "Övre baren",
     venueLocation: "Valand",
 
-    img: "https://via.placeholder.com/350x200?text=Milli+DJ",
+    img: "",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_MILLI",
       instagram: "millidj",
@@ -156,7 +156,7 @@ const artistsdata = [
     venueName: "Övre baren",
     venueLocation: "Valand",
 
-    img: "https://via.placeholder.com/350x200?text=Sara+Appeli",
+    img: "",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_SARA",
       instagram: "saraappeli",
@@ -173,7 +173,7 @@ const artistsdata = [
     venueName: "Övre baren",
     venueLocation: "Valand",
 
-    img: "https://via.placeholder.com/350x200?text=Danne+%2F+Arvid",
+    img: "",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_DANNE",
       instagram: "soxcyted",
@@ -190,7 +190,7 @@ const artistsdata = [
 
     venueName: "Övre baren",
     venueLocation: "Valand",
-    img: "https://via.placeholder.com/350x200?text=Benji+Bastae",
+    img: "",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_BENJI",
       instagram: "benjibastae",
@@ -207,7 +207,7 @@ const artistsdata = [
     venueName: "Lilla London uteservering",
     venueLocation: "Lilla London",
 
-    img: "https://via.placeholder.com/350x200?text=Liv+Andersson",
+    img: "",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_LIV",
       instagram: "livandersson",
@@ -224,7 +224,7 @@ const artistsdata = [
     venueName: "Lilla London uteservering",
     venueLocation: "Lilla London",
 
-    img: "https://via.placeholder.com/350x200?text=Makki",
+    img: "",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_MAKKI",
       instagram: "makki.dj",
@@ -241,7 +241,7 @@ const artistsdata = [
     venueName: "Lilla London uteservering",
     venueLocation: "Lilla London",
 
-    img: "https://via.placeholder.com/350x200?text=Kajsa+Nystr%C3%B6m",
+    img: "",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_KAJSA",
       instagram: "kajsanystrom",
@@ -258,7 +258,7 @@ const artistsdata = [
     venueName: "Teatergatan",
     venueLocation: "Teatergatan",
 
-    img: "https://via.placeholder.com/350x200?text=Isabbel",
+    img: "",
     social: {
       spotify: "#",
       instagram: "isabbel",
@@ -275,7 +275,7 @@ const artistsdata = [
     venueName: "Teatergatan",
     venueLocation: "Teatergatan",
 
-    img: "https://via.placeholder.com/350x200?text=DJ+Schysst",
+    img: "",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_SCHYSST",
       instagram: "dj_schysst",
@@ -291,7 +291,7 @@ const artistsdata = [
     genre: "TBH",
     venueName: "Lilla London uteservering",
     venueLocation: "Lilla London",
-    img: "https://via.placeholder.com/350x200?text=Interlude",
+    img: "",
     social: {
       spotify: "#",
       instagram: "#",
@@ -307,7 +307,7 @@ const artistsdata = [
     genre: "Interlude",
     venueName: "Röda Rummet",
     venueLocation: "Valand",
-    img: "https://via.placeholder.com/350x200?text=Interlude",
+    img: "",
     social: {
       spotify: "#",
       instagram: "#",
@@ -323,7 +323,7 @@ const artistsdata = [
     genre: "Interlude",
     venueName: "Övre baren",
     venueLocation: "Valand",
-    img: "https://via.placeholder.com/350x200?text=Interlude",
+    img: "",
     social: {
       spotify: "#",
       instagram: "#",
@@ -339,7 +339,7 @@ const artistsdata = [
     genre: "Interlude",
     venueName: "Lilla London uteservering",
     venueLocation: "Lilla London",
-    img: "https://via.placeholder.com/350x200?text=Interlude",
+    img: "",
     social: {
       spotify: "#",
       instagram: "#",
@@ -355,7 +355,7 @@ const artistsdata = [
     genre: "TBH",
     venueName: "Teatergatan",
     venueLocation: "Teatergatan",
-    img: "https://via.placeholder.com/350x200?text=Interlude",
+    img: "",
     social: {
       spotify: "#",
       instagram: "#",
@@ -371,7 +371,7 @@ const artistsdata = [
     genre: "TBH",
     venueName: "Teatergatan",
     venueLocation: "Teatergatan",
-    img: "https://via.placeholder.com/350x200?text=Interlude",
+    img: "",
     social: {
       spotify: "#",
       instagram: "#",
@@ -387,7 +387,7 @@ const artistsdata = [
     genre: "TBH",
     venueName: "Teatergatan",
     venueLocation: "Teatergatan",
-    img: "https://via.placeholder.com/350x200?text=Interlude",
+    img: "",
     social: {
       spotify: "#",
       instagram: "#",
