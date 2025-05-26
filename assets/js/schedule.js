@@ -1,101 +1,79 @@
-// ► Importera artistdata (ESM-import)
-
+// schedule.js
 import { artistsdata } from "./artistdata.js";
 
-// ► Hämta DOM-referenser
-const venueTabList = document.getElementById("venueTabList");
-const venueHeadline = document.getElementById("venueHeadline");
-const venueOutput = document.getElementById("venueOutput");
+// DOM-referenser
+const tabsContainer = document.getElementById("venue-tabs");
+const scheduleContainer = document.getElementById("venue-schedules");
 
-// ► Extrahera unika venues (kombinerat namn + plats)
-const uniqueVenues = [
-  ...new Map(
-    artistsdata.map((artist) => [
-      `${artist.venueName}|${artist.venueLocation}`,
-      { venueName: artist.venueName, venueLocation: artist.venueLocation },
-    ])
-  ).values(),
-];
+// Skapa unika venue-grupper baserat på venueName och venueLocation
+const venues = [
+  ...new Set(artistsdata.map((a) => `${a.venueName}|||${a.venueLocation}`)),
+].map((v) => {
+  const [name, location] = v.split("|||");
+  return { name, location };
+});
 
-// ► Skapa tabb-menyn dynamiskt från venues
-function buildVenueTabs() {
-  uniqueVenues.forEach((venue, index) => {
-    const li = document.createElement("li");
-    li.className = "nav-item";
-    li.innerHTML = `
-      <a class="nav-link ${index === 0 ? "active" : ""}"
-         href="#"
-         data-venue-name="${venue.venueName}"
-         data-venue-location="${venue.venueLocation}">
-        <div class="item-text">
-          <h4>${venue.venueName}</h4>
-          <h5>${venue.venueLocation}</h5>
-        </div>
-      </a>
-    `;
-    venueTabList.appendChild(li);
-  });
-}
+// Skapa flikar
+venues.forEach((venue, i) => {
+  const tab = document.createElement("li");
+  tab.className = "nav-item";
 
-// ► Rendera artistkort baserat på valt venue
-function renderArtists(venueName, venueLocation) {
-  venueHeadline.innerHTML = `
-    <h3>${venueName}</h3>
-    <h5>${venueLocation}</h5>
+  const link = document.createElement("a");
+  link.className = `nav-link ${i === 0 ? "active" : ""}`;
+  link.dataset.toggle = "tab";
+  link.href = `#venue-${i}`;
+  link.role = "tab";
+  link.innerHTML = `
+    <div class="item-text">
+      <h4>${venue.name}</h4>
+      <h5>${venue.location}</h5>
+    </div>
   `;
 
-  // Filtrera artister per venue och sortera efter starttid
-  const filtered = artistsdata
+  tab.appendChild(link);
+  tabsContainer.appendChild(tab);
+});
+
+// Skapa innehåll för varje venue-flik
+venues.forEach((venue, i) => {
+  const pane = document.createElement("div");
+  pane.className = `tab-pane fade ${i === 0 ? "show active" : ""}`;
+  pane.id = `venue-${i}`;
+  pane.role = "tabpanel";
+
+  const artistGroup = artistsdata
     .filter(
-      (artist) =>
-        artist.venueName === venueName && artist.venueLocation === venueLocation
+      (a) => a.venueName === venue.name && a.venueLocation === venue.location
     )
     .sort((a, b) => parseTime(a.time) - parseTime(b.time));
 
-  venueOutput.innerHTML = "";
+  const wrapper = document.createElement("div");
+  wrapper.className = "accordion";
 
-  filtered.forEach((artist) => {
+  artistGroup.forEach((artist, j) => {
     const card = document.createElement("div");
-    card.className = "card artist-card mb-4";
+    card.className = "card";
+
     card.innerHTML = `
-      <div class="card-body">
-        <span class="badge badge-dark mb-2 d-block">${artist.time}</span>
-        <h4 class="font-weight-bold">${artist.name}</h4>
-        <img src="${artist.img}" alt="${artist.name}" class="img-fluid my-2">
-        <p class="genre text-muted">${artist.genre}</p>
+      <div class="card-header">
+        <div class="images-box">
+          <img class="img-fluid" src="${artist.img}" alt="${artist.name}">
+        </div>
+        <span class="time">${artist.time}</span>
+        <h4>${artist.name}</h4>
+        <h5 class="name">${artist.genre}</h5>
       </div>
     `;
-    venueOutput.appendChild(card);
+    wrapper.appendChild(card);
   });
-}
 
-// ► Konvertera starttid ("HH:MM–HH:MM") till minuter sedan midnatt
-function parseTime(timeRange) {
-  const start = timeRange.split("–")[0];
-  const [hours, minutes] = start.split(":").map(Number);
-  return hours * 60 + minutes;
-}
-
-// ► Event delegation för menyval
-venueTabList.addEventListener("click", (event) => {
-  const link = event.target.closest("a.nav-link");
-  if (!link) return;
-  event.preventDefault();
-
-  // Uppdatera active-klass
-  document
-    .querySelectorAll("#venueTabList .nav-link")
-    .forEach((el) => el.classList.remove("active"));
-  link.classList.add("active");
-
-  // Rendera nytt innehåll
-  const venueName = link.dataset.venueName;
-  const venueLocation = link.dataset.venueLocation;
-  renderArtists(venueName, venueLocation);
+  pane.appendChild(wrapper);
+  scheduleContainer.appendChild(pane);
 });
 
-// ► Initiera schemat
-buildVenueTabs();
-if (uniqueVenues.length > 0) {
-  renderArtists(uniqueVenues[0].venueName, uniqueVenues[0].venueLocation);
+// Hjälpfunktion för att sortera tider korrekt
+function parseTime(str) {
+  const hhmm = str.split("–")[0] || str;
+  const [h, m] = hhmm.split(":").map((n) => parseInt(n, 10));
+  return h * 60 + m;
 }
