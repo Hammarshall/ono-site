@@ -3,25 +3,30 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>ONO Access</title>
-  <link rel="stylesheet" href="global.css" />
+  <title>ONO Terminal - Homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
-  <div id="background"></div>
+  <!-- Bakgrundsdiv som visar ONO-loggan fullscreen -->
+  <!-- Bakgrundsdiv med GIF på svart bakgrund -->
+  <div id="background">
+    <img src="assets/img/ono_glitch.gif" alt="ONO Glitch" />
+  </div>
 
+  <!-- Innehållscontainer för terminal och glitch-text -->
   <div id="content">
     <div id="terminal">
-      <pre>> AUTHENTICATION REQUIRED</pre>
+      <p> AUTHENTICATION REQUIRED</p>
       <div id="output"></div>
       <div>
-        <span>&gt;</span>
         <input type="text" id="commandInput" autofocus placeholder="Insert access code..." />
       </div>
     </div>
   </div>
 
+  <!-- JS för terminalfunktionalitet -->
   <script src="script.js"></script>
 </body>
 
