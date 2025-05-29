@@ -2,25 +2,178 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400|Josefin+Sans:700");
 
 :root {
-  /* --- Dark Grayscale (byt dessa) --- */
+  /* Dark Grayscale */
   --gray-1: #111111;
-  /* Sidans bakgrund */
   --gray-2: #232323;
-  /* Sektioner, kortbakgrunder */
   --gray-3: #343434;
-  /* Mörkare sektion */
   --gray-4: #464646;
-  /* Footer, dämpade paneler */
   --gray-5: #575757;
-  /* Extra ljus bakgrund */
-  /* --- Accents (byt dessa) --- */
+  /* Accents */
   --accent-neon: #0f0;
-  /* Huvudaccent, t.ex. knappar, länkar */
   --accent-magenta: #F50057;
-  /* Hover- eller sekundär accent */
-  /* --- Text (oftast slipper du röra) --- */
+  /* Text */
   --text-light: #fefefe;
   --text-muted: #888888;
+}
+
+/* Base */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--gray-1);
+  color: var(--text-light);
+  font-family: 'Lato', sans-serif;
+}
+
+/* Sections */
+.section-padding,
+.no-padding,
+.padding-left-none,
+.padding-right-none {
+  background: var(--gray-2);
+}
+
+/* Headers */
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: var(--text-light);
+}
+
+/* Links & Buttons */
+a {
+  color: var(--accent-neon);
+  transition: color 0.2s linear;
+}
+
+a:hover {
+  color: var(--accent-magenta);
+}
+
+.btn-common {
+  background-color: var(--accent-neon);
+  color: var(--text-light);
+}
+
+.btn-common:hover {
+  background-color: var(--accent-magenta);
+}
+
+.btn-border {
+  border: 1px solid var(--text-light);
+}
+
+.btn-border:hover {
+  background: var(--accent-magenta);
+}
+
+/* Navbar */
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: var(--text-light);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover,
+.navbar-expand-lg .navbar-nav .active>.nav-link {
+  color: var(--accent-neon) !important;
+}
+
+.top-nav-collapse {
+  background: var(--gray-2) !important;
+}
+
+.top-nav-collapse .nav-link:hover,
+.top-nav-collapse .active .nav-link {
+  color: var(--accent-neon) !important;
+}
+
+/* Schedule */
+#schedules,
+.schedule .schedule-tab-title .nav-tabs,
+.schedule .card-header {
+  background: var(--gray-3);
+}
+
+.schedule .nav-link.active,
+.schedule .nav-item.show .nav-link,
+.schedule .nav-link:hover {
+  background: var(--accent-neon);
+  border-color: var(--accent-neon);
+}
+
+.schedule .nav-link.active h4,
+.schedule .nav-link.active h5 {
+  color: var(--text-light);
+}
+
+/* Cards & Panels */
+.card-body,
+.show .card-body {
+  background: var(--gray-2);
+}
+
+.card {
+  background: var(--gray-3);
+}
+
+/* Gallery */
+#gallery {
+  background: var(--gray-2);
+}
+
+#gallery .overlay-box {
+  background: rgba(233, 30, 99, 0.7);
+}
+
+/* Footer */
+.footer-area {
+  background: var(--gray-5);
+  color: var(--text-light);
+}
+
+.footer-area a:hover {
+  color: var(--accent-neon);
+}
+
+/* Inputs & Forms */
+.form-control,
+.subscribe-inner .form-control {
+  background: var(--gray-3);
+  border-color: var(--accent-neon);
+  color: var(--text-light);
+}
+
+.form-control:focus,
+.subscribe-inner .form-control:focus {
+  border-color: var(--accent-neon);
+}
+
+/* Utility */
+.bg-white {
+  background: var(--gray-2);
+}
+
+.bg-drack {
+  background: var(--gray-1);
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+/* Hover States */
+.team-item:hover {
+  background: var(--gray-4);
+}
+
+.services-item:hover {
+  background: var(--gray-3);
 }
 
 /* HTML-element: förhindrar horisontell scroll */
@@ -188,8 +341,6 @@ ol li {
 .section-title {
   font-size: 36px;
   /* Textstorlek */
-  /* FÄRG (text): #212121 */
-  color: #212121;
   /* FÄRG */
   line-height: 52px;
   /* Radavstånd */
@@ -314,17 +465,12 @@ ol li {
   /* Medelvikt */
   margin-bottom: 10px;
 }
-
-/* INTERN RUBRIK
-   Används för mindre rubriker inuti sektioner */
 .inner-title {
   font-size: 24px;
-  /* Textstorlek */
   font-weight: 700;
   /* Fet stil */
   /* OBS: text-transform är felstavat, bör vara text-transform: capitalize; */
-  text-tranform: capitalize;
-  /* Första bokstaven versal */
+  text-tranform: capitalize; /* Första bokstaven versal */
 }
 
 /* SIDANS TAGLINE
@@ -3447,20 +3593,9 @@ Tar bort standardram på varje card */
   border: 2px solid #fff;
   /* Vit ram */
   border-radius: 2px;
-  background: transparent;
-  /* FÄRG (ikon): #fff */
-  color: #fff;
-  /* Vit ikonfärg */
-  transition: all 500ms ease;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-  /* Skugga */
-}
+  background: transparent;  color: #fff;  transition: all 500ms ease;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);}
 
 #main-slide .carousel-control i:hover {
-  background: rgba(255, 255, 255, 0.2);
-  /* Vit semi-transparent bakgrund vid hover */
-  color: #fff;
-  /* Vit ikon */
-  border-color: #fff;
-  /* Vit ram */ 
+  background: rgba(255, 255, 255, 0.2); color: #fff; border-color: #fff;
 }
