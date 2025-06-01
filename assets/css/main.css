@@ -21,7 +21,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: var(--gray-1);
+  background: var(--gray-2);
   color: var(--text-light);
   font-family: 'Lato', sans-serif;
 }
@@ -93,7 +93,7 @@ a:hover {
 #schedules,
 .schedule .schedule-tab-title .nav-tabs,
 .schedule .card-header {
-  background: var(--gray-3);
+  background: var(--gray-2);
 }
 
 .schedule .nav-link.active,
@@ -120,7 +120,7 @@ a:hover {
 
 /* Gallery */
 #gallery {
-  background: var(--gray-2);
+  background: var(--gray-3);
 }
 
 #gallery .overlay-box {
@@ -129,7 +129,7 @@ a:hover {
 
 /* Footer */
 .footer-area {
-  background: var(--gray-5);
+  background: var(--gray-1);
   color: var(--text-light);
 }
 
@@ -169,7 +169,7 @@ a:hover {
 
 /* Hover States */
 .team-item:hover {
-  background: var(--gray-4);
+  background: var(--gray-5);
 }
 
 .services-item:hover {
@@ -178,33 +178,23 @@ a:hover {
 
 /* HTML-element: förhindrar horisontell scroll */
 html {
-  overflow-x: hidden;
-  /* Dölj horisontella scrollbars */
+  overflow-x: hidden; /* Dölj horisontella scrollbars */
 }
 
 /* BODY: grundläggande layout och typografi */
 body {
-  /* FÄRG (bakgrund): #fff */
-  background: var(--gray-1);
-  /* Sätter vit bakgrund */
-  font-size: 15px;
-  /* Basstorlek för text */
-  font-weight: 400;
-  /* Normal textvikt */
-  font-family: 'Lato', sans-serif;
-  /* Typsnitt för brödtext */
-  box-sizing: border-box;
-  /* Inkluderar padding/border i elementets bredd/höjd */
-  -webkit-font-smoothing: subpixel-antialiased;
-  /* Förbättrar textrendering i WebKit */
-  /* FÄRG (text): #212121 */
+  /* FÄRG (bakgrund): */
+  background: var(--gray-2); /* Sätter bakgrund */
+  font-size: 15px; /* Basstorlek för text */
+  font-weight: 400; /* Normal textvikt */
+  font-family: 'Lato', sans-serif; /* Typsnitt för brödtext */
+  box-sizing: border-box; /* Inkluderar padding/border i elementets bredd/höjd */
+  -webkit-font-smoothing: subpixel-antialiased; /* Förbättrar textrendering i WebKit */
+  /* FÄRG: */
   color: var(--text-light);
-  line-height: 25px;
-  /* Radavstånd */
-  backface-visibility: hidden;
-  /* Förbättrar prestanda vid 3D-transform */
-  overflow-x: hidden;
-  /* Dölj horisontella scrollbars */
+  line-height: 25px; /* Radavstånd */
+  backface-visibility: hidden; /* Förbättrar prestanda vid 3D-transform */
+  overflow-x: hidden; /* Dölj horisontella scrollbars */
 }
 .section-padding,
 .no-padding,
@@ -212,169 +202,118 @@ body {
 .padding-right-none {
   background: var(--gray-2);
 }
+
 /* Rubriker H1–H4: stor, fet text med speciellt typsnitt */
 h1,
 h2,
 h3,
 h4 {
-  font-size: 36px;
-  /* Storlek på rubriker */
-  font-weight: 700;
-  /* Fet stil */
-  font-family: 'Josefin Sans', sans-serif;
-  /* Typsnitt för rubriker */
+  font-size: 36px; /* Storlek på rubriker */
+  font-weight: 700; /* Fet stil */
+  font-family: 'Josefin Sans', sans-serif; /* Typsnitt för rubriker */
 }
 
 /* LÄNKAR: mjuka övergångar vid interaktion */
 a {
-  transition: all 0.2s linear;
-  /* Övergång på alla egenskaper */
+  transition: all 0.2s linear; /* Övergång på alla egenskaper */
 }
 
 a:hover {
-  text-decoration: none;
-  /* Tar bort understrykning vid hover */
+  text-decoration: none; /* Tar bort understrykning vid hover */
 }
 
 a a:focus {
-  outline: none;
-  /* Tar bort ram vid fokus */
+  outline: none; /* Tar bort ram vid fokus */
 }
 
 /* PARAGRAFER: grundstil för styckestext */
 p {
-  font-weight: 400;
-  /* Normal vikt */
-  font-family: 'Lato', sans-serif;
-  /* Samma typsnitt som body */
-  margin: 0;
-  /* Nollställer standardmarginal */
-  font-size: 14px;
-  /* Mindre textstorlek */
+  font-weight: 400; /* Normal vikt */
+  font-family: 'Lato', sans-serif; /* Samma typsnitt som body */
+  margin: 0; /* Nollställer standardmarginal */
+  font-size: 14px; /* Mindre textstorlek */
 }
 
 /* LISTOR: tar bort standardmarkörer och marginaler */
 ul,
 ol {
-  list-style: none;
-  /* Inga punkter eller siffror */
-  margin: 0;
-  /* Tar bort marginal */
-  padding: 0;
-  /* Tar bort padding */
+  list-style: none; /* Inga punkter eller siffror */
+  margin: 0; /* Tar bort marginal */
+  padding: 0; /* Tar bort padding */
 }
 
 ul li,
 ol li {
-  list-style: none;
-  /* Säkerställer inga listmarkörer */
+  list-style: none; /* Säkerställer inga listmarkörer */
 }
 
 /* HERO-HEADING: stor vit rubrik i förstasidan */
 .hero-heading {
-  font-size: 40px;
-  /* Stor rubriktext */
-  font-weight: 700;
-  /* Fet stil */
-  /* FÄRG (text): #fff */
-  color: var(--text-light);
-  /* Vit textfärg */
-  text-transform: capitalize;
-  /* Första bokstav i varje ord versal */
-  line-height: 70px;
-  /* Radavstånd */
-  letter-spacing: 0.1rem;
-  /* Bokstavsavstånd */
+  font-size: 40px; /* Stor rubriktext */
+  font-weight: 700; /* Fet stil */
+  /* FÄRG (text): */
+  color: var(--text-light); /* textfärg */
+  text-transform: capitalize; /* Första bokstav i varje ord versal */
+  line-height: 70px; /* Radavstånd */
+  letter-spacing: 0.1rem; /* Bokstavsavstånd */
 }
 
-/* HERO-SUB-HEADING: mindre, ljusgrå undertitel */
+/* HERO-SUB-HEADING: mindre, undertitel */
 .hero-sub-heading {
-  font-size: 20px;
-  /* Mindre textstorlek */
-  font-weight: 400;
-  /* Normal vikt */
-  /* FÄRG (text): #e6e6e6 */
-  color: var(--text-light);
-  /* Ljusgrå textfärg */
-  line-height: 45px;
-  /* Radavstånd */
-  letter-spacing: 0.1rem;
-  /* Bokstavsavstånd */
+  font-size: 20px; /* Mindre textstorlek */
+  font-weight: 400; /* Normal vikt */
+  /* FÄRG: */
+  color: var(--text-light); /* textfärg */
+  line-height: 45px; /* Radavstånd */
+  letter-spacing: 0.1rem; /* Bokstavsavstånd */
 }
 
 /* SEKTIONSTITEL-BG: bakgrundsnummer för sektionstitel */
 .section-titile-bg {
-  display: inline;
-  /* Visas inline */
-  font-size: 115px;
-  /* Mycket stor text */
-  font-weight: 700;
-  /* Fet stil */
+  display: inline; /* Visas inline */
+  font-size: 115px; /* Mycket stor text */
+  font-weight: 700; /* Fet stil */
   height: 100%;
-  left: -173px;
-  /* Förskjuten åt vänster */
-  opacity: 0.1;
-  /* Mycket genomskinlig */
+  left: -173px; /* Förskjuten åt vänster */
+  opacity: 0.1; /* Mycket genomskinlig */
   /* (Fortsättning av inställningar…) */
-  position: absolute;
-  /* Absolut position för överlapp */
-  top: -14px;
-  /* Flyttar elementet 14px uppåt */
-  width: 100%;
-  /* Täcker hela behållarens bredd */
-  text-align: center;
-  /* Centrerar text horisontellt */
+  position: absolute; /* Absolut position för överlapp */
+  top: -14px; /* Flyttar elementet 14px uppåt */
+  width: 100%; /* Täcker hela behållarens bredd */
+  text-align: center; /* Centrerar text horisontellt */
 }
 
 .section-title-header p {
-  /* text: center; */
-  /* (Felaktig egenskap, bör vara text-align: center om centering önskas) */
-  font-weight: 400;
-  /* Normal vikt */
-  line-height: 26px;
-  /* Radavstånd */
-  padding-bottom: 36px;
-  /* Avstånd under paragrafen */
+  /* text: center; */  /* (Felaktig egenskap, bör vara text-align: center om centering önskas) */
+  font-weight: 400; /* Normal vikt */
+  line-height: 26px; /* Radavstånd */
+  padding-bottom: 36px; /* Avstånd under paragrafen */
 }
 
 /* Huvudsektionstitel */
 .section-title {
-  font-size: 36px;
-  /* Textstorlek */
+  font-size: 36px; /* Textstorlek */
   /* FÄRG */
-  line-height: 52px;
-  /* Radavstånd */
-  padding-bottom: 20px;
-  /* Avstånd under titeln */
-  font-weight: 700;
-  /* Fet stil */
-  text-align: center;
-  /* Centrerar texten */
-  text-transform: uppercase;
-  /* Versaler */
-  position: relative;
-  /* För pseudo-elementpositionering */
-  margin-bottom: 15px;
-  /* Avstånd till följande innehåll */
+  color: var(--accent-neon);
+  line-height: 52px; /* Radavstånd */
+  padding-bottom: 20px; /* Avstånd under titeln */
+  font-weight: 700; /* Fet stil */
+  text-align: center; /* Centrerar texten */
+  text-transform: uppercase; /* Versaler */
+  position: relative; /* För pseudo-elementpositionering */
+  margin-bottom: 15px; /* Avstånd till följande innehåll */
 }
 
 /* Dekorlinje ovanför sektionstitel */
 .section-title:before {
-  position: absolute;
-  /* Absolut position */
-  content: '';
-  /* Tomt innehåll */
-  left: 15px;
-  /* 15px från vänsterkant */
-  bottom: 8px;
-  /* 8px från botten av .section-title */
-  width: 48px;
-  /* Linjens längd */
-  height: 1px;
-  /* Linjens tjocklek */
-  /* FÄRG (bakgrund): #0f0 */
-  background-color: #0f0;
-  /* FÄRG */
+  position: absolute; /* Absolut position */
+  content: ''; /* Tomt innehåll */
+  left: 15px; /* 15px från vänsterkant */
+  bottom: 8px;  /* 8px från botten av .section-title */
+  width: 48px; /* Linjens längd */
+  height: 1px;  /* Linjens tjocklek */
+  /* FÄRG: */
+  background-color: var(--accent-neon);
 }
 
 /* Dekorlinje under sektionstitel */
@@ -385,563 +324,401 @@ ol li {
   bottom: 2px;
   width: 48px;
   height: 1px;
-  /* FÄRG (bakgrund): #0f0 */
-  background-color: #0f0;
-  /* FÄRG */
+  /* FÄRG (bakgrund): */
+  background-color: var(--accent-neon);
 }
 
 /* Centrera båda dekorlinjerna */
 .section-title:before,
 .section-title:after {
-  left: 50%;
-  /* Centrera horisontellt */
-  margin-left: -45px;
-  /* Flytta tillbaka halva bredden minus lite justering */
+  left: 50%; /* Centrera horisontellt */
+  margin-left: -45px; /* Flytta tillbaka halva bredden minus lite justering */
 }
 
 .section-title:after {
-  margin-left: -30px;
-  /* Justerar andra linjens position */
+  margin-left: -30px; /* Justerar andra linjens position */
 }
 
 /* Undertext i sektionen */
 .section-subcontent {
-  font-size: 16px;
-  /* Textstorlek */
-  /* text: center; */
-  /* (Felaktig egenskap, bör vara text-align: center) */
-  font-weight: 400;
-  /* Normal vikt */
-  line-height: 26px;
-  /* Radavstånd */
-  padding-bottom: 36px;
-  /* Avstånd under texten */
+  font-size: 16px; /* Textstorlek */
+  /* text: center; *//* (Felaktig egenskap, bör vara text-align: center) */
+  font-weight: 400; /* Normal vikt */
+  line-height: 26px; /* Radavstånd */
+  padding-bottom: 36px; /* Avstånd under texten */
 }
 
 /* Underrubrik för sektion */
 .section-sub {
-  text-transform: uppercase;
-  /* Versaler */
-  font-size: 24px;
-  /* Textstorlek */
-  line-height: 52px;
-  /* Radavstånd */
-  padding-bottom: 15px;
-  /* Avstånd under */
-  margin-bottom: 30px;
-  /* Avstånd till nästa element */
-  position: relative;
-  /* För pseudo-element */
+  text-transform: uppercase;/* Versaler */
+  font-size: 24px;  /* Textstorlek */
+  line-height: 52px;/* Radavstånd */
+  padding-bottom: 15px;/* Avstånd under */
+  margin-bottom: 30px; /* Avstånd till nästa element */
+  position: relative; /* För pseudo-element */
 }
 
 /* Dekorlinje under underrubrik */
 .section-sub:before {
-  position: absolute;
-  /* Absolut position */
-  content: '';
-  /* Tomt innehåll */
-  height: 1px;
-  /* Linjens tjocklek */
-  width: 45px;
-  /* Linjens längd */
-  left: 50%;
-  /* Centrerat horisontellt */
-  bottom: 10px;
-  /* 10px från botten av .section-sub */
-  transform: translateX(-50%);
-  /* Flyttar tillbaka halva bredden för exakt centrering */
-  /* FÄRG (bakgrund): #0f0 */
-  background-color: #0f0;
-  /* FÄRG */
+  position: absolute; /* Absolut position */
+  content: ''; /* Tomt innehåll */
+  height: 1px; /* Linjens tjocklek */
+  width: 45px; /* Linjens längd */
+  left: 50%; /* Centrerat horisontellt */
+  bottom: 10px; /* 10px från botten av .section-sub */
+  transform: translateX(-50%); /* Flyttar tillbaka halva bredden för exakt centrering */
+  /* FÄRG (bakgrund): */
+  background-color: var(--accent-neon);
 }
 
 /* Mindre underrubrik */
 .subtitle {
-  font-size: 15px;
-  /* Textstorlek */
-  margin-top: 20px;
-  /* Avstånd ovan */
-  font-weight: 500;
-  /* Medelvikt */
+  font-size: 15px; /* Textstorlek */
+  margin-top: 20px; /* Avstånd ovan */
+  font-weight: 500; /* Medelvikt */
   margin-bottom: 10px;
 }
+
 .inner-title {
   font-size: 24px;
-  font-weight: 700;
-  /* Fet stil */
-  /* OBS: text-transform är felstavat, bör vara text-transform: capitalize; */
-  text-tranform: capitalize; /* Första bokstaven versal */
+  font-weight: 700;/* Fet stil */
+  text-transform: capitalize; /* Första bokstaven versal */
 }
 
-/* SIDANS TAGLINE
-     En kort undertext under huvudrubrik */
+/* SIDANS TAGLINE En kort undertext under huvudrubrik */
 .page-tagline {
-  font-size: 24px;
-  /* Textstorlek */
-  font-weight: 400;
-  /* Normal vikt */
-  /* FÄRG (text): #ddd */
-  color: #ddd;
-  /* Ljusgrå undertitel */
+  font-size: 24px; /* Textstorlek */
+  font-weight: 400; /* Normal vikt */
+  /* FÄRG */
+  color: var(--text-light); /* undertitel */
 }
 
-/* SIDANS HUVUDTITEL
-     Stor, fet text ofta i hero-sektion */
+/* SIDANS HUVUDTITEL Stor, fet text ofta i hero-sektion */
 .page-title {
-  font-size: 62px;
-  /* Mycket stor text */
-  font-weight: 700;
-  /* Fet stil */
-  /* FÄRG (text): #fff */
-  color: #fff;
-  /* Vit textfärg */
+  font-size: 62px; /* Mycket stor text */
+  font-weight: 700; /* Fet stil */
+  /* FÄRG: */
+  color: var(--text-light); /* textfärg */
 }
 
-/* UNIVERSAL KNAPP (btn)
-     Grunddesign för knappar */
+/* UNIVERSAL KNAPP (btn) Grunddesign för knappar */
 .btn {
-  font-size: 14px;
-  /* Textstorlek */
-  padding: 12px 20px;
-  /* Inre marginal */
-  border-radius: 4px;
-  /* Rundade hörn */
-  cursor: pointer;
-  /* Muspekare blir hand */
-  font-weight: 400;
-  /* Normal vikt */
-  /* FÄRG (text): #fff */
-  color: #fff;
-  /* Vit textfärg */
-  text-transform: uppercase;
-  /* Versaler */
-  transition: all 0.2s linear;
-  /* Mjuk övergång */
-  display: inline-block;
-  /* Inline-block för dimensioner */
+  font-size: 14px; /* Textstorlek */
+  padding: 12px 20px; /* Inre marginal */
+  border-radius: 4px; /* Rundade hörn */
+  cursor: pointer; /* Muspekare blir hand */
+  font-weight: 400; /* Normal vikt */
+  /* FÄRG: */
+  color: var(--text-light); /* textfärg */
+  text-transform: uppercase; /* Versaler */
+  transition: all 0.2s linear; /* Mjuk övergång */
+  display: inline-block; /* Inline-block för dimensioner */
 }
 
 .btn i {
-  margin-right: 5px;
-  /* Avstånd mellan ikon och text */
+  margin-right: 5px; /* Avstånd mellan ikon och text */
 }
 
 .btn:focus,
 .btn:active {
-  box-shadow: none;
-  /* Ingen fokus-/aktiv skugga */
-  outline: none;
-  /* Ingen fokusring */
-  color: #fff;
-  /* Vit text även vid fokus */
+  box-shadow: none; /* Ingen fokus-/aktiv skugga */
+  outline: none; /* Ingen fokusring */
+  color: var(--text-light); /* Vit text även vid fokus */
 }
 
 /* PRIMÄRKNAPP (btn-common) */
 .btn-common {
-  /* FÄRG (bakgrund): #0f0 */
-  background-color: #0f0;
-  /* Illgrön bakgrund */
+  /* FÄRG: */
+  background-color: var(--accent-neon); /* Illgrön bakgrund */
   position: relative;
   z-index: 1;
 }
 
 .btn-common:hover {
-  /* FÄRG (bakgrund hover): #F50057 */
-  background: #F50057;
-  /* Rosa hover-bakgrund */
-  color: #fff;
-  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
-  /* Subtil skugga */
-  transition: all .2s ease-in-out;
-  /* Mjuk övergång */
+  /* FÄRG (bakgrund hover): */
+  background: var(--accent-magenta); /* Rosa hover-bakgrund */
+  color: var(--text-light);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1); /* Subtil skugga */
+  transition: all .2s ease-in-out; /* Mjuk övergång */
 }
 
 /* RAMKNAPP (btn-border) */
 .btn-border {
-  /* FÄRG (text): #fff */
-  color: #fff;
-  /* Vit text */
-  background-color: transparent;
-  /* Transparent bakgrund */
-  border: 1px solid #fff;
-  /* Vit ram */
+  /* FÄRG (text): */
+  color: var(--text-light); /* text */
+  background-color: transparent; /* Transparent bakgrund */
+  border: 1px solid var(--text-light); /* ram */
 }
 
 .btn-border:hover {
   /* FÄRG (bakgrund hover): rgba(255, 255, 255, 0.2) */
-  background-color: rgba(255, 255, 255, 0.2);
-  /* Halvtransparent vit */
-  color: #fff;
-  /* Vit text */
+  background-color: rgba(255, 255, 255, 0.2); /* Halvtransparent vit */
+  color: var(--text-light); /* text */
 }
 
 /* STOR KNAPP (btn-lg) */
 .btn-lg {
-  padding: 12px 34px;
-  /* Större inre marginal */
-  text-transform: uppercase;
-  /* Versaler */
-  font-size: 14px;
-  /* Textstorlek */
+  padding: 12px 34px; /* Större inre marginal */
+  text-transform: uppercase; /* Versaler */
+  font-size: 14px; /* Textstorlek */
 }
 
 /* LITEN KNAPP (btn-rm) */
 .btn-rm {
-  padding: 7px 10px;
-  /* Mindre inre marginal */
-  text-transform: capitalize;
-  /* Första bokstav versal */
+  padding: 7px 10px; /* Mindre inre marginal */
+  text-transform: capitalize; /* Första bokstav versal */
 }
 
 /* ALLA BUTTONS – TA BORT FOKUSRING */
 button:focus {
-  outline: none !important;
-  /* Tvingar bort default-fokus */
+  outline: none !important; /* Tvingar bort default-fokus */
 }
 
-/* ICON-KLASSER
-     Färg för ikoner som visar status */
+/* ICON-KLASSER Färg för ikoner som visar status */
 .icon-close,
 .icon-check {
-  /* FÄRG (ikon): #0f0 */
-  color: #0f0;
-  /* Illgrön ikonfärg */
+  /* FÄRG (ikon): */
+  color: var(--accent-neon); /* ikonfärg */
 }
 
 /* BAKGRUNDSKLASS (möjligen felskrivet “drack”) */
 .bg-drack {
-  /* FÄRG (bakgrund): #f1f1f1 */
-  background: var(--gray-1);
-  /* Ljusgrå bakgrund */
+  /* FÄRG (bakgrund): */
+  background: var(--gray-1); /* bakgrund */
 }
 
-/* VIT BAKGRUNDSKLASS
-   Applicera vit bakgrund på element */
+/* VIT BAKGRUNDSKLASS Applicera vit bakgrund på element */
 .bg-white {
-  /* FÄRG (bakgrund): #fff */
-  background: var(--gray-1);
-  /* Vit bakgrund */
+  /* FÄRG (bakgrund): */
+  background: var(--gray-1); /* bakgrund */
 }
 
-/* MARGIN-BOTTOM 30px
-     Ger 30px avstånd under element */
+/* MARGIN-BOTTOM 30px Ger 30px avstånd under element */
 .mb-30 {
-  margin-bottom: 30px;
-  /* Avstånd under */
+  margin-bottom: 30px; /* Avstånd under */
 }
 
-/* MARGIN-TOP 30px
-     Ger 30px avstånd ovanför element */
+/* MARGIN-TOP 30px Ger 30px avstånd ovanför element */
 .mt-30 {
-  margin-top: 30px;
-  /* Avstånd ovanför */
+  margin-top: 30px; /* Avstånd ovanför */
 }
 
-/* ScrollToTop-knapp
-     Döljs initialt, visas med JavaScript när man scrollar */
+/* ScrollToTop-knapp Döljs initialt, visas med JavaScript när man scrollar */
 a.back-to-top {
-  display: none;
-  /* Dölj element */
-  position: fixed;
-  /* Fast position */
-  bottom: 18px;
-  /* 18px från botten */
-  right: 15px;
-  /* 15px från höger */
-  text-decoration: none;
-  /* Ingen understrykning */
+  display: none; /* Dölj element */
+  position: fixed; /* Fast position */
+  bottom: 18px; /* 18px från botten */
+  right: 15px; /* 15px från höger */
+  text-decoration: none; /* Ingen understrykning */
 }
 
 /* Ikon i ScrollToTop-knappen */
 a.back-to-top i {
-  display: block;
-  /* Blockelement */
-  font-size: 22px;
-  /* Ikonens storlek */
-  width: 40px;
-  /* Bredd på klickyta */
-  height: 40px;
-  /* Höjd på klickyta */
-  line-height: 40px;
-  /* Vertikal centrering */
-  /* FÄRG (ikon): #fff */
-  color: #fff;
-  /* Vit ikonfärg */
-  /* FÄRG (bakgrund): #0f0 */
-  background: #0f0;
-  /* Illgrön bakgrund */
-  border-radius: 0;
-  /* Raka hörn */
-  text-align: center;
-  /* Centrerar ikonen */
-  transition: all 0.2s ease-in-out;
-  /* Mjuk övergång */
+  display: block; /* Blockelement */
+  font-size: 22px; /* Ikonens storlek */
+  width: 40px; /* Bredd på klickyta */
+  height: 40px; /* Höjd på klickyta */
+  line-height: 40px; /* Vertikal centrering */
+  /* FÄRG (ikon): */
+  color: var(--text-light); /* ikonfärg */
+  /* FÄRG (bakgrund): */
+  background: var(--accent-neon);
+  border-radius: 0; /* Raka hörn */
+  text-align: center; /* Centrerar ikonen */
+  transition: all 0.2s ease-in-out; /* Mjuk övergång */
   -moz-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14),
-    /* Subtil skugga */
-    0 4px 8px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), /* Subtil skugga */
+  0 4px 8px rgba(0, 0, 0, 0.28);
 }
 
 /* Hover- och fokusstil för ScrollToTop-knappen */
 a.back-to-top:hover,
 a.back-to-top:focus {
-  text-decoration: none;
-  /* Ingen understrykning även vid hover/fokus */
+  text-decoration: none; /* Ingen understrykning även vid hover/fokus */
 }
 
 /* Preloader: helskärmsöverlägg innan sida laddat klart */
 #preloader {
-  position: fixed;
-  /* Täcker hela fönstret */
-  /* FÄRG (bakgrund): #fff */
-  background: #fff;
-  /* Vit bakgrund */
-  top: 0;
-  /* Börjar vid toppen */
-  left: 0;
-  /* Börjar vid vänsterkanten */
-  width: 100%;
-  /* Täcker hela bredden */
-  height: 100%;
-  /* Täcker hela höjden */
-  z-index: 9999999999;
-  /* Ligger över allt annat */
+  position: fixed; /* Täcker hela fönstret */
+  /* FÄRG (bakgrund): */
+  background: var(--text-light); /* Vit bakgrund */
+  top: 0; /* Börjar vid toppen */
+  left: 0;  /* Börjar vid vänsterkanten */
+  width: 100%;  /* Täcker hela bredden */
+  height: 100%; /* Täcker hela höjden */
+  z-index: 9999999999; /* Ligger över allt annat */
 }
 
 /* Skulle-animation: cirkelcontainer */
 .sk-circle {
-  margin: 0 auto;
-  /* Centrerar horisontellt */
-  width: 40px;
-  /* Behållarbredd */
-  height: 40px;
-  /* Behållarhöjd */
-  top: 45%;
-  /* Vertikal placering (relativt föräldern) */
-  position: relative;
-  /* För absolutpositionerade barn */
+  margin: 0 auto; /* Centrerar horisontellt */
+  width: 40px; /* Behållarbredd */
+  height: 40px; /* Behållarhöjd */
+  top: 45%; /* Vertikal placering (relativt föräldern) */
+  position: relative; /* För absolutpositionerade barn */
 }
 
 /* Varje barn i cirkeln */
 .sk-circle .sk-child {
-  width: 100%;
-  /* Täcker förälderns bredd */
-  height: 100%;
-  /* Täcker förälderns höjd */
-  position: absolute;
-  /* Absolut position */
-  left: 0;
-  /* Vid vänsterkant */
-  top: 0;
-  /* Vid topp */
+  width: 100%; /* Täcker förälderns bredd */
+  height: 100%; /* Täcker förälderns höjd */
+  position: absolute; /* Absolut position */
+  left: 0; /* Vid vänsterkant */
+  top: 0; /* Vid topp */
 }
 
 /* Prickarna i cirkeln */
 .sk-circle .sk-child:before {
-  content: '';
-  /* Tomt innehåll */
-  display: block;
-  /* Blockelement */
-  margin: 0 auto;
-  /* Centrerar horisontellt */
-  width: 15%;
-  /* 15% av .sk-circle bredd */
-  height: 15%;
-  /* 15% av .sk-circle höjd */
-  /* FÄRG (bakgrund): #0f0 */
-  background-color: #0f0;
-  /* Illgrön prick */
-  border-radius: 100%;
-  /* Gör pricken rund */
+  content: ''; /* Tomt innehåll */
+  display: block; /* Blockelement */
+  margin: 0 auto; /* Centrerar horisontellt */
+  width: 15%; /* 15% av .sk-circle bredd */
+  height: 15%; /* 15% av .sk-circle höjd */
+  /* FÄRG (bakgrund): */
+  background-color: var(--accent-neon); /* Illgrön prick */
+  border-radius: 100%; /* Gör pricken rund */
   -webkit-animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
   animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
 }
 
 /* Rotationsvinklar för varje prick */
 .sk-circle .sk-circle2 {
-  -webkit-transform: rotate(30deg);
-  /* WebKit-rotation */
-  -ms-transform: rotate(30deg);
-  /* IE-rotation */
-  transform: rotate(30deg);
-  /* Standardrotation */
+  -webkit-transform: rotate(30deg); /* WebKit-rotation */
+  -ms-transform: rotate(30deg); /* IE-rotation */
+  transform: rotate(30deg); /* Standardrotation */
 }
-/* ROTATION FÖR PRICK 3
-   Roterar tredje .sk-child till 60 grader */
+/* ROTATION FÖR PRICK 3 Roterar tredje .sk-child till 60 grader */
 .sk-circle .sk-circle3 {
-  -webkit-transform: rotate(60deg);
-  /* WebKit: rotera 60° */
-  -ms-transform: rotate(60deg);
-  /* IE: rotera 60° */
-  transform: rotate(60deg);
-  /* Standard: rotera 60° */
+  -webkit-transform: rotate(60deg); /* WebKit: rotera 60° */
+  -ms-transform: rotate(60deg); /* IE: rotera 60° */
+  transform: rotate(60deg); /* Standard: rotera 60° */
 }
-
-/* ROTATION FÖR PRICK 4
-     Roterar fjärde pricken till 90 grader */
+/* ROTATION FÖR PRICK 4 Roterar fjärde pricken till 90 grader */
 .sk-circle .sk-circle4 {
-  -webkit-transform: rotate(90deg);
-  /* 90° */
+  -webkit-transform: rotate(90deg); /* 90° */
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-
-/* ROTATION FÖR PRICK 5
-     Roterar femte pricken till 120 grader */
+/* ROTATION FÖR PRICK 5c Roterar femte pricken till 120 grader */
 .sk-circle .sk-circle5 {
   -webkit-transform: rotate(120deg);
   -ms-transform: rotate(120deg);
   transform: rotate(120deg);
 }
-
-/* ROTATION FÖR PRICK 6
-     Roterar sjätte pricken till 150 grader */
+/* ROTATION FÖR PRICK 6 Roterar sjätte pricken till 150 grader */
 .sk-circle .sk-circle6 {
   -webkit-transform: rotate(150deg);
   -ms-transform: rotate(150deg);
   transform: rotate(150deg);
 }
-
-/* ROTATION FÖR PRICK 7
-     Roterar sjunde pricken till 180 grader */
+/* ROTATION FÖR PRICK 7 Roterar sjunde pricken till 180 grader */
 .sk-circle .sk-circle7 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-
-/* ROTATION FÖR PRICK 8
-     Roterar åttonde pricken till 210 grader */
+/* ROTATION FÖR PRICK 8 Roterar åttonde pricken till 210 grader */
 .sk-circle .sk-circle8 {
   -webkit-transform: rotate(210deg);
   -ms-transform: rotate(210deg);
   transform: rotate(210deg);
 }
-
-/* ROTATION FÖR PRICK 9
-     Roterar nionde pricken till 240 grader */
+/* ROTATION FÖR PRICK 9 Roterar nionde pricken till 240 grader */
 .sk-circle .sk-circle9 {
   -webkit-transform: rotate(240deg);
   -ms-transform: rotate(240deg);
   transform: rotate(240deg);
 }
-
-/* ROTATION FÖR PRICK 10
-     Roterar tionde pricken till 270 grader */
+/* ROTATION FÖR PRICK 10 Roterar tionde pricken till 270 grader */
 .sk-circle .sk-circle10 {
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
-
-/* ROTATION FÖR PRICK 11
-     Roterar elfte pricken till 300 grader */
+/* ROTATION FÖR PRICK 11 Roterar elfte pricken till 300 grader */
 .sk-circle .sk-circle11 {
   -webkit-transform: rotate(300deg);
   -ms-transform: rotate(300deg);
   transform: rotate(300deg);
 }
-
-/* ROTATION FÖR PRICK 12
-     Roterar tolfte pricken till 330 grader */
+/* ROTATION FÖR PRICK 12 Roterar tolfte pricken till 330 grader */
 .sk-circle .sk-circle12 {
   -webkit-transform: rotate(330deg);
   -ms-transform: rotate(330deg);
   transform: rotate(330deg);
 }
-
-/* ANIMERINGSFÖRDRÖJNING FÖR PRICK 2
-     Justerar starttiden för andra prickens bouncing-animation */
+/* ANIMERINGSFÖRDRÖJNING FÖR PRICK 2 Justerar starttiden för andra prickens bouncing-animation */
 .sk-circle .sk-circle2:before {
-  -webkit-animation-delay: -1.1s;
-  /* WebKit: fördröjning */
-  animation-delay: -1.1s;
-  /* Standard: fördröjning */ 
+  -webkit-animation-delay: -1.1s; /* WebKit: fördröjning */
+  animation-delay: -1.1s; /* Standard: fördröjning */ 
 }
-
 /* DELAY FÖR PRICK 3 (sk-circle3) */
 .sk-circle .sk-circle3:before {
-  -webkit-animation-delay: -1s;
-  /* WebKit: startar animationen tidigare */
-  animation-delay: -1s;
-  /* Standard: fördröjer start med -1s */
+  -webkit-animation-delay: -1s; /* WebKit: startar animationen tidigare */
+  animation-delay: -1s; /* Standard: fördröjer start med -1s */
 }
-
 /* DELAY FÖR PRICK 4 (sk-circle4) */
 .sk-circle .sk-circle4:before {
   -webkit-animation-delay: -0.9s;
   animation-delay: -0.9s;
 }
-
 /* DELAY FÖR PRICK 5 (sk-circle5) */
 .sk-circle .sk-circle5:before {
   -webkit-animation-delay: -0.8s;
   animation-delay: -0.8s;
 }
-
 /* DELAY FÖR PRICK 6 (sk-circle6) */
 .sk-circle .sk-circle6:before {
   -webkit-animation-delay: -0.7s;
   animation-delay: -0.7s;
 }
-
 /* DELAY FÖR PRICK 7 (sk-circle7) */
 .sk-circle .sk-circle7:before {
   -webkit-animation-delay: -0.6s;
   animation-delay: -0.6s;
 }
-
 /* DELAY FÖR PRICK 8 (sk-circle8) */
 .sk-circle .sk-circle8:before {
   -webkit-animation-delay: -0.5s;
   animation-delay: -0.5s;
 }
-
 /* DELAY FÖR PRICK 9 (sk-circle9) */
 .sk-circle .sk-circle9:before {
   -webkit-animation-delay: -0.4s;
   animation-delay: -0.4s;
 }
-
 /* DELAY FÖR PRICK 10 (sk-circle10) */
 .sk-circle .sk-circle10:before {
   -webkit-animation-delay: -0.3s;
   animation-delay: -0.3s;
 }
-
 /* DELAY FÖR PRICK 11 (sk-circle11) */
 .sk-circle .sk-circle11:before {
   -webkit-animation-delay: -0.2s;
   animation-delay: -0.2s;
 }
-
 /* DELAY FÖR PRICK 12 (sk-circle12) */
 .sk-circle .sk-circle12:before {
   -webkit-animation-delay: -0.1s;
   animation-delay: -0.1s;
 }
 
-/* KEYFRAMES FÖR SK-CIRCLE-BOUNCE
-   Definierar skalningsanimationen för prickar */
+/* KEYFRAMES FÖR SK-CIRCLE-BOUNCE Definierar skalningsanimationen för prickar */
 @-webkit-keyframes sk-circleBounceDelay {
 
   0%,
   80%,
   100% {
-    -webkit-transform: scale(0);
-    /* Skala ner till 0 (osynlig) */
+    -webkit-transform: scale(0); /* Skala ner till 0 (osynlig) */
     transform: scale(0);
   }
-
   40% {
-    -webkit-transform: scale(1);
-    /* Skala upp till full storlek */
+    -webkit-transform: scale(1); /* Skala upp till full storlek */
     transform: scale(1);
   }
 }
-
 @keyframes sk-circleBounceDelay {
 
   0%,
@@ -950,61 +727,48 @@ a.back-to-top:focus {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
   40% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
 
-/* SEKTION-PADDING
-   Ger vertikalt utrymme runt sektioner */
+/* SEKTION-PADDING Ger vertikalt utrymme runt sektioner */
 .section-padding {
-  padding: 60px 0;
-  /* 60px ovan och under */
+  padding: 60px 0; /* 60px ovan och under */
 }
 
-/* NO PADDING
-   Tar bort all padding */
+/* NO PADDING Tar bort all padding */
 .no-padding {
-  padding: 0 !important;
-  /* Tvingar bort padding */
+  padding: 0 !important; /* Tvingar bort padding */
 }
 
 /* PADDING LEFT NONE */
 .padding-left-none {
-  padding-left: 0;
-  /* Tar bort vänsterpadding */
+  padding-left: 0; /* Tar bort vänsterpadding */
 }
 
 /* PADDING RIGHT NONE */
 .padding-right-none {
-  padding-right: 0;
-  /* Tar bort högerpadding */
+  padding-right: 0; /* Tar bort högerpadding */
 }
 
 /* PAGE BANNER AREA Bakgrundsbild för bannersektionen */
 #page-banner-area {
-  background: var(--gray-2) url(../img/background/banner.jpg) no-repeat;
-  /* Bild som bakgrund */
-  background-position: 50% 50%;
-  /* Centrerar bilden */
-  background-size: cover;
-  /* Täcker hela området */
+  background: var(--gray-2) url(../img/background/banner.jpg) no-repeat; /* Bild som bakgrund */
+  background-position: 50% 50%; /* Centrerar bilden */
+  background-size: cover; /* Täcker hela området */
 }
 
 /* PAGE BANNER Grundinställningar för banner */
 .page-banner {
   position: relative;
-  min-height: 250px;
-  /* Minsta höjd */
-  /* FÄRG (text): #fff */
-  color: #fff;
-  /* Vit textfärg */
+  min-height: 250px; /* Minsta höjd */
+  /* FÄRG */
+  color: var(--text-light); /* textfärg */
 }
 
-/* BANNER OVERLAY
-   Halvtransparent svart överlägg */
+/* BANNER OVERLAY Halvtransparent svart överlägg */
 .page-banner:before {
   content: '';
   position: absolute;
@@ -1012,28 +776,23 @@ a.back-to-top:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  /* Svart med 20% opacitet */
+  background: rgba(0, 0, 0, 0.2); /* Svart med 20% opacitet */
 }
 
 /* BANNER TITEL-CONTAINER */
 .page-banner .page-banner-title {
   position: absolute;
-  top: 50%;
-  /* Vertikalt mittfält */
+  top: 50%; /* Vertikalt mittfält */
   width: 100%;
   height: 100%;
-  text-transform: uppercase;
-  /* Versaler */
+  text-transform: uppercase; /* Versaler */
 }
 
 /* BANNER TITEL TEXT */
 .page-banner .page-banner-title h2 {
-  font-size: 40px;
-  /* Textstorlek */
-  /* FÄRG (text): #fff */
-  color: #fff;
-  /* Vit text */
+  font-size: 40px; /* Textstorlek */
+  /* FÄRG: */
+  color: var(--text-light);
 }
 
 /* FADE-IN ANIMATION */
@@ -1041,12 +800,10 @@ a.back-to-top:focus {
   from {
     opacity: 0;
   }
-
   /* Börjar osynlig */
   to {
     opacity: 1;
   }
-
   /* Slutar synlig */
 }
 
@@ -1054,183 +811,137 @@ a.back-to-top:focus {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
 }
 
 .fadeIn {
-  -webkit-animation-name: fadeIn;
-  /* Använd fadeIn WebKit */
-  animation-name: fadeIn;
-  /* Standard animering */
+  -webkit-animation-name: fadeIn; /* Använd fadeIn WebKit */
+  animation-name: fadeIn; /* Standard animering */
 }
 
 /* VIT BAKGRUNDSIDEBEHÅLLARE */
 #white-bg {
-  /* FÄRG (bakgrund): #fff */
-  background: #fff;
-  /* Vit bakgrund */
+  /* FÄRG: */
+  background: var(--text-light); /* bakgrund */
 }
 
 /* ROOF-SEKTION */
 #roof {
-  /* FÄRG (bakgrund): */
-  background: var(--gray-4);
-  /* Ljusgrå bakgrund */
-  padding: 15px 0;
-  /* Vertikal padding */
+  /* FÄRG: */
+  background: var(--gray-4); /* Ljusgrå bakgrund */
+  padding: 15px 0; /* Vertikal padding */
 }
 
 #roof .info-bar-address {
-  font-size: 14px;
-  /* Textstorlek */
+  font-size: 14px; /* Textstorlek */
 }
 
 #roof .quick-contacts span {
-  margin-right: 10px;
-  /* Avstånd mellan kontaktuppgifter */
+  margin-right: 10px; /* Avstånd mellan kontaktuppgifter */
 }
 
 #roof .quick-contacts span a {
-  /* FÄRG (länk): #212121 */
-  color: #212121;
-  /* Mörkgrå länktext */
+  /* FÄRG (länk): */
+  color: var(--gray-1); /* Mörkgrå länktext */
 }
 
 #roof .quick-contacts span a:hover {
-  /* FÄRG (länk hover): #0f0 */
-  color: #0f0;
-  /* Illgrön hovertext */
+  /* FÄRG (länk hover): */
+  color: var(--accent-neon); /* Illgrön hovertext */
 }
 
 #roof .quick-contacts span i {
-  margin-right: 5px;
-  /* Avstånd efter ikon */
+  margin-right: 5px; /* Avstånd efter ikon */
   vertical-align: middle;
-  font-size: 15px;
-  /* Ikonstorlek */
+  font-size: 15px; /* Ikonstorlek */
 }
 
 /* NAVBAR BRAND (logotyp) */
 .navbar-brand {
   position: relative;
-  padding: 0px;
-  /* Tar bort standardpadding */
+  padding: 0px; /* Tar bort standardpadding */
 }
 
-/* LOGOTYPBILD I NAVBAR
-   Styr bildstorlek för varumärkeslogo */
+/* LOGOTYPBILD I NAVBAR Styr bildstorlek för varumärkeslogo */
 .navbar-brand img {
-  width: 75%;
-  /* Bildens bredd som 75% av behållaren */
+  width: 75%; /* Bildens bredd som 75% av behållaren */
 }
 
-/* KOMPAKT NAVBAR VID SCROLL
-     Gör navbar vit och applicerar in-/ut-animation */
+/* KOMPAKT NAVBAR VID SCROLL Gör navbar vit och applicerar in-/ut-animation */
 .top-nav-collapse {
   /* FÄRG (bakgrund): */
   background: var(--gray-2) !important;
-  z-index: 999999;
-  /* Ligger över allt annat innehåll */
-  top: 0px !important;
-  /* Fäster navbar överst */
-  min-height: 58px;
-  /* Minsta höjd på navbar */
-  box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
-  /* Subtil skugga */
+  z-index: 999999; /* Ligger över allt annat innehåll */
+  top: 0px !important; /* Fäster navbar överst */
+  min-height: 58px; /* Minsta höjd på navbar */
+  box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06); /* Subtil skugga */
   /* ANIMERINGSTID */
   -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  /* BEHÅLL SLUTTILLSTÅND EFTER ANIMATION */
+  animation-duration: 1s; /* BEHÅLL SLUTTILLSTÅND EFTER ANIMATION */
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  /* ANIMERINGSNAMN */
+  animation-fill-mode: both; /* ANIMERINGSNAMN */
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
 
 /* JUSTERAR LOGOTYP INUT KOMPAKT NAVBAR */
 .top-nav-collapse .navbar-brand {
-  top: 0px;
-  /* Säkerställer att logotypen är i översta kant */
+  top: 0px; /* Säkerställer att logotypen är i översta kant */
 }
 
 /* NORMALA NAVBAR-LÄNKAR I KOMPAKT LÄGE */
 .top-nav-collapse .navbar-nav .nav-link {
-  /* FÄRG (text): #212121 */
-  color: #212121 !important;
-  /* Mörkgrå text för länkar */
+  /* FÄRG (text): */
+  color: var(--gray-1) !important; /* Mörkgrå text för länkar */
 }
 
 /* HOVER-EFFEKT FÖR DESSA LÄNKAR */
 .top-nav-collapse .navbar-nav .nav-link:hover {
-  /* FÄRG (text hover): #0f0 */
-  color: #0f0 !important;
-  /* Illgrön text vid hover */
+  /* FÄRG (text hover): */
+  color: var(--accent-neon) !important; /* Illgrön text vid hover */
 }
 
 /* AKTIV LÄNK I KOMPAKT NAVBAR */
 .top-nav-collapse .navbar-nav li.active a.nav-link {
-  /* FÄRG (aktiv länk): #0f0 */
-  color: #0f0 !important;
-  /* Illgrön text för aktiv länk */
+  /* FÄRG (aktiv länk): */
+  color: var(--accent-neon) !important; /* Illgrön text för aktiv länk */
 }
 
 /* TRANSPARENT BAKGRUND FÖR KLASSEN “indigo” */
 .indigo {
-  background: transparent;
-  /* Ingen bakgrundsfärg */
+  background: transparent; /* Ingen bakgrundsfärg */
 }
 
 /* EXPANDERAD NAVBAR, STANDARDNÄTKLÄNKAR */
 .navbar-expand-lg .navbar-nav .nav-link {
-  /* FÄRG (text): #fff */
-  color: #fff;
-  /* Vit text */
-  padding: 0 15px;
-  /* Horisontellt mellanrum */
-  margin-top: 10px;
-  /* Avstånd ovanför länken */
-  margin-bottom: 10px;
-  /* Avstånd under länken */
-  line-height: 40px;
-  /* Höjd på länkens klickyta */
-  text-transform: uppercase;
-  /* Versalt text */
-  background: transparent;
-  /* Transparent bakgrund */
-  transition: all 0.3s ease-in-out;
-  /* Mjuka övergångar */
-  position: relative;
-  /* För pseudo-element */
+  /* FÄRG (text): */
+  color: var(--text-light); /* text */
+  padding: 0 15px; /* Horisontellt mellanrum */
+  margin-top: 10px; /* Avstånd ovanför länken */
+  margin-bottom: 10px; /* Avstånd under länken */
+  line-height: 40px; /* Höjd på länkens klickyta */
+  text-transform: uppercase; /* Versalt text */
+  background: transparent; /* Transparent bakgrund */
+  transition: all 0.3s ease-in-out; /* Mjuka övergångar */
+  position: relative; /* För pseudo-element */
 }
 
 /* DEKORLINJE UNDER NAV-LÄNKAR
 Skapas med :before, syns vid hover/aktiv */
 .navbar-expand-lg .navbar-nav li>a:before {
-  content: '';
-  /* Tomt innehåll skapar formen */
-  position: absolute;
-  /* Absolut position */
-  top: 0;
-  /* Placeras vid länkens övre kant */
-  left: 50%;
-  /* Centreras horisontellt */
-  margin-left: -10px;
-  /* Justerar exakt till mitten */
-  width: 15px;
-  /* Linjens längd */
-  height: 2px;
-  /* Linjens tjocklek */
-  /* FÄRG (bakgrund): #0f0 */
-  background: #0f0;
-  /* Illgrön dekorlinje */
-  transform: scale3d(0, 1, 1);
-  /* Börjar skalad till 0 (inte synlig) */
-  transition: transform 0.1s;
-  /* Snabb övergång för skalning */
+  content: ''; /* Tomt innehåll skapar formen */
+  position: absolute; /* Absolut position */
+  top: 0; /* Placeras vid länkens övre kant */
+  left: 50%; /* Centreras horisontellt */
+  margin-left: -10px; /* Justerar exakt till mitten */
+  width: 15px; /* Linjens längd */
+  height: 2px;  /* Linjens tjocklek */
+  /* FÄRG): */
+  background: var(--accent-neon); /* Illgrön dekorlinje */
+  transform: scale3d(0, 1, 1);  /* Börjar skalad till 0 (inte synlig) */
+  transition: transform 0.1s; /* Snabb övergång för skalning */
 }
 
 /* AKTIVERAR DEKORLINJEN FÖR AKTIVA NAV-LÄNKAR */
@@ -1238,8 +949,7 @@ Skapas med :before, syns vid hover/aktiv */
   /* Återställer skala så linjen syns */
   -webkit-transform: scale3d(1, 1, 1);
   -moz-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-  /* Timing-funktion för övergång */
+  transform: scale3d(1, 1, 1); /* Timing-funktion för övergång */
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -moz-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1253,19 +963,16 @@ Skapas med :before, syns vid hover/aktiv */
 .navbar-expand-lg .navbar-nav li a:hover,
 .navbar-expand-lg .navbar-nav li .active>a,
 .navbar-expand-lg .navbar-nav li a:focus {
-  /* FÄRG (text): #0f0 */
-  color: #0f0;
-  /* Illgrön text vid hover/aktiv/fokus */
-  outline: none;
-  /* Ingen fokusram */
+  /* FÄRG (text): */
+  color: var(--accent-neon) !important; /* Illgrön text vid hover/aktiv/fokus */
+  outline: none; /* Ingen fokusram */
 }
 
 /* Extra säkerhet för hover/fokus på .nav-link */
 .navbar-expand-lg .navbar-nav .nav-link:focus,
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-  /* FÄRG (text): #0f0 */
-  color: #0f0 !important;
-  /* Tvingar illgrön text */
+  /* FÄRG (text) */
+  color: var(--accent-neon) !important; /* Tvingar illgrön text */
 }
 
 /* Tar bort standardpadding i navbar */
@@ -1275,9 +982,8 @@ Skapas med :before, syns vid hover/aktiv */
 
 /* Aktiv länk i vanlig navbar */
 .navbar li.active a.nav-link {
-  /* FÄRG (text): #0f0 */
-  color: #0f0 !important;
-  /* Illgrön text för aktiv länk */
+  /* FÄRG (text): */
+  color: var(--accent-neon) !important; /* Illgrön text för aktiv länk */
 }
 
 /* Tar bort pilindikator på dropdown-knapp */
@@ -1289,23 +995,16 @@ Skapas med :before, syns vid hover/aktiv */
 .dropdown-menu {
   margin: 0;
   padding: 0;
-  display: none;
-  /* Dölj tills hover */
+  display: none; /* Dölj tills hover */
   position: absolute;
   z-index: 99;
-  min-width: 210px;
-  /* Minsta bredd */
-  /* FÄRG (bakgrund): #fff */
-  background-color: #fff;
-  /* Vit bakgrund */
-  white-space: nowrap;
-  /* Inget radbyte */
-  border-radius: 4px;
-  /* Rundade hörn */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  /* Skugga */
-  animation: fadeIn 0.4s;
-  /* FadeIn-animation */
+  min-width: 210px;  /* Minsta bredd */
+  /* FÄRG): */
+  background-color: var(--text-light); /* bakgrund */
+  white-space: nowrap; /* Inget radbyte */
+  border-radius: 4px; /* Rundade hörn */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); /* Skugga */
+  animation: fadeIn 0.4s; /* FadeIn-animation */
   -webkit-animation: fadeIn 0.4s;
   -moz-animation: fadeIn 0.4s;
   -o-animation: fadeIn 0.4s;
@@ -1322,9 +1021,8 @@ Skapas med :before, syns vid hover/aktiv */
   margin-left: -5px;
   border-right: 10px solid transparent;
   border-left: 10px solid transparent;
-  /* FÄRG (triangel): #f5f5f5 */
-  border-bottom: 10px solid #f5f5f5;
-  /* Ljusgrå triangel */
+  /* FÄRG): */
+  border-bottom: 10px solid var(--text-muted); /* Ljusgrå triangel */
 }
 
 /* Visar dropdown-meny vid hover på förälder */
@@ -1335,30 +1033,24 @@ Skapas med :before, syns vid hover/aktiv */
   top: 100%;
   border: none;
   animation: fadeIn 0.4s;
-  background: #f5f5f5;
-  /* FÄRG (bakgrund vid hover): #f5f5f5 */
+  background: var(--text-light); /* FÄRG (bakgrund vid hover): */
 }
 
 /* Styling för varje dropdown-item */
 .dropdown .dropdown-menu .dropdown-item {
   width: 100%;
-  padding: 12px 20px;
-  /* Inre marginal */
-  font-size: 14px;
-  /* Textstorlek */
-  /* FÄRG (text): #212121 */
-  color: #212121;
-  /* Mörkgrå text */
-  border-bottom: 1px solid #f1f1f1;
-  /* Avgränsande linje */
+  padding: 12px 20px; /* Inre marginal */
+  font-size: 14px; /* Textstorlek */
+  /* FÄRG */
+  color: var(--gray-1); /* Mörkgrå text */
+  border-bottom: 1px solid var(--text-light); /* Avgränsande linje */
   text-decoration: none;
   display: inline-block;
   float: left;
   clear: both;
   position: relative;
   outline: 0;
-  transition: all 0.3s ease-in-out;
-  /* Mjuk övergång */
+  transition: all 0.3s ease-in-out; /* Mjuk övergång */
 }
 
 /* Tar bort underkant på sista item och rundar hörn */
@@ -1378,9 +1070,8 @@ Skapas med :before, syns vid hover/aktiv */
 .dropdown .dropdown-item:focus,
 .dropdown .dropdown-item:hover,
 .dropdown .dropdown-item.active {
-  /* FÄRG (text): #0f0 */
-  color: #0f0;
-  /* Illgrön text */
+  /* FÄRG (text): */
+  color: var(--accent-neon); /* Illgrön text */
 }
 
 /* Inaktiv bakgrund för aktiv dropdown-item */
@@ -1397,23 +1088,20 @@ Skapas med :before, syns vid hover/aktiv */
 
 /* Hamburgerknapp i SlickNav */
 .slicknav_btn {
-  /* FÄRG (ram): #0f0 */
-  border-color: #0f0;
-  /* Illgrön kant */
+  /* FÄRG (ram): */
+  border-color: var(--accent-neon); /* Illgrön kant */
 }
 
 /* Streck i SlickNav-ikon */
 .slicknav_menu .slicknav_icon-bar {
   /* FÄRG (ikon): #0f0 */
-  background: #0f0;
-  /* Illgrön streck */
+  background: var(--accent-neon); /* streck */
 }
 
 /* Endast små tablets: justerad padding */
 @media (min-width: 768px) and (max-width: 991px) {
   #nav-main li a.nav-link {
-    padding-top: 18px;
-    /* Mer padding ovanför länktext */
+    padding-top: 18px; /* Mer padding ovanför länktext */
   }
 }
 
@@ -1427,20 +1115,17 @@ Skapas med :before, syns vid hover/aktiv */
 /* Mobillayout för skärm ≤ 768px */
 @media screen and (max-width: 768px) {
   .navbar-header {
-    width: 100%;
-    /* Full bredd */
+    width: 100%; /* Full bredd */
   }
 
   .navbar-brand {
     position: absolute;
-    padding: 15px;
-    /* Inre marginal */
+    padding: 15px; /* Inre marginal */
     top: 0;
   }
 
   .navbar-brand img {
-    width: 75%;
-    /* Bildbredd mobil */
+    width: 75%; /* Bildbredd mobil */
   }
 
   #mobile-menu {
@@ -1448,171 +1133,132 @@ Skapas med :before, syns vid hover/aktiv */
   }
 
   .slicknav_menu {
-    display: block;
-    /* Visa SlickNav-meny på mobil */
+    display: block; /* Visa SlickNav-meny på mobil */
   }
 
   .slicknav_nav .active a {
-    /* FÄRG (bakgrund): #0f0 */
-    background: #0f0;
-    /* Illgrön bakgrund */
-    /* FÄRG (text): #fff */
-    color: #fff;
-    /* Vit text */
+    /* FÄRG (bakgrund): */
+    background: var(--accent-neon); /* Illgrön bakgrund */
+    /* FÄRG (text): */
+    color: var(--text-light); /* text */
   }
 
   .slicknav_nav a:hover,
   .slicknav_nav .active {
-    /* FÄRG (text): #0f0 */
-    color: #0f0;
-    /* FÄRG (bakgrund): #f5f5f5 */
-    background: #f5f5f5;
+    /* FÄRG (text): */
+    color: var(--accent-neon);
+    /* FÄRG (bakgrund): */
+    background: var(--text-light);
   }
 
   .slicknav_nav .dropdown li a.active {
-    background: #f5f5f5;
-    /* FÄRG (bakgrund aktiv): #f5f5f5 */
-    /* FÄRG (text): #0f0 */
-    color: #0f0;
+    background: var(--gray-2); /* FÄRG (bakgrund aktiv): */
+    /* FÄRG (text): */
+    color: var(--accent-neon);
   }
 }
 
 /* EVENT SLIDES INTRO-BESKRIVNING Radavstånd och marginal under text */
 #event-slides .intro-desc {
-  line-height: 26px;
-  /* Radavstånd */
-  margin-bottom: 30px;
-  /* Avstånd under text */
+  line-height: 26px; /* Radavstånd */
+  margin-bottom: 30px; /* Avstånd under text */
 }
 
 /* EVENT SLIDES TITEL Stil för rubriken i slides */
 #event-slides .intro-title {
-  /* FÄRG (text): #212121 */
-  color: #212121;
-  /* Mörkgrå text */
-  font-size: 22px;
-  /* Textstorlek */
-  font-weight: 700;
-  /* Fet stil */
-  letter-spacing: 1px;
-  /* Bokstavsavstånd */
-  margin-bottom: 15px;
-  /* Avstånd under rubrik */
+  /* FÄRG (text): */
+  color: var(--gray-1); /* Mörkgrå text */
+  font-size: 22px; /* Textstorlek */
+  font-weight: 700; /* Fet stil */
+  letter-spacing: 1px; /* Bokstavsavstånd */
+  margin-bottom: 15px; /* Avstånd under rubrik */
 }
 
 /* LISTA MED SPECIFIKATIONER I EVENT-SLIDES */
 #event-slides .list-specification li {
-  margin-bottom: 10px;
-  /* Avstånd under varje punkt */
-  font-size: 15px;
-  /* Textstorlek */
+  margin-bottom: 10px; /* Avstånd under varje punkt */
+  font-size: 15px; /* Textstorlek */
 }
 
 /* ICON I SPECIFIKATIONSLISTA */
 #event-slides .list-specification li i {
-  margin-right: 5px;
-  /* Avstånd efter ikon */
+  margin-right: 5px; /* Avstånd efter ikon */
 }
 
-/* COUNTER-SEKTION
-     Helgrön bakgrund och dold overflow för räkneelement */
+/* COUNTER-SEKTION Helgrön bakgrund och dold overflow för räkneelement */
 .counter-section {
-  /* FÄRG (bakgrund): #0f0 */
-  background: var(--accent-neon);
-  /* Illgrön bakgrund */
-  overflow: hidden;
-  /* Dölj utflödande innehåll */
-  position: relative;
-  /* För eventuella pseudo-element */
+  /* FÄRG (bakgrund): */
+  background: var(--accent-neon); /* bakgrund */
+  overflow: hidden; /* Dölj utflödande innehåll */
+  position: relative; /* För eventuella pseudo-element */
 }
 
 /* INRE BEHÅLLARE FÖR COUNTER */
 .counter-section .counter {
-  padding: 30px 0;
-  /* Vertikal padding */
+  padding: 30px 0; /* Vertikal padding */
 }
 
 /* IKON I COUNTER */
 .counter-section .counter .icon {
-  margin-bottom: 15px;
-  /* Avstånd under ikonen */
+  margin-bottom: 15px /* Avstånd under ikonen */
 }
 
 /* IKONSYMBOL I COUNTER */
 .counter-section .counter .icon i {
   font-size: 60px;
   /* Stor ikon */
-  /* FÄRG (ikon): #fff */
-  color: #fff;
-  /* Vit ikonfärg */
+  /* FÄRG (ikon): */
+  color: var(--text-light); /* ikonfärg */
 }
 
 /* PARAGRAF I COUNTER */
 .counter-section .counter p {
-  font-size: 15px;
-  /* Textstorlek */
-  /* FÄRG (text): #fff */
-  color: #fff;
-  /* Vit text */
-  font-weight: 700;
-  /* Fet stil */
-  text-transform: uppercase;
-  /* Versaler */
+  font-size: 15px; /* Textstorlek */
+  /* FÄRG (text): */
+  color: var(--text-light); /* Vit text */
+  /* text */
+  font-weight: 700; /* Fet stil */
+  text-transform: uppercase; /* Versaler */
 }
 
 /* SPAN I COUNTER */
 .counter-section .counter span {
-  /* FÄRG (text): #fefefe */
-  color: #fefefe;
-  /* Nästan vit text */
-  font-size: 12px;
-  /* Mindre textstorlek */
-  font-weight: 400;
-  /* Normal vikt */
-  text-transform: uppercase;
-  /* Versaler */
+  /* FÄRG (text): */
+  color: var(--text-light); /* Nästan vit text */
+  font-size: 12px; /* Mindre textstorlek */
+  font-weight: 400; /* Normal vikt */
+  text-transform: uppercase; /* Versaler */
 }
 
-/* SPONSORS AREA
-     Ljusgrå bakgrund för sponsorer */
+/* SPONSORS AREA Ljusgrå bakgrund för sponsorer */
 #sponsors {
   /* FÄRG (bakgrund): */
-  background: var(--gray-2);
-  /* Ljusgrå bakgrund */
+  background: var(--gray-2); /* Ljusgrå bakgrund */
 }
 
 /* LOGOTYPBEHÅLLARE FÖR SPONSORER */
 #sponsors .spnsors-logo {
-  text-align: center;
-  /* Centrerar innehåll */
-  border-radius: 4px;
-  /* Rundar hörn */
-  padding: 50px;
-  /* Inre marginal */
-  margin-bottom: 30px;
-  /* Avstånd under */
-  display: inline-block;
-  /* Inline-block för flera logotyper */
+  text-align: center; /* Centrerar innehåll */
+  border-radius: 4px; /* Rundar hörn */
+  padding: 50px; /* Inre marginal */
+  margin-bottom: 30px; /* Avstånd under */
+  display: inline-block; /* Inline-block för flera logotyper */
   border: 1px solid var(--text-light);
-  /* Ljusgrå ram */
-  /* FÄRG (bakgrund): #fff */
-  background: var(--text-light); /* Vit bakgrund */
-  transition: all 300ms ease-in-out;
-  /* Mjuk övergång */
+  /* Ljusgrå ram FÄRG (bakgrund): */
+  background: var(--text-light); /* bakgrund */
+  transition: all 300ms ease-in-out; /* Mjuk övergång */
 }
 
 /* HOVER PÅ SPONSORLOGOTYP */
 #sponsors .spnsors-logo:hover {
-  border-color: transparent;
-  /* Tar bort ram */
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
-  /* Starkare skugga */
+  border-color: transparent; /* Tar bort ram */
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2); /* Starkare skugga */
 }
 
 /* SCHEDULE AREA Samma ljusgrå bakgrund för schemasektion */
 #schedules {
   /* FÄRG (bakgrund): */
-  background: var(--gray-1);
+  background: var(--gray-2);
 }
 
 /* TABBARNA INUT SCHEDULE */
@@ -1622,15 +1268,13 @@ Skapas med :before, syns vid hover/aktiv */
 
 /* TITELRAD FÖR SCHEME-TABBAR */
 .schedule .schedule-tab-title {
-  margin-bottom: 35px;
-  /* Avstånd under titeln */
+  margin-bottom: 35px; /* Avstånd under titeln */
 }
 
 /* TABBAR-BEHÅLLARE */
 .schedule .schedule-tab-title .nav-tabs {
-  /* FÄRG (bakgrund): #ffffff */
-  background: var(--gray-1);
-  /* Vit bakgrund */
+  /* FÄRG (bakgrund): */
+  background: var(--gray-3); /* bakgrund */
 }
 
 /* INDIVIDUELLA TAB-LÄNKAR */
@@ -1640,292 +1284,208 @@ Skapas med :before, syns vid hover/aktiv */
   cursor: pointer;
   height: 90px; /* Höjd */
   width: 255px; /* Bredd */
-  border-bottom: 2px solid var(--gray-2); /* Ljusgrå avgränsningslinje */
-  transition: all 500ms ease;
-  /* Långsam övergång */
-  padding: 20px;
-  /* Inre marginal */
+  border-bottom: 2px solid var(--gray-1); /* grå avgränsningslinje */
+  transition: all 500ms ease; /* Långsam övergång */
+  padding: 20px; /* Inre marginal */
 }
 
 /* AKTIV/HOVERAD TAB */
 .schedule .schedule-tab-title .nav-tabs .nav-item.show .nav-link,
 .schedule .schedule-tab-title .nav-tabs .nav-link.active,
 .schedule .schedule-tab-title .nav-tabs .nav-item .nav-link:hover {
-  /* FÄRG (bakgrund): #0f0 */
-  background: var(--accent-neon);
-  /* Illgrön bakgrund */
-  border: 1px solid var(--accent-neon);
-  /* Illgrön ram */
-  transition: all 0.3s ease-in-out;
-  /* Mjukare övergång */
+  /* FÄRG (bakgrund): */
+  background: var(--accent-neon); /* Illgrön bakgrund */
+  border: 1px solid var(--accent-neon); /* Illgrön ram */
+  transition: all 0.3s ease-in-out; /* Mjukare övergång */
 }
 
 /* VIT TEXT I AKTIVA TAB BARNS H4 */
 .schedule .schedule-tab-title .nav-tabs .nav-item.show .nav-link h4,
 .schedule .schedule-tab-title .nav-tabs .nav-link.active h4,
 .schedule .schedule-tab-title .nav-tabs .nav-item .nav-link:hover h4 {
-  color: var(--text-light); /* Vit text för rubriknivå */ 
+  color: var(--gray-1); /* text för rubriknivå */ 
 }
 
-/* TAB-RUBRIK H5 I AKTIV/HOVER-STATE
-   Sätter textfärg för underrubriker i schemats tabbar */
+/* TAB-RUBRIK H5 I AKTIV/HOVER-STATE Sätter textfärg för underrubriker i schemats tabbar */
 .schedule .schedule-tab-title .nav-tabs .nav-item.show .nav-link h5,
 .schedule .schedule-tab-title .nav-tabs .nav-link.active h5,
 .schedule .schedule-tab-title .nav-tabs .nav-item .nav-link:hover h5 {
-  color: var(--text-light);
-  /* Vit text för h5 i aktiv/hoverad tab */
+  color: var(--text-muted); /* text för h5 i aktiv/hoverad tab */
 }
 
 /* ITEM-TEXT H4 Stil för huvudtext i varje tab-item */
 .schedule .schedule-tab-title .item-text h4 {
-  font-size: 15px;
-  /* Textstorlek */
-  color: var(--gray-3);
-  line-height: 22px;
-  /* Radavstånd */
-  font-weight: 400;
-  /* Normal vikt */
-  text-transform: uppercase;
-  /* Versaler */
+  font-size: 15px; /* Textstorlek */
+  color: var(--accent-magenta);
+  line-height: 22px; /* Radavstånd */
+  font-weight: 400; /* Normal vikt */
+  text-transform: uppercase; /* Versaler */
 }
 
 /* ITEM-TEXT H5 Stil för undertext i varje tab-item */
 .schedule .schedule-tab-title .item-text h5 {
-  font-size: 14px;
-  /* Textstorlek */
-  /* FÄRG (text): #848484 */
-  color: #848484;
-  /* Mellangrå text */
-  line-height: 16px;
-  /* Radavstånd */
-  font-weight: 400;
-  /* Normal vikt */
-  text-transform: capitalize;
-  /* Första bokstaven stor */
+  font-size: 14px; /* Textstorlek */
+  /* FÄRG (text): */
+  color: var(--gray-5); /* text */
+  line-height: 16px; /* Radavstånd */
+  font-weight: 400; /* Normal vikt */
+  text-transform: capitalize; /* Första bokstaven stor */
 }
 
 /* TAB-CONTENT BEHÅLLARE Box-skygg för innehållsområdet */
 .schedule .schedule-tab-content .tab-content {
-  box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.1);
-  /* Subtil skugga */
+  box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.1); /* Subtil skugga */
 }
 
-/* RADERAR KANT PÅ KORT
-Tar bort standardram på varje card */
+/* RADERAR KANT PÅ KORT Tar bort standardram på varje card */
 .schedule .schedule-tab-content .card {
-  border: none;
-  /* Ingen kant */
+  border: none; /* Ingen kant */
 }
 
 /* VISAD CARD-BODY Ljusgrå bakgrund när kortet är aktivt */
 .schedule .show .card-body {
-  /* FÄRG (bakgrund): #f3f4f3 */
-  background: #f3f4f3;
-  /* Ljusgrå bakgrund */
+  /* FÄRG (bakgrund): */
+  background: var(--gray-4); /* bakgrund */
 }
 
 /* CARD-HEADER Stil för korthuvud med klickbar yta */
 .schedule .card-header {
-  border: none;
-  /* Ingen ram runt header */
-  cursor: pointer;
-  /* Muspekare blir hand */
-  /* FÄRG (bakgrund): #fff */
-  background: var(--gray-3);
-  /* Vit bakgrund */
-  border-bottom: 1px solid #ddd;
-  /* Ljusgrå underlinje */
+  border: none; /* Ingen ram runt header */
+  cursor: pointer; /* Muspekare blir hand */
+  /* FÄRG (bakgrund): */
+  background: var(--gray-5); /* bakgrund */
+  border-bottom: 1px solid var(--accent-neon); /* underlinje */
 }
 
-/* IMAGES-BOX I CARD-HEADER
-      Behållare för bilder/profilbilder */
+/* IMAGES-BOX I CARD-HEADER Behållare för bilder/profilbilder */
 .schedule .card-header .images-box {
-  width: 70px;
-  /* Bredd */
-  height: 70px;
-  /* Höjd */
-  float: left;
-  /* Flyter till vänster */
-  margin-right: 20px;
-  /* Avstånd till text */
+  width: 70px; /* Bredd */
+  height: 70px; /* Höjd */
+  float: left; /* Flyter till vänster */
+  margin-right: 20px; /* Avstånd till text */
 }
 
 /* RUNDNING AV BILD I IMAGES-BOX */
 .schedule .card-header .images-box img {
-  border-radius: 50%;
-  /* Gör bilden cirkulär */
+  border-radius: 50%; /* Gör bilden cirkulär */
 }
 
 /* TIDSTEXT I CARD-HEADER */
 .schedule .card-header .time {
-  /* FÄRG (text): #777777 */
-  color: var(--gray-3);
-  /* Grå text */
-  font-size: 13px;
-  /* Textstorlek */
-  margin-bottom: 5px;
-  /* Avstånd under tid */
+  /* FÄRG (text): */
+  color: var(--accent-magenta); /* tid text */
+  font-size: 13px; /* Textstorlek */
+  margin-bottom: 5px; /* Avstånd under tid */
 }
 
-/* H4 I CARD-HEADER
-      Titelnamn i korthuvudet */
+/* H4 I CARD-HEADER Titelnamn i korthuvudet */
 .schedule .card-header h4 {
-  font-weight: 700;
-  /* Fet stil */
-  font-size: 18px;
-  /* Textstorlek */
-  /* FÄRG (text): #212121 */
-  color: #212121;
-  /* Mörkgrå text */
-  margin-bottom: 8px;
-  /* Avstånd under */
+  font-weight: 700; /* Fet stil */
+  font-size: 18px; /* Textstorlek */
+  /* FÄRG (text): */
+  color: var(--accent-neon); /* namn text */
+  margin-bottom: 8px; /* Avstånd under */
 }
 
-/* NAMN I CARD-HEADER
-      Visar namn på talare/aktivitet */
+/* NAMN I CARD-HEADER Visar namn på talare/aktivitet */
 .schedule .card-header .name {
   position: relative;
-  font-size: 14px;
-  /* Textstorlek */
-  /* FÄRG (text): #777777 */
-  color: #777777;
-  /* Grå text */
-  font-weight: 500;
-  /* Medelvikt */
+  font-size: 14px; /* Textstorlek */
+  /* FÄRG (text): */
+  color: var(--text-muted); /* musik tag text */
+  font-weight: 500; /* Medelvikt */
   display: inline-block;
-  margin-bottom: 5px;
-  /* Avstånd under */
+  margin-bottom: 5px; /* Avstånd under */
 }
 
 /* CARD-BODYcInre padding och vit bakgrund */
 .schedule .card-body {
-  padding: 15px 70px 15px 110px;
-  /* Topp/höger/botten/vänster */
-  /* FÄRG (bakgrund): #fff */
-  background: var(--gray-3);
-  /* Vit bakgrund */
-  border-bottom: 1px solid #ddd;
-  /* Ljusgrå underlinje */
+  padding: 15px 70px 15px 110px; /* Topp/höger/botten/vänster */
+  /* FÄRG (bakgrund): */
+  background: var(--gray-3); /* bakgrund */
+  border-bottom: 1px solid var(--text-light); /* underlinje färg*/
 }
 
 /* PLATS-TEXT I CARD-BODY */
 .schedule .card-body .location {
-  font-size: 13px;
-  /* Textstorlek */
-  /* FÄRG (text): #777777 */
-  color: var(--gray-3);
-  /* Grå text */
+  font-size: 13px; /* Textstorlek */
+  /* FÄRG (text): */
+  color: var(--gray-4); /* Grå text */
 }
 
 /* SPAN I LOCATION (ikon eller texthighlight) */
 .schedule .card-body .location span {
-  /* FÄRG (text): #0f0 */
-  color: #0f0;
-  /* Illgrön text */
-  margin-right: 5px;
-  /* Avstånd under */ 
+  /* FÄRG (text): */
+  color: var(--accent-neon); /* Illgrön text */
+  margin-right: 10px; /* Avstånd under */ 
 }
 
-/* ACCORDION-KORT
-   Varje kort i accordion har inga rundade hörn och ett litet negativt avstånd för att sammanfoga kort */
+/* ACCORDION-KORT Varje kort i accordion har inga rundade hörn och ett litet negativt avstånd för att sammanfoga kort */
 .accordion .card {
-  border-radius: 0px;
-  /* Rak kant utan rundning */
-  margin-bottom: -2px;
-  /* Litet negativt avstånd mellan kort */
+  border-radius: 0px; /* Rak kant utan rundning */
+  margin-bottom: -2px; /* Litet negativt avstånd mellan kort */
 }
 
-/* HEADER-TITEL I ACCORDION
-     Behållare för rubriktext med plats för pseudo-element */
+/* HEADER-TITEL I ACCORDION Behållare för rubriktext med plats för pseudo-element */
 .accordion .header-title {
-  position: relative;
-  /* För positionering av :after-ikonen */
+  position: relative; /* För positionering av :after-ikonen */
 }
 
-/* PSEUDO-ELEMENT FÖR HEADER-TITEL
-     Visar en pilikon till höger */
+/* PSEUDO-ELEMENT FÖR HEADER-TITEL Visar en pilikon till höger */
 .accordion .header-title:after {
-  font-family: "LineIcons";
-  /* Ikonfont */
-  content: "\e93a";
-  /* Kod för pil-ikon */
+  font-family: "LineIcons"; /* Ikonfont */
+  content: "\e93a"; /* Kod för pil-ikon */
   position: absolute;
-  right: 10px;
-  /* 10px från högerkant */
-  /* FÄRG (ikon): #999 */
-  color: var(--gray-3);
-  /* Ljusgrå ikonfärg */
-  top: 50%;
-  /* Vertikalt centrerad */
+  right: 10px; /* 10px från högerkant */
+  /* FÄRG (ikon): */
+  color: var(--gray-3); /* Ljusgrå ikonfärg */
+  top: 50%; /* Vertikalt centrerad */
   line-height: 1;
-  padding: 0px 5px;
-  /* Horisontell padding */
-  margin-top: -7px;
-  /* Justerar vertikalt */
+  padding: 0px 5px; /* Horisontell padding */
+  margin-top: -7px; /* Justerar vertikalt */
 }
 
-/* ÄNDRAD PIL I KOLLAPSAT LÄGE
-     Byter ikon när accordion-sektionen är hopfälld */
+/* ÄNDRAD PIL I KOLLAPSAT LÄGE Byter ikon när accordion-sektionen är hopfälld */
 .accordion .collapsed:after {
-  content: "\e940";
-  /* Kod för nedåtpil-ikon */
+  content: "\e940"; /* Kod för nedåtpil-ikon */
 }
 
-/* ACCORDION HEADER
-     Klickbar rad utan bakgrund eller padding */
+/* ACCORDION HEADER Klickbar rad utan bakgrund eller padding */
 .accordion .card-header {
-  background: transparent;
-  /* Transparent bakgrund */
-  cursor: pointer;
-  /* Muspekare blir hand */
-  padding: 0;
-  /* Ingen inre marginal */
+  background: transparent; /* Transparent bakgrund */
+  cursor: pointer; /* Muspekare blir hand */
+  padding: 0; /* Ingen inre marginal */
 }
 
-/* IKON I ACCORDION HEADER
-     Pilar eller symboler till vänster om texten */
+/* IKON I ACCORDION HEADER Pilar eller symboler till vänster om texten */
 .accordion .card-header i {
-  /* FÄRG (ikon): #0f0 */
-  color: #0f0;
-  /* Illgrön ikonfärg */
-  width: 40px;
-  /* Bredd */
-  height: 40px;
-  /* Höjd */
+  /* FÄRG (ikon): */
+  color: var(--accent-neon); /* Illgrön ikonfärg */
+  width: 40px; /* Bredd */
+  height: 40px; /* Höjd */
   display: inline-block;
-  line-height: 40px;
-  /* Centrerar ikonen vertikalt */
+  line-height: 40px; /* Centrerar ikonen vertikalt */
   text-align: center;
-  margin-right: 10px;
-  /* Avstånd till text */
-  border-right: 1px solid #ddd;
-  /* Ljusgrå avgränsning höger */
+  margin-right: 10px; /* Avstånd till text */
+  border-right: 1px solid var(--text-muted); /* Ljusgrå avgränsning höger */
 }
 
-/* INNEHÅLL I ACCORDION
-     Inre indragning för texten */
+/* INNEHÅLL I ACCORDION Inre indragning för texten */
 .accordion .card-body {
-  padding-left: 56px;
-  /* Indrar innehållet så det inte hamnar under ikon */
+  padding-left: 56px; /* Indrar innehållet så det inte hamnar under ikon */
 }
 
-/* SERVICES-AREA
-     Vit bakgrund för hela services-sektionen */
+/* SERVICES-AREA bakgrund för hela services-sektionen */
 .services {
-  /* FÄRG (bakgrund): #fff */
-  background: var(--gray-1);
-  /* Vit bakgrund */
+  /* FÄRG (bakgrund): */
+  background: var(--gray-1); /* bakgrund */
 }
 
-/* UTAN PADDING-KLASS
-     Tar bort all padding och lägger till tunna grå ramar */
+/* UTAN PADDING-KLASS Tar bort all padding och lägger till tunna grå ramar */
 .padding-none {
-  padding: 0;
-  /* Inga inre marginaler */
-  border-left: 1px solid #ddd;
-  /* Ljusgrå vänsterram */
-  border-bottom: 1px solid #ddd;
-  /* Ljusgrå bottendelinje */
+  padding: 0; /* Inga inre marginaler */
+  border-left: 1px solid var(--text-light); /* Ljusgrå vänsterram */
+  border-bottom: 1px solid var(--text-light); /* Ljusgrå bottendelinje */
 }
 
 /* Tar bort vänsterram på första elementet */
@@ -1949,172 +1509,121 @@ Tar bort standardram på varje card */
   border-bottom: none;
 }
 
-/* WRAPPER FÖR SERVICES-ITEMS
-     Skapar ett avstånd ovanför raden med serviceobjekt */
+/* WRAPPER FÖR SERVICES-ITEMS Skapar ett avstånd ovanför raden med serviceobjekt */
 .services-wrapper {
-  margin-top: 30px;
-  /* Avstånd ovanför */
+  margin-top: 30px; /* Avstånd ovanför */
 }
 
-/* SERVICES-ITEM
-   Behållare för varje enskild tjänst med padding, centrerad text och mjuka övergångar */
+/* SERVICES-ITEM Behållare för varje enskild tjänst med padding, centrerad text och mjuka övergångar */
 .services-item {
-  padding: 40px 20px;
-  /* Vertikal och horisontell inre marginal */
-  text-align: center;
-  /* Centrerar all text och inline-element */
-  transition: all 0.3s ease-in-out 0s;
-  /* Mjuk övergång för alla ändringar */
+  padding: 40px 20px; /* Vertikal och horisontell inre marginal */
+  text-align: center; /* Centrerar all text och inline-element */
+  transition: all 0.3s ease-in-out 0s; /* Mjuk övergång för alla ändringar */
   -moz-transition: all 0.3s ease-in-out 0s;
   -webkit-transition: all 0.3s ease-in-out 0s;
   -o-transition: all 0.3s ease-in-out 0s;
 }
 
-/* IKON I SERVICES-ITEM
-     Stil för ikonen: storlek, centrering och färg */
+/* IKON I SERVICES-ITEM Stil för ikonen: storlek, centrering och färg */
 .services-item .icon i {
-  width: 50px;
-  /* Bredd på ikonbehållaren */
-  height: 50px;
-  /* Höjd på ikonbehållaren */
-  display: inline-block;
-  /* Inline-block för att bevara storlek */
-  line-height: 50px;
-  /* Vertikal centrering av symbol */
-  font-size: 48px;
-  /* Storlek på ikonsymbolen */
-  text-align: center;
-  /* Horisontell centrering */
-  margin-bottom: 15px;
-  /* Avstånd under ikonen */
-  /* FÄRG (ikon): #212121 */
-  color: #212121;
-  /* Mörkgrå ikonfärg */
-  border-radius: 0;
-  /* Inga rundade hörn */
-  transition: all 0.3s ease-in-out 0s;
-  /* Mjuk övergång för färg och bakgrund */
+  width: 50px; /* Bredd på ikonbehållaren */
+  height: 50px; /* Höjd på ikonbehållaren */
+  display: inline-block; /* Inline-block för att bevara storlek */
+  line-height: 50px; /* Vertikal centrering av symbol */
+  font-size: 48px; /* Storlek på ikonsymbolen */
+  text-align: center; /* Horisontell centrering */
+  margin-bottom: 15px; /* Avstånd under ikonen */
+  /* FÄRG (ikon): */
+  color: var(--gray-5); /* Mörkgrå ikonfärg */
+  border-radius: 0; /* Inga rundade hörn */
+  transition: all 0.3s ease-in-out 0s; /* Mjuk övergång för färg och bakgrund */
   -moz-transition: all 0.3s ease-in-out 0s;
   -webkit-transition: all 0.3s ease-in-out 0s;
   -o-transition: all 0.3s ease-in-out 0s;
 }
 
-/* RUBRIK UNDER IKONEN
-     Stil för rubriken i tjänsteinnehållet */
+/* RUBRIK UNDER IKONEN Stil för rubriken i tjänsteinnehållet */
 .services-item .services-content h3 {
-  margin-bottom: 10px;
-  /* Avstånd under rubriken */
-  line-height: 26px;
-  /* Radavstånd i rubriken */
+  margin-bottom: 10px; /* Avstånd under rubriken */
+  line-height: 26px; /* Radavstånd i rubriken */
 }
 
-/* LÄNK I RUBRIKEN
-     Stil för klickbar rubriktext */
+/* LÄNK I RUBRIKEN Stil för klickbar rubriktext */
 .services-item .services-content h3 a {
-  font-size: 20px;
-  /* Textstorlek */
-  letter-spacing: 0.5px;
-  /* Bokstavsavstånd */
-  font-weight: 400;
-  /* Normal vikt */
-  /* FÄRG (länk): #212121 */
-  color: #212121;
-  /* Mörkgrå länkfärg */
+  font-size: 20px; /* Textstorlek */
+  letter-spacing: 0.5px; /* Bokstavsavstånd */
+  font-weight: 400; /* Normal vikt */
+  /* FÄRG (länk): */
+  color: var(--gray-2); /* Mörkgrå länkfärg */
 }
 
-/* HOVER-EFFEKT PÅ SERVICES-ITEM
-     Ändrar bakgrund när man hovrar över hela rutan */
+/* HOVER-EFFEKT PÅ SERVICES-ITEM Ändrar bakgrund när man hovrar över hela rutan */
 .services-item:hover {
-  /* FÄRG (bakgrund): #f3f3f3 */
-  background: #f3f3f3;
-  /* Ljusgrå bakgrund vid hover */
+  /* FÄRG (bakgrund): */
+  background: var(--text-light); /* bakgrund vid hover */
 }
 
-/* HOVER-EFFEKT PÅ IKON
-     Ändrar ikonens färg vid hover på services-item */
+/* HOVER-EFFEKT PÅ IKON Ändrar ikonens färg vid hover på services-item */
 .services-item:hover .icon i {
   background: transparent;
   /* Tar bort eventuell bakgrundsfärg */
-  /* FÄRG (ikon hover): #0f0 */
-  color: #0f0;
-  /* Illgrön ikonfärg vid hover */
+  /* FÄRG (ikon hover): */
+  color: var(--accent-neon); /* Illgrön ikonfärg vid hover */
 }
 
-/* GALLERY SECTION
-     Behållare för galleriet med ljusgrå bakgrund */
+/* GALLERY SECTION Behållare för galleriet med ljusgrå bakgrund */
 #gallery {
-  /* FÄRG (bakgrund): #f3f4f3 */
-  background: var(--gray-1);
-  /* Ljusgrå bakgrund */
-  position: relative;
-  /* För overlay-positionering */
+  /* FÄRG (bakgrund): */
+  background: var(--gray-2); /* Ljusgrå bakgrund */
+  position: relative; /* För overlay-positionering */
 }
 
-/* GALLERI-BOX
-     Varje bildbehållare med marginal under */
+/* GALLERI-BOX Varje bildbehållare med marginal under */
 #gallery .gallery-box {
-  position: relative;
-  /* För absolut positionerade overlays */
-  margin-bottom: 30px;
-  /* Avstånd mellan galleriobjekt */
+  position: relative; /* För absolut positionerade overlays */
+  margin-bottom: 30px; /* Avstånd mellan galleriobjekt */
 }
 
-/* OVERLAY-BOX
-     Täcker galleri-bilden och döljs tills hover */
+/* OVERLAY-BOX Täcker galleri-bilden och döljs tills hover */
 #gallery .gallery-box .overlay-box {
   position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
-  bottom: 0px;
-  /* Täcker hela behållaren */
-  padding-top: 35%;
-  /* Skapar plats för ikon vertikalt */
-  transition: all 500ms ease;
-  /* Mjuk övergång vid transform */
+  bottom: 0px; /* Täcker hela behållaren */
+  padding-top: 35%; /* Skapar plats för ikon vertikalt */
+  transition: all 500ms ease; /* Mjuk övergång vid transform */
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
 }
 
-/* OVERLAY-IKON
-     Stil för ikonen i overlay (t.ex. förstoringsglas) */
+/* OVERLAY-IKON Stil för ikonen i overlay (t.ex. förstoringsglas) */
 #gallery .gallery-box .overlay-box i {
-  /* FÄRG (ikonbakgrund): #ffffff */
-  background: #ffffff;
-  /* Vit cirkelbakgrund */
-  /* FÄRG (ikon): #0f0 */
-  color: #0f0;
-  /* Illgrön ikonfärg */
-  font-size: 30px;
-  /* Ikonstorlek */
-  width: 50px;
-  /* Bredd på cirkeln */
-  height: 50px;
-  /* Höjd på cirkeln */
+  /* FÄRG (ikonbakgrund): */
+  background: var(--text-light); /* cirkelbakgrund */
+  /* FÄRG (ikon): */
+  color: var(--accent-neon); /* Illgrön ikonfärg */
+  font-size: 30px; /* Ikonstorlek */
+  width: 50px; /* Bredd på cirkeln */
+  height: 50px; /* Höjd på cirkeln */
   display: inline-block;
-  line-height: 50px;
-  /* Centrerar ikonen i cirkeln */
-  border-radius: 50%;
-  /* Gör cirkeln rund */
-  transform: scale(0, 0);
-  /* Börjar osynlig */
+  line-height: 50px; /* Centrerar ikonen i cirkeln */
+  border-radius: 50%; /* Gör cirkeln rund */
+  transform: scale(0, 0); /* Börjar osynlig */
   -webkit-transform: scale(0, 0);
   -moz-transform: scale(0, 0);
   -ms-transform: scale(0, 0);
   -o-transform: scale(0, 0);
-  transition: all 500ms ease;
-  /* Mjuk övergång vid skalning */
+  transition: all 500ms ease; /* Mjuk övergång vid skalning */
 }
 
 /* HOVER PÅ GALLERY-BOX, Visar overlay och bakgrundsfärg */
 #gallery .gallery-box:hover .overlay-box {
   /* FÄRG (overlay): rgba(233, 30, 99, 0.7) */
-  background: rgba(233, 30, 99, 0.7);
-  /* Rosa semi-transparent overlay */
-  transform: scale(1, 1);
-  /* Skalar upp overlay */
+  background: rgba(233, 30, 99, 0.7); /* Rosa semi-transparent overlay */
+  transform: scale(1, 1); /* Skalar upp overlay */
 }
 
 /* HOVER-IKON VISAS, Skalar upp ikonen inuti overlay-box */
@@ -2122,101 +1631,73 @@ Tar bort standardram på varje card */
   transform: scale(1, 1); 
 }
 
-/* HOVER-EFFEKT PÅ GALLERI OVERLAY
-   Visar overlay med semi-transparent bakgrund och skalar upp */
+/* HOVER-EFFEKT PÅ GALLERI OVERLAY Visar overlay med semi-transparent bakgrund och skalar upp */
 #gallery .gallery-box:hover .overlay-box {
   /* FÄRG (overlay): rgba(233, 30, 99, 0.7) */
-  background: rgba(233, 30, 99, 0.7);
-  /* Rosa semi-transparent bakgrund */
-  transform: scale(1, 1);
-  /* Återställer skala till full storlek */
-  transition: all 500ms ease;
-  /* Mjuk övergång vid visning */
+  background: rgba(233, 30, 99, 0.7); /* Rosa semi-transparent bakgrund */
+  transform: scale(1, 1); /* Återställer skala till full storlek */
+  transition: all 500ms ease;  /* Mjuk övergång vid visning */
 }
 
-/* HOVER-EFFEKT PÅ GALLERI-IKON
-     Skalar upp ikonen inuti overlay vid hover */
+/* HOVER-EFFEKT PÅ GALLERI-IKON Skalar upp ikonen inuti overlay vid hover */
 #gallery .gallery-box:hover .overlay-box i {
-  -webkit-transform: scale(1, 1);
-  /* WebKit: skala upp */
-  -moz-transform: scale(1, 1);
-  /* Firefox: skala upp */
-  -ms-transform: scale(1, 1);
-  /* IE: skala upp */
-  -o-transform: scale(1, 1);
-  /* Opera: skala upp */
+  -webkit-transform: scale(1, 1); /* WebKit: skala upp */
+  -moz-transform: scale(1, 1); /* Firefox: skala upp */
+  -ms-transform: scale(1, 1); /* IE: skala upp */
+  -o-transform: scale(1, 1); /* Opera: skala upp */
 }
 
-/* TEAM-ITEM HOVER
-     Fördjupad skugga ger en "flytande" effekt vid hover */
+/* TEAM-ITEM HOVER Fördjupad skugga ger en "flytande" effekt vid hover */
 .team-item:hover {
-  box-shadow: 0 25px 35px -12px rgba(0, 0, 0, 0.35);
-  /* Mörkare, utspridd skugga */
+  box-shadow: 0 25px 35px -12px rgba(0, 0, 0, 0.35); /* Mörkare, utspridd skugga */
 }
 
-/* TEAM-ITEM BEHÅLLARE
-     Grundlayout med marginal, padding och subtil skugga */
+/* TEAM-ITEM BEHÅLLARE Grundlayout med marginal, padding och subtil skugga */
 .team-item {
-  margin: 15px 0;
-  /* Vertikalt avstånd mellan items */
-  padding: 10px;
-  /* Inre marginal */
-  border-radius: 4px;
-  /* Lätt rundade hörn */
+  margin: 15px 0; /* Vertikalt avstånd mellan items */
+  padding: 10px; /* Inre marginal */
+  border-radius: 4px; /* Lätt rundade hörn */
   position: relative;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.17);
-  /* Lätt skugga runt behållaren */
-  transition: all 0.3s ease-in-out 0s;
-  /* Mjuka övergångar för hover-effekter */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.17); /* Lätt skugga runt behållaren */
+  transition: all 0.3s ease-in-out 0s; /* Mjuka övergångar för hover-effekter */
   -moz-transition: all 0.3s ease-in-out 0s;
   -webkit-transition: all 0.3s ease-in-out 0s;
   -o-transition: all 0.3s ease-in-out 0s;
 }
 
-/* TEAM-BILD BEHÅLLARE
-     Relativ positionering med overflow hidden för bildövergång */
+/* TEAM-BILD BEHÅLLARE Relativ positionering med overflow hidden för bildövergång */
 .team-item .team-img {
   position: relative;
   cursor: pointer;
-  overflow: hidden;
-  /* Dölj utflödande bilddelar */
+  overflow: hidden; /* Dölj utflödande bilddelar */
 }
 
-/* TEAM-OVERLAY
-     Mörk semi-transparent overlay över bilden, dold initialt */
+/* TEAM-OVERLAY Mörk semi-transparent overlay över bilden, dold initialt */
 .team-item .team-overlay {
   height: 100%;
   position: absolute;
   top: 0;
   /* FÄRG (overlay): rgba(47, 47, 47, 0.7) */
-  background: rgba(47, 47, 47, 0.7);
-  /* Mörk grå overlay */
-  opacity: 0;
-  /* Osynlig initialt */
+  background: rgba(47, 47, 47, 0.7); /* Mörk grå overlay */
+  opacity: 0; /* Osynlig initialt */
   width: 100%;
-  transition: all 0.3s ease-in-out 0s;
-  /* Mjuk övergång vid hover */
+  transition: all 0.3s ease-in-out 0s; /* Mjuk övergång vid hover */
 }
 
-/* SOCIAL-ICON CONTAINER
-     Positionering och färg för sociala ikoner i overlay */
+/* SOCIAL-ICON CONTAINER Positionering och färg för sociala ikoner i overlay */
 .team-item .overlay-social-icon {
-  /* FÄRG (ikon): #fff */
-  color: #fff;
-  /* Vit ikonfärg */
+  /* FÄRG (ikon): */
+  color: var(--text-light); /* ikonfärg */
   top: 15px;
   position: absolute;
   right: 15px;
 }
 
-/* SOCIAL-ICON LIST
-     Döljer ikoner utanför vyn tills hover */
+/* SOCIAL-ICON LIST Döljer ikoner utanför vyn tills hover */
 .team-item .overlay-social-icon .social-icons {
   padding-left: 0;
-  transform: translateY(-30px);
-  /* Flyttar ikoner uppåt ur sikte */
-  transition: all 0.3s ease-in-out 0s;
-  /* Mjuka övergångar */
+  transform: translateY(-30px); /* Flyttar ikoner uppåt ur sikte */
+  transition: all 0.3s ease-in-out 0s; /* Mjuka övergångar */
   -moz-transition: all 0.3s ease-in-out 0s;
   -webkit-transition: all 0.3s ease-in-out 0s;
   -o-transition: all 0.3s ease-in-out 0s;
@@ -2225,8 +1706,7 @@ Tar bort standardram på varje card */
 /* SOCIAL-IKONLISTANS ITEM Ställer ikonerna i rad med litet mellanrum */
 .team-item .overlay-social-icon .social-icons li {
   display: inline-block;
-  margin: 0 4px;
-  /* Horisontellt avstånd mellan ikoner */
+  margin: 0 4px; /* Horisontellt avstånd mellan ikoner */
 }
 
 /* LÄNKSTYLING FÖR SOCIAL-IKONER Tar bort outline vid fokus */
@@ -2235,29 +1715,20 @@ Tar bort standardram på varje card */
   outline: 0 !important; 
 }
 
-/* SOCIAL-IKON I TEAM-ITEM
-   Stil för själva ikonen i sociala länkar */
+/* SOCIAL-IKON I TEAM-ITEM Stil för själva ikonen i sociala länkar */
 .team-item .overlay-social-icon .social-icons li a i {
-  font-size: 20px;
-  /* Ikonstorlek */
-  /* FÄRG (ikon): #fff */
-  color: #fff;
-  /* Vit ikonfärg */
+  font-size: 20px; /* Ikonstorlek */
+  /* FÄRG (ikon): */
+  color: var(--accent-neon); /* ikonfärg */
   width: 36px;
   /* Bredd på bakgrundsbehållare */
-  height: 36px;
-  /* Höjd på bakgrundsbehållare */
-  /* FÄRG (bakgrund): #0f0 */
-  background: #0f0;
-  /* Illgrön bakgrund */
-  display: block;
-  /* Blockelement för centering */
-  border-radius: 4px;
-  /* Rundade hörn */
-  line-height: 36px;
-  /* Vertikal centrering av ikon */
-  transition: all 0.3s ease-in-out 0s;
-  /* Mjuk övergång vid hover */
+  height: 36px; /* Höjd på bakgrundsbehållare */
+  /* FÄRG (bakgrund): */
+  background: var(--accent-neon); /* Illgrön bakgrund */
+  display: block; /* Blockelement för centering */
+  border-radius: 4px; /* Rundade hörn */
+  line-height: 36px; /* Vertikal centrering av ikon */
+  transition: all 0.3s ease-in-out 0s; /* Mjuk övergång vid hover */
   -moz-transition: all 0.3s ease-in-out 0s;
   -webkit-transition: all 0.3s ease-in-out 0s;
   -o-transition: all 0.3s ease-in-out 0s;
@@ -2265,1004 +1736,713 @@ Tar bort standardram på varje card */
 
 /* HOVERFÄRG FÖR FACEBOOK-IKON */
 .team-item .overlay-social-icon .social-icons li a:hover .fa-facebook {
-  /* FÄRG (bakgrund hover): #3B5998 */
-  background: #3B5998;
-  /* Facebook-blå bakgrund */
+  /* FÄRG (bakgrund hover): */
+  background: #3B5998; /* Facebook-blå bakgrund */
 }
 
 /* HOVERFÄRG FÖR TWITTER-IKON */
 .team-item .overlay-social-icon .social-icons li a:hover .fa-twitter {
-  /* FÄRG (bakgrund hover): #00aced */
-  background: #00aced;
-  /* Twitter-blå bakgrund */
+  /* FÄRG (bakgrund hover): */
+  background: #00aced; /* Twitter-blå bakgrund */
 }
 
 /* HOVERFÄRG FÖR INSTAGRAM-IKON */
 .team-item .overlay-social-icon .social-icons li a:hover .fa-instagram {
-  /* FÄRG (bakgrund hover): #fb3958 */
-  background: #fb3958;
-  /* Instagram-rosa bakgrund */
+  /* FÄRG (bakgrund hover): */
+  background: var(--accent-magenta); /* Instagram-rosa bakgrund */
 }
 
-/* INFO-TEXT I TEAM-ITEM
-     Låda längst ner med namn och roll */
+/* INFO-TEXT I TEAM-ITEM Låda längst ner med namn och roll */
 .team-item .info-text {
-  position: absolute;
-  /* Absolut position i förhållande till .team-item */
-  bottom: 10px;
-  /* 10px från nederkant */
-  left: 10px;
-  /* 10px från vänsterkant */
-  padding: 15px 20px;
-  /* Inre marginal */
-  /* FÄRG (bakgrund): #f3f4f3 */
-  background: #f3f4f3;
-  /* Ljusgrå bakgrund */
-  text-align: left;
-  /* Vänsterjusterad text */
+  position: absolute; /* Absolut position i förhållande till .team-item */
+  bottom: 10px; /* 10px från nederkant */
+  left: 10px; /* 10px från vänsterkant */
+  padding: 15px 20px; /* Inre marginal */
+  /* FÄRG (bakgrund): */
+  background: var(--accent-neon); /* bakgrund artist kort namn*/
+  text-align: left; /* Vänsterjusterad text */
 }
 
 /* RUBRIK INUT INFO-TEXT */
 .team-item .info-text h3 {
-  font-size: 16px;
-  /* Textstorlek */
-  text-transform: uppercase;
-  /* Versaler */
-  font-weight: 700;
-  /* Fet stil */
-  margin-bottom: 5px;
-  /* Avstånd under rubrik */
+  font-size: 16px; /* Textstorlek */
+  text-transform: uppercase; /* Versaler */
+  font-weight: 700; /* Fet stil */
+  margin-bottom: 5px; /* Avstånd under rubrik */
 }
 
 /* LÄNK I INFO-TEXT-RUBRIK */
 .team-item .info-text h3 a {
-  /* FÄRG (länk): #212121 */
-  color: #212121;
-  /* Mörkgrå länkfärg */
+  /* FÄRG (länk): */
+  color: var(--gray-2); /* Mörkgrå länkfärg */
 }
 
-.team-item .info-text h3 a:hover {
-  /* FÄRG (länk hover): #0f0 */
-  color: #0f0;
-  /* Illgrön vid hover */
-}
 
 /* PARAGRAF I INFO-TEXT */
 .team-item .info-text p {
-  margin: 0;
-  /* Ingen marginal */
-  /* FÄRG (text): #888 */
-  color: #888;
-  /* Grå text */
+  margin: 0; /* Ingen marginal */
+  /* FÄRG (text): */
+  color: var(--gray-2);
 }
 
 /* VISNING AV OVERLAY VID HOVER */
 .team-item:hover .team-overlay {
-  opacity: 1;
-  /* Gör overlay synlig */
+  opacity: 1; /* Gör overlay synlig */
 }
 
 /* VISNING AV SOCIAL-IKONER VID HOVER */
 .team-item:hover .social-icons {
-  -webkit-transform: translateY(0px);
-  /* Flyttar ikonerna ner till ursprunglig position */
+  -webkit-transform: translateY(0px); /* Flyttar ikonerna ner till ursprunglig position */
   -moz-transform: translateY(0px);
   transform: translateY(0px);
 }
 
-/* BLOGGITEM
-     Behållare för bloggpost med vit bakgrund och skugga */
+/* BLOGGITEM Behållare för bloggpost med vit bakgrund och skugga */
 .blog-item {
   /* FÄRG (bakgrund): #fff */
-  background-color: #fff;
-  /* Vit bakgrund */
-  border-radius: 4px;
-  /* Rundade hörn */
-  margin-bottom: 40px;
-  /* Avstånd under varje post */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  /* Mjuk skugga */
-  transition: all 300ms ease-in-out;
-  /* Mjuk övergång vid hover */
+  background-color: var(--text-light); /* Vit bakgrund */
+  border-radius: 4px; /* Rundade hörn */
+  margin-bottom: 40px; /* Avstånd under varje post */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Mjuk skugga */
+  transition: all 300ms ease-in-out; /* Mjuk övergång vid hover */
 }
 
-/* BLOGG-IMAGE BEHÅLLARE
-     Tar hand om bildstorlek och overflow */
+/* BLOGG-IMAGE BEHÅLLARE Tar hand om bildstorlek och overflow */
 .blog-item .blog-image {
-  width: 100%;
-  /* Tar hela bredden */
-  max-width: 370px;
-  /* Begränsar maxbredd */
+  width: 100%; /* Tar hela bredden */
+  max-width: 370px; /* Begränsar maxbredd */
   position: relative;
-  overflow: hidden;
-  /* Dölj utflödande del av bild */
+  overflow: hidden; /* Dölj utflödande del av bild */
 }
 
-/* BLOGGBILD
-     Startar med svart bakgrund under bilden */
+/* BLOGGBILD Startar med svart bakgrund under bilden */
 .blog-item .blog-image img {
-  /* FÄRG (bakgrund): #000 */
-  background: #000;
-  /* Svart bakgrund bakom bilden */
-  transform: scale(1);
-  /* Normal storlek */
-  transition: all 300ms ease-in-out;
-  /* Mjuk övergång vid hover */
+  /* FÄRG (bakgrund): */
+  background: var(--gray-1); /* bakgrund bakom bilden */
+  transform: scale(1); /* Normal storlek */
+  transition: all 300ms ease-in-out; /* Mjuk övergång vid hover */
 }
 
-/* BLOGGITEM TAG
-   Etikett som flyter ovanpå bloggposten */
+/* BLOGGITEM TAG Etikett som flyter ovanpå bloggposten */
 .blog-item .tag {
-  position: absolute;
-  /* Positioneras relativt till .blog-item */
-  text-transform: uppercase;
-  /* Versaler */
-  top: -18px;
-  /* 18px ovanför behållarens topp */
-  left: 20px;
-  /* 20px in från vänsterkanten */
-  padding: 4px 27px;
-  /* Inre marginal vertikalt och horisontellt */
-  /* FÄRG (bakgrund): white */
-  background-color: white;
-  /* Vit bakgrund */
+  position: absolute; /* Positioneras relativt till .blog-item */
+  text-transform: uppercase; /* Versaler */
+  top: -18px; /* 18px ovanför behållarens topp */
+  left: 20px; /* 20px in från vänsterkanten */
+  padding: 4px 27px; /* Inre marginal vertikalt och horisontellt */
+  /* FÄRG (bakgrund): */
+  background-color: var(--text-light); /* Vit bakgrund */
   /* FÄRG (text): #0f0 */
-  color: #0f0;
-  /* Illgrön textfärg */
-  border-radius: 4px;
-  /* Rundade hörn */
-  display: block;
-  /* Blockelement */
-  font-size: 14px;
-  /* Textstorlek */
-  font-weight: 500;
-  /* Medelvikt */
-  box-shadow: 0px 3px 16px rgba(35, 31, 32, 0.15);
-  /* Subtil skugga */
+  color: var(--accent-neon); /* Illgrön textfärg */
+  border-radius: 4px; /* Rundade hörn */
+  display: block; /* Blockelement */
+  font-size: 14px; /* Textstorlek */
+  font-weight: 500; /* Medelvikt */
+  box-shadow: 0px 3px 16px rgba(35, 31, 32, 0.15); /* Subtil skugga */
 }
 
-/* BESKRIVNING I BLOGGITEM
-     Inre marginal och grundtextfärg */
+/* BESKRIVNING I BLOGGITEM Inre marginal och grundtextfärg */
 .blog-item .descr {
-  padding: 30px 15px;
-  /* Topp/botten 30px, vänster/höger 15px */
-  /* FÄRG (text): #212121 */
-  color: #212121;
-  /* Mörkgrå textfärg */
-  position: relative;
-  /* För positionering av barn */
+  padding: 30px 15px; /* Topp/botten 30px, vänster/höger 15px */
+  /* FÄRG (text): */
+  color: var(--gray-2);/* Mörkgrå textfärg */
+  position: relative; /* För positionering av barn */
 }
 
-/* H3 I BESKRIVNING
-     Radavstånd och marginal under rubrik */
+/* H3 I BESKRIVNINg Radavstånd och marginal under rubrik */
 .blog-item .descr h3 {
-  line-height: 30px;
-  /* Radavstånd */
-  margin-bottom: 15px;
-  /* Avstånd under rubrik */
+  line-height: 30px; /* Radavstånd */
+  margin-bottom: 15px; /* Avstånd under rubrik */
 }
 
-/* LÄNK I H3 BESKRIVNING
-     Stil för klickbar titel i bloggpost */
+/* LÄNK I H3 BESKRIVNING Stil för klickbar titel i bloggpost */
 .blog-item .descr h3 a {
-  font-weight: 400;
-  /* Normal vikt */
-  text-align: center;
-  /* Centrerar text om block */
-  font-size: 25px;
-  /* Textstorlek */
-  /* FÄRG (text): #212121 */
-  color: #212121;
-  /* Mörkgrå länkfärg */
-  transition: all 300ms ease-in-out;
-  /* Mjuk övergång vid hover */
+  font-weight: 400; /* Normal vikt */
+  text-align: center; /* Centrerar text om block */
+  font-size: 25px; /* Textstorlek */
+  /* FÄRG (text): */
+  color: var(--gray-1); /* Mörkgrå länkfärg */
+  transition: all 300ms ease-in-out; /* Mjuk övergång vid hover */
 }
 
 .blog-item .descr h3 a:hover {
-  /* FÄRG (text hover): #0f0 */
-  color: #0f0;
-  /* Illgrön länk vid hover */
+  /* FÄRG (text hover): */
+  color: var(--accent-neon); /* Illgrön länk vid hover */
 }
 
-/* META-TAGS I BESKRIVNING
-     Lista med extra info som datum, kategori etc. */
+/* META-TAGS I BESKRIVNING Lista med extra info som datum, kategori etc. */
 .blog-item .descr .meta-tags {
-  margin-bottom: 10px;
-  /* Avstånd under metataggar */
+  margin-bottom: 10px; /* Avstånd under metataggar */
 }
 
 /* INDIVIDUELLA META-TAGGAR */
 .blog-item .descr .meta-tags span {
-  /* FÄRG (text): #999 */
-  color: #999;
+  /* FÄRG (text): */
+  color: var(--text-muted);
   /* Ljusgrå text */
-  margin-right: 8px;
-  /* Avstånd efter varje span */
+  margin-right: 8px; /* Avstånd efter varje span */
 }
 
 /* LÄNK I META-TAGGAR */
 .blog-item .descr .meta-tags span a {
-  color: #999;
-  /* Ljusgrå länktext */
-  margin-left: 8px;
-  /* Avstånd före länk */
+  color: var(--text-light); /* Ljusgrå länktext */
+  margin-left: 8px; /* Avstånd före länk */
 }
 
-.blog-item .descr .meta-tags span a:hover {
-  /* FÄRG (text hover): #0f0 */
-  color: #0f0;
-  /* Illgrön länk vid hover */
+.blog-item .descr .meta-tags span a:hover { /* FÄRG (text hover): #0f0 */
+  color: var(--accent-neon); /* Illgrön länk vid hover */
 }
 
-/* BLOGGITEM HOVER
-     Djupare skugga vid hover */
+/* BLOGGITEM HOVER Djupare skugga vid hover */
 .blog-item:hover {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-  /* Mörkare, större skugga */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Mörkare, större skugga */
 }
 
-/* BLOGGBILD HOVER
-     Zoom-effekt på bilden vid hover */
+/* BLOGGBILD HOVER Zoom-effekt på bilden vid hover */
 .blog-item:hover .blog-image img {
-  transform: scale(1.1);
-  /* Förstorar bilden 110% */
+  transform: scale(1.1); /* Förstorar bilden 110% */
 }
 
 /* KONTAKTSEKTION Mörk bakgrund för kontaktdelen */
 .contact {
   /* FÄRG (bakgrund): */
-  background: var(--gray-1);
-  /* Nästan svart bakgrund */
+  background: var(--gray-1); /* Nästan svart bakgrund */
 }
 
 /* TITEL FORM SECTION */
 .title-forme {
-  font-size: 28px;
-  /* Textstorlek */
-  margin-bottom: 20px;
-  /* Avstånd under */
+  font-size: 28px; /* Textstorlek */
+  margin-bottom: 20px; /* Avstånd under */
 }
 
-/* KONTAKTITEM
-     Behållare för varje kontaktmetod */
+/* KONTAKTITEM Behållare för varje kontaktmetod */
 .contact-item {
-  position: relative;
-  /* För eventuella overlays */
-  text-align: center;
-  /* Centrerar innehåll */
+  position: relative; /* För eventuella overlays */
+  text-align: center; /* Centrerar innehåll */
 }
-/* IKON I KONTAKTITEM
-   Stor ikon för kontaktmetod med bakgrund och vit ikonfärg */
+/* IKON I KONTAKTITEM Stor ikon för kontaktmetod med bakgrund och vit ikonfärg */
 .contact-item i {
-  width: 70px;
-  /* Bredd på ikonbehållaren */
-  height: 70px;
-  /* Höjd på ikonbehållaren */
-  display: inline-block;
-  /* Behåller blockdimensioner men i rad */
-  line-height: 70px;
-  /* Vertikal centrering av ikonsymbol */
-  font-size: 24px;
-  /* Storlek på ikonsymbol */
-  text-align: center;
-  /* Horisontell centrering */
-  margin-bottom: 30px;
-  /* Avstånd under ikonen */
-  /* FÄRG (bakgrund): #2d2d2d */
-  background: #2d2d2d;
+  width: 70px; /* Bredd på ikonbehållaren */
+  height: 70px; /* Höjd på ikonbehållaren */
+  display: inline-block; /* Behåller blockdimensioner men i rad */
+  line-height: 70px; /* Vertikal centrering av ikonsymbol */
+  font-size: 24px; /* Storlek på ikonsymbol */
+  text-align: center; /* Horisontell centrering */
+  margin-bottom: 30px; /* Avstånd under ikonen */
+  /* FÄRG (bakgrund): */
+  background: var(--gray-2);
   /* Mörkgrå bakgrund */
-  /* FÄRG (ikon): #fff */
-  color: #fff;
-  /* Vit ikonfärg */
-  border-radius: 4px;
-  /* Lätt rundade hörn */
-  transition: .3s all;
-  /* Mjuk övergång vid hover/fokus */
+  /* FÄRG (ikon): */
+  color: var(--text-light); /* Vit ikonfärg */
+  border-radius: 4px; /* Lätt rundade hörn */
+  transition: .3s all; /* Mjuk övergång vid hover/fokus */
   -webkit-transition: .3s all;
   -o-transition: .3s all;
 }
 
-/* RUBRIK I KONTAKTINFO
-     Titel för varje kontaktmetod */
+/* RUBRIK I KONTAKTINFO Titel för varje kontaktmetod */
 .contact-item .contact-info h3 {
-  /* FÄRG (text): #0f0 */
-  color: #0f0;
-  /* Illgrön textfärg */
-  font-size: 18px;
-  /* Textstorlek */
-  margin-bottom: 10px;
-  /* Avstånd under rubrik */
+  /* FÄRG (text) */
+  color: var(--accent-neon); /* Illgrön textfärg */
+  font-size: 18px;  /* Textstorlek */
+  margin-bottom: 10px; /* Avstånd under rubrik */
 }
 
-/* PARAGRAF I KONTAKTINFO
-     Beskrivande text under rubrik */
+/* PARAGRAF I KONTAKTINFO Beskrivande text under rubrik */
 .contact-item .contact-info p {
-  /* FÄRG (text): #fff */
-  color: #fff;
-  /* Vit textfärg */
+  /* FÄRG (text): */
+  color: var(--text-light); /* Vit textfärg */
 }
 
-/* SUBSCRIBE-FORMULÄR
-     Bakgrund för prenumerationssektion */
+/* SUBSCRIBE-FORMULÄR Bakgrund för prenumerationssektion */
 #subscribe {
-  /* FÄRG (bakgrund): #f2f2f2 */
-  background: #f2f2f2;
-  /* Mycket ljusgrå bakgrund */
+  /* FÄRG (bakgrund): */
+  background: var(--gray-5); /* Mycket ljusgrå bakgrund */
 }
 
-/* INNER BEHÅLLARE FÖR SUBSCRIBE
-     Vertikal padding och centrerad text */
+/* INNER BEHÅLLARE FÖR SUBSCRIBE Vertikal padding och centrerad text */
 .subscribe-inner {
-  padding: 50px 0;
-  /* 50px ovan och under */
-  text-align: center;
-  /* Centrerar innehåll */
+  padding: 50px 0; /* 50px ovan och under */
+  text-align: center; /* Centrerar innehåll */
 }
 
 /* TITEL I SUBSCRIBE-SEKTION */
 .subscribe-inner .subscribe-title {
-  font-size: 36px;
-  /* Textstorlek */
-  margin-bottom: 30px;
-  /* Avstånd under */
+  font-size: 36px; /* Textstorlek */
+  margin-bottom: 30px; /* Avstånd under */
 }
 
 /* PARAGRAF I SUBSCRIBE-SEKTION */
-.subscribe-inner p {
-  /* FÄRG (text): #888 */
-  color: #888;
-  /* Mellangrå textfärg */
-  margin-bottom: 30px;
-  /* Avstånd under */
+.subscribe-inner p { 
+  /* FÄRG (text): */
+  color: var(--text-muted); /* Mellangrå textfärg */
+  margin-bottom: 30px; /* Avstånd under */
 }
 
-/* KNAPPEN I SUBSCRIBE-FORMULÄR
-     Placeras absolut till höger */
+/* KNAPPEN I SUBSCRIBE-FORMULÄR Placeras absolut till höger */
 .subscribe-inner .sub-btn {
-  margin: 0;
-  /* Tar bort standardmarginal */
-  width: 12rem;
-  /* Fast bredd */
-  padding: 18px 40px;
-  /* Inre marginal */
-  min-width: 12rem;
-  /* Säkerställer minsta bredd */
-  position: absolute;
-  /* Absolut position inom .subscribe-inner */
+  margin: 0; /* Tar bort standardmarginal */
+  width: 12rem; /* Fast bredd */
+  padding: 18px 40px; /* Inre marginal */
+  min-width: 12rem; /* Säkerställer minsta bredd */
+  position: absolute; /* Absolut position inom .subscribe-inner */
   top: 0;
-  bottom: 0;
-  /* Sträcker sig vertikalt */
-  right: 0;
-  /* Fäster mot högerkant */
+  bottom: 0; /* Sträcker sig vertikalt */
+  right: 0; /* Fäster mot högerkant */
 }
 
 /* IKON I SUBSCRIBE-KNAPP */
 .subscribe-inner .sub-btn i {
-  margin-right: 5px;
-  /* Avstånd mellan ikon och text */
+  margin-right: 5px; /* Avstånd mellan ikon och text */
 }
 
-/* FORM-CONTROL I SUBSCRIBE
-     Stilar för input-fält */
+/* FORM-CONTROL I SUBSCRIBE Stilar för input-fält */
 .subscribe-inner .form-control {
   position: relative;
-  /* FÄRG (bakgrund): #fff */
-  background: #fff;
-  /* Vit bakgrund */
+  /* FÄRG (bakgrund):  */
+  background: var(--text-light); /* bakgrund */
   /* FÄRG (ram): #0f0 */
-  border: 1px solid #0f0;
-  /* Illgrön kant */
-  border-radius: 0px;
-  /* Inga rundade hörn */
-  box-shadow: none;
-  /* Ingen skugga */
-  /* FÄRG (text): #888999 */
-  color: #888999;
-  /* Grå textfärg */
-  height: 55px;
-  /* Höjd */
-  margin-right: -1px;
-  /* Liten negativ marginal */
-  width: 90%;
-  /* Täcker 90% av bredden */
+  border: 1px solid var(--accent-neon); /* Illgrön kant */
+  border-radius: 0px; /* Inga rundade hörn */
+  box-shadow: none; /* Ingen skugga */
+  /* FÄRG (text): */
+  color: var(--text-muted); /* Grå textfärg */
+  height: 55px; /* Höjd */
+  margin-right: -1px; /* Liten negativ marginal */
+  width: 90%; /* Täcker 90% av bredden */
 }
 
 /* FOCUS PÅ FORM-CONTROL I SUBSCRIBE */
 .subscribe-inner .form-control:focus {
-  /* FÄRG (text): #212121 */
-  color: #212121;
-  /* Mörkgrå text vid fokus */
-  background-color: #fff;
-  /* Vit bakgrund */
-  /* FÄRG (ram): #0f0 */
-  border-color: #0f0;
-  /* Illgrön kant vid fokus */
-  outline: 0;
-  /* Tar bort default-fokusram */
+  /* FÄRG (text): */
+  color: var(--gray-2); /* Mörkgrå text vid fokus */
+  background-color: var(--text-light);  /* Vit bakgrund */
+  /* FÄRG (ram): */
+  border-color: var(--accent-neon); /* Illgrön kant vid fokus */
+  outline: 0; /* Tar bort default-fokusram */
 }
 
-/* FORM INLINE I SUBSCRIBE
-     Centrerar formuläret horisontellt */
+/* FORM INLINE I SUBSCRIBE Centrerar formuläret horisontellt */
 .subscribe-inner .form-inline {
   position: relative;
-  margin: 0 auto 30px;
-  /* Centrerar och ger bottom-margin */
-  width: 100%;
-  /* Full bredd */
+  margin: 0 auto 30px; /* Centrerar och ger bottom-margin */
+  width: 100%; /* Full bredd */
 }
 
 /* KONTAKTFORMSEKTION: GOOGLE MAP AREA */
 #google-map-area {
-  position: relative;
-  /* För absolutbarn */
+  position: relative; /* För absolutbarn */
 }
 
 /* BORTA PADDING PÅ GOOGLE MAP CONTAINER */
 #google-map-area .container-fluid {
-  padding-left: 0;
-  /* Tar bort padding */
-  padding-right: 0;
-  /* Tar bort padding */
+  padding-left: 0; /* Tar bort padding */
+  padding-right: 0; /* Tar bort padding */
 }
 
 /* ÖVERGRIPANDE FORMULÄRBEHÅLLARE */
 .container-form {
-  left: 0%;
-  /* Fäster till vänsterkant */
-  padding: 40px 15px;
-  /* Inre marginal */
-  margin-left: -15px;
-  /* Justering för grid */
-  z-index: 99;
-  /* Lägger sig över andra element */
+  left: 0%; /* Fäster till vänsterkant */
+  padding: 40px 15px; /* Inre marginal */
+  margin-left: -15px; /* Justering för grid */
+  z-index: 99; /* Lägger sig över andra element */
 }
 
-/* FORMWRAPPER
-     Vit bakgrund och skugga runt formuläret */
+/* FORMWRAPPER Vit bakgrund och skugga runt formuläret */
 .container-form .form-wrapper {
-  background-color: white;
-  /* Vit bakgrund */
-  padding: 56px;
-  /* Stor inre marginal */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  /* Starkare skugga */
+  background-color: var(--text-light); /* Vit bakgrund */
+  padding: 56px; /* Stor inre marginal */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Starkare skugga */
 }
 
-/* FORM-GROUP
-     Avstånd mellan formulärfält */
+/* FORM-GROUP Avstånd mellan formulärfält */
 .container-form .form-wrapper .form-group {
-  margin-bottom: 30px;
-  /* Avstånd under varje grupp */
+  margin-bottom: 30px;/* Avstånd under varje grupp */
 }
 
-/* FORM-CONTROL I FORMWRAPPER
-     Konsistent stil för formulärfält */
+/* FORM-CONTROL I FORMWRAPPER Konsistent stil för formulärfält */
 .container-form .form-wrapper .form-control {
   display: block;
-  width: 100%;
-  /* Full bredd */
-  line-height: 26px;
-  /* Radavstånd */
+  width: 100%; /* Full bredd */
+  line-height: 26px; /* Radavstånd */
   font-size: 14px;
   /* Textstorlek */
   box-shadow: none;
-  /* FÄRG (text): #848484 */
-  color: #848484;
-  /* Grå textfärg */
-  text-transform: capitalize;
-  /* Första bokstaven versal */
-  /* FÄRG (bakgrund): #f7f7f7 */
-  background: #f7f7f7;
-  /* Mycket ljusgrå bakgrund */
-  border: 1px solid transparent;
-  /* Ingen synlig kant */
-  padding: 7px 19px;
-  /* Inre marginal */
-  border-radius: 0px;
-  /* Inga rundade hörn */
+  /* FÄRG (text): */
+  color: var(--text-muted); /* Grå textfärg */
+  text-transform: capitalize; /* Första bokstaven versal */
+  /* FÄRG (bakgrund): */
+  background: var(--gray-5); /* Mycket ljusgrå bakgrund */
+  border: 1px solid transparent; /* Ingen synlig kant */
+  padding: 7px 19px; /* Inre marginal */
+  border-radius: 0px; /* Inga rundade hörn */
   background-image: none;
   background-clip: padding-box;
 }
 
 /* FOCUS PÅ FORM-CONTROL I FORMWRAPPER */
 .container-form .form-wrapper .form-control:focus {
-  /* FÄRG (text): #212121 */
-  color: #212121;
+  /* FÄRG (text): */
+  color: var(--gray-2);
   /* Mörkgrå text vid fokus */
-  /* FÄRG (bakgrund): #fff */
-  background-color: #fff;
-  /* Vit bakgrund vid fokus */
-  /* FÄRG (ram): #0f0 */
-  border-color: #0f0;
-  /* Illgrön kant vid fokus */
+  /* FÄRG (bakgrund): */
+  background-color: var(--text-light); /* Vit bakgrund vid fokus */
+  /* FÄRG (ram): */
+  border-color: var(--accent-neon);/* Illgrön kant vid fokus */
   box-shadow: none;
-  outline: 0;
-  /* Tar bort default-fokusram */
+  outline: 0; /* Tar bort default-fokusram */
 }
 
-/* FORM-SUBMIT KNAPP 
-     Fullbreddsknapp i formuläret */
+/* FORM-SUBMIT KNAPP  Fullbreddsknapp i formuläret */
 .form-submit .btn-common {
-  width: 100%;
-  /* Täcker hela behållarens bredd */
+  width: 100%; /* Täcker hela behållarens bredd */
 }
 
-/* LISTA UTAN STYLING
-   Används för valideringsfel eller liknande listor */
+/* LISTA UTAN STYLING Används för valideringsfel eller liknande listor */
 .list-unstyled li {
-  margin-top: 10px;
-  /* Avstånd ovanför varje listpunkt */
-  /* FÄRG (text): #dc3545 */
-  color: #dc3545 !important;
-  /* Röd text för felmeddelanden */
+  margin-top: 10px; /* Avstånd ovanför varje listpunkt */
+  /* FÄRG (text): */
+  color: var(--accent-magenta) !important; /* Röd text för felmeddelanden */
 }
 
-/* TEXT DANGER
-     Allmän klass för felmeddelanden */
+/* TEXT DANGER Allmän klass för felmeddelanden */
 .text-danger {
-  margin-top: 20px;
-  /* Avstånd ovanför felmeddelande */
-  font-size: 18px;
-  /* Textstorlek för felmeddelanden */
+  margin-top: 20px; /* Avstånd ovanför felmeddelande */
+  font-size: 18px; /* Textstorlek för felmeddelanden */
 }
 
-/* FORM CONTROL
-     Standardstil för alla formulärfält */
+/* FORM CONTROL Standardstil för alla formulärfält */
 .form-control {
   display: block;
   width: 100%;
-  line-height: 27px;
-  /* Radavstånd */
+  line-height: 27px; /* Radavstånd */
   font-size: 14px;
   box-shadow: none;
-  /* FÄRG (text): #848484 */
-  color: #848484;
-  /* Grå text */
-  text-transform: capitalize;
-  /* Första bokstaven versal */
-  /* FÄRG (bakgrund): #f7f7f7 */
-  background: #f7f7f7;
-  /* Mycket ljusgrå bakgrund */
-  padding: 7px 19px;
-  /* Inre marginal */
-  border: 1px solid #e5e5e5;
-  /* Ljusgrå kant */
-  border-radius: 0px;
-  /* Inga rundade hörn */
-  transition: all 500ms ease;
-  /* Mjuk övergång vid fokus */
+  /* FÄRG (text): */
+  color: var(--text-muted); /* Grå text */
+  text-transform: capitalize; /* Första bokstaven versal */
+  padding: 7px 19px; /* Inre marginal */
+  border: 1px solid var(--gray-2); /* Ljusgrå kant */
+  border-radius: 0px; /* Inga rundade hörn */
+  transition: all 500ms ease; /* Mjuk övergång vid fokus */
   -webkit-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
 }
 
-/* FOCUS PÅ FORMULÄRFÄLT
-     Visuell indikation vid fokus */
+/* FOCUS PÅ FORMULÄRFÄLT Visuell indikation vid fokus */
 .form-control:focus {
-  /* FÄRG (kant): #0f0 */
-  border-color: #0f0;
-  /* Illgrön kant vid fokus */
+  /* FÄRG (kant): */
+  border-color: var(--accent-neon);/* Illgrön kant vid fokus */
   box-shadow: none;
-  outline: 0;
-  /* Ingen extra fokusmarkering */
+  outline: 0; /* Ingen extra fokusmarkering */
 }
 
-/* FOOTER-AREA
-     Sektion längst ner på sidan med mörk bakgrund */
+/* FOOTER-AREA sektion längst ner på sidan med mörk bakgrund */
 .footer-area {
-  /* FÄRG (bakgrund): #222222 */
-  background: #222222;
-  /* Mörkgrå bakgrund */
+  /* FÄRG (bakgrund): */
+  background: var(--gray-1); /* Mörkgrå bakgrund */
 }
 
-/* RUBRIKAR I FOOTER
-     H3-rubriker i footern */
+/* RUBRIKAR I FOOTER H3-rubriker i footern */
 .footer-area h3 {
-  font-size: 20px;
-  /* Textstorlek */
-  /* FÄRG (text): #fff */
-  color: #fff;
-  /* Vit text */
-  font-weight: 700;
-  /* Fet stil */
-  padding-bottom: 10px;
-  /* Avstånd under rubrik */
-  letter-spacing: 0.5px;
-  /* Bokstavsavstånd */
+  font-size: 20px; /* Textstorlek */
+  /* FÄRG (text): */
+  color: var(--accent-magenta); /* footer head text */
+  font-weight: 700; /* Fet stil */
+  padding-bottom: 10px; /* Avstånd under rubrik */
+  letter-spacing: 0.5px; /* Bokstavsavstånd */
 }
 
-/* PARAGRAFER I FOOTER
-     Längre beskrivningar eller kontaktinfo */
+/* PARAGRAFER I FOOTER Längre beskrivningar eller kontaktinfo */
 .footer-area p {
-  font-size: 14px;
-  /* Textstorlek */
-  /* FÄRG (text): #fff */
-  color: #fff;
-  /* Vit text */
-  line-height: 20px;
-  /* Radavstånd */
-  margin: 0;
-  /* Ingen marginal */
-  padding-right: 50px;
-  /* Avstånd till höger */
+  font-size: 14px; /* Textstorlek */
+  /* FÄRG (text): */
+  color: var(--text-muted); /* text */
+  line-height: 20px; /* Radavstånd */
+  margin: 0; /* Ingen marginal */
+  padding-right: 50px; /* Avstånd till höger */
 }
 
 /* LÄNKAR I FOOTER-LISTOR */
 .footer-area ul li a {
-  /* FÄRG (text): #fff */
-  color: #fff;
-  /* Vit länktext */
+  /* FÄRG (text): */
+  color: var(--text-muted); /* länktext */
   font-size: 13px;
   font-weight: 400;
 }
 
 .footer-area ul li a:hover {
-  /* FÄRG (text hover): #0f0 */
-  color: #0f0;
-  /* Illgrön länk vid hover */
+  /* FÄRG (text hover) */
+  color: var(--accent-neon); /* Illgrön länk vid hover */
 }
 
 /* SOCIALA IKONER I FOOTER */
 .footer-area .footer-social li {
-  display: inline-block;
-  /* Radrad ikoner */
+  display: inline-block; /* Radrad ikoner */
 }
 
 .footer-area .footer-social li a {
-  /* FÄRG (text): #000 */
-  color: #000;
-  /* Svart ikontext */
-  /* FÄRG (bakgrund): #fff */
-  background: #fff;
-  /* Vit bakgrund */
+  /* FÄRG (text): */
+  color: var(--gray-1); /* Svart ikontext */
+  /* FÄRG (bakgrund): */
+  background: var(--text-light); /* Vit bakgrund */
   width: 35px;
   height: 35px;
-  line-height: 35px;
-  /* Centrerar ikon vertikalt */
+  line-height: 35px; /* Centrerar ikon vertikalt */
   display: block;
   text-align: center;
-  border-radius: 4px;
-  /* Rundade hörn */
+  border-radius: 4px;  /* Rundade hörn */
   font-size: 15px;
   margin-right: 5px;
-  transition: all 0.3s ease-in-out 0s;
-  /* Mjuk övergång vid hover */
+  transition: all 0.3s ease-in-out 0s; /* Mjuk övergång vid hover */
   -moz-transition: all 0.3s ease-in-out 0s;
   -webkit-transition: all 0.3s ease-in-out 0s;
   -o-transition: all 0.3s ease-in-out 0s;
 }
 
 .footer-area .footer-social li a:hover {
-  /* FÄRG (text hover): #fff */
-  color: #fff;
-  /* Vit ikon vid hover */ 
+  /* FÄRG (text hover): */
+  color: var(--text-light); /* Vit ikon vid hover */ 
 }
-/* FACEBOOK-HOVER I FOOTER-SOCIAL
-   Sätter bakgrundsfärg vid hover */
+/* FACEBOOK-HOVER I FOOTER-SOCIAL Sätter bakgrundsfärg vid hover */
 .footer-area .footer-social li .facebook:hover {
-  /* FÄRG (bakgrund hover): #3B5998 */
-  background: #3B5998;
-  /* Facebook-blå */
+  /* FÄRG (bakgrund hover): */
+  background: #3B5998; /* Facebook-blå */
 }
 
 /* TWITTER-HOVER I FOOTER-SOCIAL */
 .footer-area .footer-social li .twitter:hover {
-  /* FÄRG (bakgrund hover): #00aced */
-  background: #00aced;
-  /* Twitter-blå */
+  /* FÄRG (bakgrund hover): */
+  background: #00aced; /* Twitter-blå */
 }
 
 /* LINKEDIN-HOVER I FOOTER-SOCIAL */
 .footer-area .footer-social li .linkedin:hover {
-  /* FÄRG (bakgrund hover): #0073b1 */
-  background: #0073b1;
-  /* LinkedIn-blå */
+  /* FÄRG (bakgrund hover): */
+  background: #0073b1; /* LinkedIn-blå */
 }
 
 /* FOURSQUARE-HOVER I FOOTER-SOCIAL */
 .footer-area .footer-social li .foursqare:hover {
-  /* FÄRG (bakgrund hover): #25a0ca */
-  background: #25a0ca;
-  /* Foursquare-blå */
+  /* FÄRG (bakgrund hover): */
+  background: #25a0ca; /* Foursquare-blå */
 }
 
 /* GOOGLE-PLUS-HOVER I FOOTER-SOCIAL */
 .footer-area .footer-social li .google-plus:hover {
   /* FÄRG (bakgrund hover): #d34836 */
-  background: #d34836;
-  /* Google Plus-röd */
+  background: #d34836; /* Google Plus-röd */
 }
 
-/* AVSLUTANDE TEXT I FOOTER-TEXT
-     P-etikett under sociala ikoner */
+/* AVSLUTANDE TEXT I FOOTER-TEXT P-etikett under sociala ikoner */
 .footer-area .footer-text p {
-  font-size: 14px;
-  /* Textstorlek */
-  margin-top: 20px;
-  /* Avstånd ovanför */
+  font-size: 14px; /* Textstorlek */
+  margin-top: 20px; /* Avstånd ovanför */
   /* FÄRG (text): #fff */
-  color: #fff;
-  /* Vit text */
+  color: var(--text-light); /* Vit text */
 }
 
 /* LÄNKAR I FOOTER-TEXT PARAGRAF */
 .footer-area .footer-text p a {
-  /* FÄRG (länk): #0f0 */
-  color: #0f0;
-  /* Illgrön länk */
+  /* FÄRG (länk): */
+  color: var(--accent-neon); /* Illgrön länk */
 }
 
 /* INLINE NAV-LÄNKAR I FOOTER-TEXT */
 .footer-area .footer-text .nav-inline .nav-link {
-  padding: 11px 7px;
-  /* Inre marginal */
-  /* FÄRG (text): #888 */
-  color: #888;
-  /* Grå text */
+  padding: 11px 7px; /* Inre marginal */
+  /* FÄRG (text): */
+  color: var(--text-muted); /* Grå text */
 }
 
 /* HOVER FÖR NAV-LÄNKAR I FOOTER-TEXT */
 .footer-area .footer-text .nav-inline .nav-link:hover {
-  /* FÄRG (text hover): #0f0 */
-  color: #0f0;
-  /* Illgrön text vid hover */
+  /* FÄRG (text hover): */
+  color: var(--accent-neon); /* Illgrön text vid hover */
 }
 
-/* IMAGE-LIST BEHÅLLARE
-     Ta bort standard padding/marginal */
+/* IMAGE-LIST BEHÅLLARE Ta bort standard padding/marginal */
 .image-list {
-  padding: 0;
-  /* Ingen padding */
-  margin: 0;
-  /* Ingen marginal */
+  padding: 0; /* Ingen padding */
+  margin: 0; /* Ingen marginal */
 }
 
-/* LISTITEM I IMAGE-LIST
-     Inline-block för flera rader */
+/* LISTITEM I IMAGE-LIST Inline-block för flera rader */
 .image-list li {
-  margin-bottom: 15px;
-  /* Avstånd under varje post */
-  display: inline-block;
-  /* Rad-indelade objekt */
+  margin-bottom: 15px; /* Avstånd under varje post */
+  display: inline-block; /* Rad-indelade objekt */
 }
 
 /* OVERLAY BEHÅLLARE I IMAGE-LIST */
 .image-list li .overlay {
-  float: left;
-  /* Flyter till vänster */
-  width: 70px;
-  /* Bredd */
-  height: 60px;
-  /* Höjd */
+  float: left; /* Flyter till vänster */
+  width: 70px; /* Bredd */
+  height: 60px; /* Höjd */
   position: relative;
-  overflow: hidden;
-  /* Dölj utflöden */
+  overflow: hidden; /* Dölj utflöden */
   text-align: center;
   margin: 0;
 }
 
-/* HOVER-EFFEKT PÅ OVERLAY
-     Visar figcaption vid hover */
+/* HOVER-EFFEKT PÅ OVERLAY Visar figcaption vid hover */
 .image-list li .overlay:hover figcaption {
-  opacity: 1;
-  /* Gör captions synliga */
-  transition: all 0.3s ease-in-out;
-  /* Mjuk övergång */
+  opacity: 1; /* Gör captions synliga */
+  transition: all 0.3s ease-in-out; /* Mjuk övergång */
 }
 
-/* POST-CONTENT I IMAGE-LIST
-     Indrag för text efter overlay */
+/* POST-CONTENT I IMAGE-LIST Indrag för text efter overlay */
 .image-list .post-content {
-  margin-left: 85px;
-  /* Indrag till höger */
-  margin-bottom: 0;
-  /* Ingen underliggande marginal */
+  margin-left: 85px; /* Indrag till höger */
+  margin-bottom: 0; /* Ingen underliggande marginal */
 }
 
 /* POST-TITLE I POST-CONTENT */
 .image-list .post-content .post-title {
-  margin: 0;
-  /* Nollställ marginal */
-  margin-bottom: 5px;
-  /* Avstånd under titeln */
-  font-weight: 500;
-  /* Medelvikt */
-  font-size: 15px;
-  /* Textstorlek */
+  margin: 0; /* Nollställ marginal */
+  margin-bottom: 5px; /* Avstånd under titeln */
+  font-weight: 500; /* Medelvikt */
+  font-size: 15px; /* Textstorlek */
 }
 
 /* LÄNK I POST-TITLE */
 .image-list .post-content .post-title a {
-  /* FÄRG (länk): #fff */
-  color: #fff;
-  /* Vit textlänk */
+  /* FÄRG (länk): */
+  color: var(--text-light); /* Vit textlänk */
 }
 
 .image-list .post-content .post-title a:hover {
-  /* FÄRG (länk hover): #0f0 */
-  color: #0f0;
-  /* Illgrön vid hover */
+  /* FÄRG (länk hover): */
+  color: var(--accent-neon); /* Illgrön vid hover */
 }
 
 /* META-TEXT I POST-CONTENT */
 .image-list .post-content .meta {
-  /* FÄRG (text): #999 */
-  color: #999;
-  /* Ljusgrå text */
+  /* FÄRG (text) */
+  color: var(--text-muted); /* Ljusgrå text */
 }
 
 /* SPAN I META-TEXT */
 .image-list .post-content .meta span {
-  text-transform: uppercase;
-  /* Versaler */
-  font-size: 12px;
-  /* Textstorlek */
-  line-height: 18px;
-  /* Radavstånd */
-  margin-bottom: 10px;
-  /* Avstånd under */
+  text-transform: uppercase; /* Versaler */
+  font-size: 12px; /* Textstorlek */
+  line-height: 18px; /* Radavstånd */
+  margin-bottom: 10px; /* Avstånd under */
 }
 
 /* NEWSLETTER WRAPPER FORM-GROUP */
 .newsletter-wrapper .form-group {
-  margin-bottom: 20px;
-  /* Avstånd under fält */
+  margin-bottom: 20px; /* Avstånd under fält */
   position: relative;
 }
 
 /* NEWSLETTER INPUT-FÄLT */
 .newsletter-wrapper .form-group input {
   display: inline-block;
-  /* FÄRG (text): #fff */
-  color: #fff;
-  /* Vit text */
+  /* FÄRG (text):  */
+  color: var(--text-light); /* Vit text */
   position: relative;
 }
 
 /* NEWSLETTER SUBMIT-KNAPP */
 .newsletter-wrapper .sub-btn {
-  position: absolute;
-  /* Absolut inom form-group */
-  top: 0;
-  /* Fäster till överkant */
-  right: 0;
-  /* Fäster till högerkant */
-  border-radius: 0;
-  /* Inga rundade hörn */
-  padding: 10px 20px;
-  /* Inre marginal */ 
+  position: absolute; /* Absolut inom form-group */
+  top: 0; /* Fäster till överkant */
+  right: 0; /* Fäster till högerkant */
+  border-radius: 0; /* Inga rundade hörn */
+  padding: 10px 20px; /* Inre marginal */ 
 }
-/* WIDGET-CONTAINER
-   Avstånd ovanför varje widget */
+/* WIDGET-CONTAINER Avstånd ovanför varje widget */
 .widget {
-  margin-top: 10px;
-  /* 10px avstånd från föregående element */
+  margin-top: 10px; /* 10px avstånd från föregående element */
 }
 
-/* WIDGET-TITLE
-     Rubrikstil för widgetsektioner */
+/* WIDGET-TITLE Rubrikstil för widgetsektioner */
 .widget .widget-title {
-  margin-bottom: 20px;
-  /* Avstånd under titeln */
-  font-size: 18px;
-  /* Textstorlek */
-  /* FÄRG (text): #fff */
-  color: #fff;
-  /* Vit titeltext */
+  margin-bottom: 20px; /* Avstånd under titeln */
+  font-size: 18px; /* Textstorlek */
+  /* FÄRG (text): */
+  color: var(--text-light); /* Vit titeltext */
 }
 
-/* COPYRIGHT-SEKTION
-     Bottenrad med mörk bakgrund och centrerad text */
+/* COPYRIGHT-SEKTION Bottenrad med mörk bakgrund och centrerad text */
 #copyright {
-  /* FÄRG (bakgrund): #0b0b0b */
-  background: #0b0b0b;
-  /* Nästan svart bakgrund */
-  text-align: center;
-  /* Centrerar texten */
+  /* FÄRG (bakgrund): */
+  background: var(--gray-1); /* Nästan svart bakgrund */
+  text-align: center; /* Centrerar texten */
 }
 
 #copyright p {
   line-height: 42px;
   /* Radavstånd för text */
-  /* FÄRG (text): #fff */
-  color: #fff;
-  /* Vit text */
-  margin: 0;
-  /* Ingen marginal */
+  /* FÄRG (text): */
+  color: var(--text-light); /* Vit text */
+  margin: 0; /* Ingen marginal */
 }
 
 #copyright p a {
-  /* FÄRG (länk): #fff */
-  color: #fff;
-  /* Vita länkar */
+  /* FÄRG (länk): */
+  color: var(--text-light); /* Vita länkar */
 }
 
 #copyright p a:hover {
-  /* FÄRG (länk hover): #0f0 */
-  color: #0f0;
-  /* Illgrön länk vid hover */
+  /* FÄRG (länk hover): */
+  color: var(--accent-neon); /* Illgrön länk vid hover */
 }
 
-/* COUNTDOWN-TIMER HEADING
-     Sektionens rubriker och beskrivningar */
+/* COUNTDOWN-TIMER HEADING Sektionens rubriker och beskrivningar */
 .countdown-timer .heading-count {
-  padding: 10px 68px;
-  /* Inre marginal */
+  padding: 10px 68px; /* Inre marginal */
 }
 
 .countdown-timer .heading-count h2 {
-  font-size: 40px;
-  /* Huvudrubrikstorlek */
-  /* FÄRG (text): #212121 */
-  color: #212121;
-  /* Mörkgrå text */
-  text-transform: uppercase;
-  /* Versaler */
-  line-height: 48px;
-  /* Radavstånd */
+  font-size: 40px; /* Huvudrubrikstorlek */
+  /* FÄRG (text): */
+  color: var(--accent-neon); /* Header text */
+  text-transform: uppercase; /* Versaler */
+  line-height: 48px; /* Radavstånd */
 }
 
 .countdown-timer .heading-count h4 {
-  font-size: 24px;
-  /* Underrubrikstorlek */
-  font-weight: 300;
-  /* Lätt vikt */
-  /* FÄRG (text): #fff */
-  color: #fff;
-  /* Vit text */
-  margin-top: 30px;
-  /* Avstånd ovanför */
+  font-size: 24px; /* Underrubrikstorlek */
+  font-weight: 300; /* Lätt vikt */
+  /* FÄRG (text): */
+  color: var(--text-light); /* Vit text */
+  margin-top: 30px; /* Avstånd ovanför */
 }
 
 .countdown-timer .heading-count h4 span {
-  /* FÄRG (bakgrund): #212121 */
-  background: #212121;
-  /* Mörkgrå bakgrund */
-  padding: 7px 15px;
-  /* Inre marginal */
-  border-radius: 4px;
-  /* Rundade hörn */
+  /* FÄRG (bakgrund): */
+  background: var(--gray-2); /* Mörkgrå bakgrund */
+  padding: 7px 15px; /* Inre marginal */
+  border-radius: 4px; /* Rundade hörn */
 }
 
 .countdown-timer .heading-count p {
-  font-size: 14px;
-  /* Brödtextstorlek */
-  /* FÄRG (text): #212121 */
-  color: #212121;
-  /* Mörkgrå text */
-  line-height: 30px;
-  /* Radavstånd */
+  font-size: 14px; /* Brödtextstorlek */
+  /* FÄRG (text): */
+  color: var(--gray-2); /* Mörkgrå text */
+  line-height: 30px; /* Radavstånd */
 }
 
-/* TIME-COUNT BEHÅLLARE
-     Centrering av varje tidssystem */
+/* TIME-COUNT BEHÅLLARE Centrering av varje tidssystem */
 .time-count div {
-  text-align: center;
-  /* Centrerar innehåll */
+  text-align: center; /* Centrerar innehåll */
 }
 
 .time-entry {
-  display: inline-block;
-  /* Radrad behållare */
-  min-width: 120px;
-  /* Minsta bredd */
-  margin: 15px;
-  /* Marginal runtom */
-  height: 110px;
-  /* Höjd */
-  padding: 20px;
-  /* Inre marginal */
-  box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.2);
-  /* Skugga */
-  border-radius: 4px;
-  /* Rundade hörn */
-  background: #fff;
-  /* Vit bakgrund */
+  display: inline-block; /* Radrad behållare */
+  min-width: 120px; /* Minsta bredd */
+  margin: 15px; /* Marginal runtom */
+  height: 110px; /* Höjd */
+  padding: 20px; /* Inre marginal */
+  box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.2); /* Skugga */
+  border-radius: 4px; /* Rundade hörn */
+  background: var(--gray-5); /* bakgrund */
   text-align: center;
   font-weight: 400;
-  /* FÄRG (text): #212121 */
-  color: #212121;
-  /* Mörkgrå text */
+  /* FÄRG: */
+  color: var(--accent-neon);/* days, hours etc text */
   font-size: 16px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -3270,194 +2450,132 @@ Tar bort standardram på varje card */
 }
 
 .time-entry span {
-  font-size: 45px;
-  /* Stor siffra */
+  font-size: 45px; /* Stor siffra */
   line-height: 45px;
   font-weight: 700;
   display: block;
-  /* FÄRG (text): #212121 */
-  color: #212121;
-  /* Mörkgrå siffra */
+  /* FÄRG (text): */
+  color: var(--text-light); /* ned räk siffra */
   margin-bottom: 10px;
 }
 
 .time-entry:first-child {
-  border-left: none;
-  /* Ingen kant på första entry */
+  border-left: none; /* Ingen kant på första entry */
 }
 
 .time-countdown {
-  margin: 15px 0px 50px 0;
-  /* Vertikala marginaler */
+  margin: 15px 0px 50px 0; /* Vertikala marginaler */
 }
 
-/* PRICING SECTION
-     Bakgrundsbild och fast position */
+/* PRICING SECTION Bakgrundsbild och fast position ANVÄNDS EJ */
 #pricing {
   background: url(../img/background/bg-pricing.jpg);
   background-attachment: fixed;
   overflow: hidden;
   position: relative;
 }
-
 /* Sektionstext mot vit bakgrund */
 #pricing .section-title-header .section-title,
 #pricing .section-title-header p {
-  /* FÄRG (text): #fff */
-  color: var(--text-light);
-  /* Vit text för titlar och beskrivning */
+  /* FÄRG (text): */
+  color: var(--text-light); /* Vit text för titlar och beskrivning */
 }
-
 /* PRISBLOCK BEHÅLLARE Kortlayout för prisalternativ */
 #pricing .price-block-wrapper {
   text-align: center;
   display: inline-block;
   width: 100%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  /* Skugga */
-  background: #ffffff;
-  /* Vit bakgrund */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Skugga */
+  background: var(--text-light); /* Vit bakgrund */
   padding: 30px;
 }
-
 #pricing .price-block-wrapper .icon {
-  padding: 20px;
-  /* Inre marginal kring ikon */
+  padding: 20px; /* Inre marginal kring ikon */
 }
-
 #pricing .price-block-wrapper .icon i {
-  font-size: 60px;
-  /* Ikonstorlek */
-  /* FÄRG (ikon): #0f0 */
-  color: #0f0;
-  /* Illgrön ikon */
+  font-size: 60px; /* Ikonstorlek */
+  /* FÄRG (ikon): */
+  color: var(--accent-neon);/* Illgrön ikon */
 }
-
 /* KOLUMN-TITEL UNDER IKON */
 #pricing .price-block-wrapper .colmun-title {
-  margin-top: 15px;
-  /* Avstånd ovanför rubrik */
+  margin-top: 15px; /* Avstånd ovanför rubrik */
 }
-
 #pricing .price-block-wrapper .colmun-title h5 {
-  font-size: 18px;
-  /* Textstorlek */
-  line-height: 30px;
-  /* FÄRG (text): #212121 */
-  color: #212121;
-  /* Mörkgrå text */
+  font-size: 18px; /* Textstorlek */
+  line-height: 30px; 
+  /* FÄRG: */
+  color: var(--gray-1); /* Mörkgrå text */
   margin-bottom: 5px;
   font-weight: 700;
-  background: #ffffff;
-  /* Vit bakgrund bakom rubrik */
+  background: var(--text-light);/* Vit bakgrund bakom rubrik */
   text-transform: uppercase;
 }
-
-/* PRISAVSNITTETS PRIS-RAD
-   Padding under pris och övergångseffekter */
+/* PRISAVSNITTETS PRIS-RAD Padding under pris och övergångseffekter */
 #pricing .price-block-wrapper .price {
-  padding-bottom: 10px;
-  /* Avstånd under priset */
-  transition: all 500ms ease;
-  /* Smidig övergång vid hover */
+  padding-bottom: 10px; /* Avstånd under priset */
+  transition: all 500ms ease; /* Smidig övergång vid hover */
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
 }
-
-/* PRIS-RUBRIK (H2)
-     Stor tydlig pristext */
+/* PRIS-RUBRIK (H2) Stor tydlig pristext */
 #pricing .price-block-wrapper .price h2 {
-  font-size: 38px;
-  /* Stor text */
-  /* FÄRG (text): #5c5c5c */
-  color: #5c5c5c;
-  /* Mörkgrå ton */
-  line-height: 42px;
-  /* Radavstånd */
-  margin: 0;
-  /* Nollställ marginal */
+  font-size: 38px; /* Stor text */
+  /* FÄRG (text): */
+  color: var(--gray-3); /* Mörkgrå ton */
+  line-height: 42px; /* Radavstånd */
+  margin: 0; /* Nollställ marginal */
 }
-
-/* PRISBESKRIVNING (P)
-     Undertext under priset */
+/* PRISBESKRIVNING (P) Undertext under priset */
 #pricing .price-block-wrapper .price p {
-  font-size: 15px;
-  /* Textstorlek */
-  /* FÄRG (text): #5c5c5c */
-  color: #5c5c5c;
-  /* Mörkgrå ton */
-  font-weight: 700;
-  /* Fet stil */
-  letter-spacing: 1px;
-  /* Bokstavsavstånd */
-  line-height: 30px;
-  /* Radavstånd */
-  text-transform: uppercase;
-  /* Versaler */
-  transition: all 500ms ease;
-  /* Smidig övergång */
+  font-size: 15px; /* Textstorlek */
+  /* FÄRG (text): */
+  color: var(--gray-3);/* Mörkgrå ton */
+  font-weight: 700; /* Fet stil */
+  letter-spacing: 1px; /* Bokstavsavstånd */
+  line-height: 30px; /* Radavstånd */
+  text-transform: uppercase; /* Versaler */
+  transition: all 500ms ease; /* Smidig övergång */
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
 }
-
-/* PRISLISTA
-     Lista över vad som ingår */
+/* PRISLISTA Lista över vad som ingår */
 #pricing .price-block-wrapper .pricing-list {
-  padding: 10px 60px 10px 78px;
-  /* Topp, höger, botten, vänster */
-  text-align: left;
-  /* Vänsterjusterad text */
+  padding: 10px 60px 10px 78px; /* Topp, höger, botten, vänster */
+  text-align: left; /* Vänsterjusterad text */
 }
-
 #pricing .price-block-wrapper .pricing-list ul {
-  padding-bottom: 15px;
-  /* Avstånd under hela listan */
+  padding-bottom: 15px; /* Avstånd under hela listan */
 }
-
 /* Enskild lista i prislista */
 #pricing .price-block-wrapper .pricing-list ul li {
-  font-size: 15px;
-  /* Textstorlek */
-  /* FÄRG (text): #212121 */
-  color: #212121;
-  /* Mörkgrå text */
-  font-weight: 400;
-  /* Normal vikt */
-  padding: 2px 0;
-  /* Litet utrymme mellan punkter */
+  font-size: 15px; /* Textstorlek */
+  /* FÄRG (text): */
+  color: var(--gray-1); /* Mörkgrå text */
+  font-weight: 400; /* Normal vikt */
+  padding: 2px 0; /* Litet utrymme mellan punkter */
 }
-
 /* Ikon före varje lista */
 #pricing .price-block-wrapper .pricing-list ul li i {
-  margin-right: 7px;
-  /* Avstånd efter ikon */
-  font-size: 12px;
-  /* Ikonstorlek */
-  /* FÄRG (ikon): #0f0 */
-  color: #0f0;
-  /* Illgrön ikonfärg */
+  margin-right: 7px; /* Avstånd efter ikon */
+  font-size: 12px; /* Ikonstorlek */
+  /* FÄRG (ikon): */
+  color: var(--accent-neon); /* Illgrön ikonfärg */
 }
-
 /* KNAPP-IKON I PRISBLOCK */
 #pricing .price-block-wrapper .btn i {
-  font-size: 12px;
-  /* Ikonstorlek */
-  margin-right: 5px;
-  /* Avstånd efter ikon */
+  font-size: 12px; /* Ikonstorlek */
+  margin-right: 5px; /* Avstånd efter ikon */
 }
 
-/* HUVUDSLIDER KONTROLLER
-     Dölj kontroller initialt, visa på hover */
+/* HUVUDSLIDER KONTROLLER Dölj kontroller initialt, visa på hover */
 #main-slide .carousel-control {
-  display: none;
-  /* Dölj pilar */
-  transition: all 0.3s ease-in-out;
-  /* Smidiga animationer */
+  display: none; /* Dölj pilar */
+  transition: all 0.3s ease-in-out; /* Smidiga animationer */
 }
 
 #main-slide:hover .carousel-control {
-  display: block;
-  /* Visa pilar vid hover */
+  display: block; /* Visa pilar vid hover */
   transition: all 0.3s ease-in-out;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -3469,18 +2587,14 @@ Tar bort standardram på varje card */
 
 /* INDICATORER FÖR CAROUSEL */
 #main-slide .carousel-indicators {
-  cursor: pointer;
-  /* Klickbar indikator */
-  bottom: 90px;
-  /* Placering ovanför botten */
+  cursor: pointer; /* Klickbar indikator */
+  bottom: 90px; /* Placering ovanför botten */
 }
 
-/* BILDER I CAROUSEL
-     Anpassa bredd */
+/* BILDER I CAROUSEL anpassa bredd */
 #main-slide .carousel-item img {
   position: relative;
-  width: 100%;
-  /* Full bredd */
+  width: 100%; /* Full bredd */
 }
 
 /* Overlay över bild i aktivt läge */
@@ -3490,112 +2604,92 @@ Tar bort standardram på varje card */
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  /* Täcker hela bilden */
+  bottom: 0; /* Täcker hela bilden */
 }
 
-/* CAPTION STLÄNGD
-     Dölj caption tills aktiv */
+/* CAPTION STLÄNGD Dölj caption tills aktiv */
 #main-slide .carousel-item .carousel-caption {
-  opacity: 0;
-  /* Osynlig initialt */
+  opacity: 0; /* Osynlig initialt */
   transition: opacity 100ms ease;
   z-index: 0;
 }
 
 #main-slide .carousel-item.active .carousel-caption {
-  opacity: 1;
-  /* Synlig när aktiv */
+  opacity: 1;  /* Synlig när aktiv */
   transition: opacity 100ms ease;
   z-index: 1;
 }
 
 /* CAPTION POSITION OCH STIL */
-#main-slide .carousel-caption {
-  /* FÄRG (text): #fff */
-  color: #fff;
-  /* Vit text */
+#main-slide .carousel-caption { 
+  /* FÄRG (text) */
+  color: var(--text-light); /* Vit text */
   position: absolute;
-  top: 35%;
-  /* Vertikalt mittfält */
+  top: 35%; /* Vertikalt mittfält */
 }
 
 #main-slide .carousel-caption .heading {
-  font-size: 48px;
-  /* Stor rubrik */
-  font-weight: 700;
-  /* Fet stil */
-  text-transform: uppercase;
-  /* Versaler */
+  font-size: 48px; /* Stor rubrik */
+  font-weight: 700; /* Fet stil */
+  text-transform: uppercase; /* Versaler */
   letter-spacing: 0.1rem;
   margin-top: 30px;
 }
 
 /* Beskrivning under rubrik */
 #main-slide .carousel-item .carousel-caption p {
-  font-size: 20px;
-  /* Textstorlek */
+  font-size: 20px; /* Textstorlek */
 }
 
 /* Knappar i caption */
 #main-slide .carousel-caption .btn {
-  margin: 25px 25px 0 0;
-  /* Marginal höger och topp */
+  margin: 25px 25px 0 0; /* Marginal höger och topp */
 }
 
 /* PILAR I CAROUSEL */
 #main-slide .carousel-control-next,
 #main-slide .carousel-control-prev {
-  opacity: 1;
-  /* Alltid synliga */
+  opacity: 1;  /* Alltid synliga */
   box-shadow: none;
 }
 
 #main-slide .carousel-control-prev span,
 #main-slide .carousel-control-next span {
-  padding: 15px;
-  /* Inre marginal */
+  padding: 15px; /* Inre marginal */
 }
 
 #main-slide .carousel-control {
-  top: 45%;
-  /* Vertikal placering */
+  top: 45%; /* Vertikal placering */
 }
 
 #main-slide .carousel-control .lni-chevron-left {
-  left: 15px;
-  /* Placering vänsterpil */
+  left: 15px; /* Placering vänsterpil */
 }
 
 #main-slide .carousel-control .lni-chevron-right {
-  right: 15px;
-  /* Placering högerpil */
+  right: 15px; /* Placering högerpil */
 }
 
 /* INDICATOR-CIRKLAR */
 .carousel-indicators li {
-  width: 12px;
-  /* Cirkelstorlek */
+  width: 12px; /* Cirkelstorlek */
   height: 12px;
-  border-radius: 50%;
-  /* Gör cirkeln rund */
+  border-radius: 50%; /* Gör cirkeln rund */
 }
 
 /* IKONER I KONTROLLER */
 #main-slide .carousel-control i {
-  line-height: 40px;
-  /* Vertikal centrering */
-  font-size: 18px;
-  /* Ikonstorlek */
+  line-height: 40px; /* Vertikal centrering */
+  font-size: 18px; /* Ikonstorlek */
   width: 45px;
   height: 45px;
   display: block;
-  border: 2px solid #fff;
-  /* Vit ram */
+  border: 2px solid var(--text-light);  /* Vit ram */
   border-radius: 2px;
-  background: transparent;  color: #fff;  transition: all 500ms ease;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);}
+  background: transparent;  color: var(--text-light);  transition: all 500ms ease;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
 
 #main-slide .carousel-control i:hover {
-  background: rgba(255, 255, 255, 0.2); color: #fff; border-color: #fff;
+  background: rgba(255, 255, 255, 0.2); color: var(--text-light); border-color: var(--text-light);
 }
