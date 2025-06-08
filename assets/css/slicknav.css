@@ -1,3 +1,6 @@
+/* Importerar Google Fonts: Lato för brödtext och Josefin Sans för rubriker */
+@import url("https://fonts.googleapis.com/css?family=Lato:400|Josefin+Sans:700");
+@import url(../css/main.css);
 
 .slicknav_btn {
   cursor: pointer;
@@ -63,17 +66,19 @@
 }
 .slicknav_nav ul {
   display: block;
+  background-color: black;
 }
 .slicknav_nav li {
   display: block; 
   line-height: 30px;
+
 }
 
 .slicknav_nav li:not(:first-child) {
 
 }
 .slicknav_nav .slicknav_arrow {
-  background: #ededed none repeat scroll 0 0;
+  background: var() none repeat scroll 0 0;
   float: right;
   text-align: center;
   width: 35px;
@@ -110,7 +115,7 @@
 }
 
 .slicknav_menu ul{
-  background: #fff;
+  background: var(--gray-2);
 }
 .slicknav_menu * {
   box-sizing: border-box;

@@ -58,7 +58,7 @@
 
     // one page navigation 
     $('.navbar-nav').onePageNav({
-            currentClass: 'active'
+      currentClass: 'active'
     }); 
 
     /* Back Top Link active
