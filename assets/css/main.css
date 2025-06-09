@@ -24,6 +24,7 @@ body {
   background: var(--gray-2);
   color: var(--text-light);
   font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Sections */
