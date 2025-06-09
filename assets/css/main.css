@@ -125,9 +125,7 @@ a:hover {
   background: var(--gray-3);
 }
 
-#gallery .overlay-box {
-  background: rgba(233, 30, 99, 0.7);
-}
+
 
 /* Footer */
 .footer-area {
@@ -1158,15 +1156,22 @@ Skapas med :before, syns vid hover/aktiv */
     /* FÄRG (text): */
     color: var(--accent-neon);
   }
-    #schedules,
-    .schedule,
-    .schedule .schedule-tab-title .nav-tabs,
-    .schedule .nav-tabs .nav-item,
-    .schedule .nav-link,
-    .schedule .card-header {
+  
+  #schedules, .schedule, .schedule .schedule-tab-title .nav-tabs,
+  .schedule .nav-tabs .nav-item, .schedule .nav-link, .schedule .card-header {
       width: 100% !important;
       max-width: 100% !important;
       box-sizing: border-box;
+    }
+    
+    @media screen and (max-width: 768px) {
+      #gallery .gallery-box .img-thumb {
+          height: 200px; /* Lite lägre i mobil */
+      }
+  
+      #gallery .gallery-box .img-thumb img {
+          object-fit: cover;
+      }
     }
 }
 
@@ -1657,6 +1662,28 @@ Skapas med :before, syns vid hover/aktiv */
   -moz-transform: scale(1, 1); /* Firefox: skala upp */
   -ms-transform: scale(1, 1); /* IE: skala upp */
   -o-transform: scale(1, 1); /* Opera: skala upp */
+}
+
+/* === GALLERI-BILD === */
+#gallery .gallery-box .img-thumb {
+  width: 100%;
+  height: 300px;
+  /* Alla bilder lika höga */
+  overflow: hidden;
+}
+
+#gallery .gallery-box .img-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Beskär och fyll ut snyggt */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+#gallery .gallery-box .img-thumb img:hover {
+  transform: scale(1.05);
+  /* Liten zoom vid hover (valfritt) */
 }
 
 /* TEAM-ITEM HOVER Fördjupad skugga ger en "flytande" effekt vid hover */
