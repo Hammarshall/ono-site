@@ -1,81 +1,244 @@
-:root {
-    --color-primary: #0f0;
-    --color-accent: #ff0040;
-    --color-bg: #000;
-    --color-bg-alt: rgba(0, 0, 0, 0.75);
-    --color-text: #0f0;
-    --font-size-base: 1rem;
-    --font-size-xxl: 3rem;
+/* ============================================================================
+   FONTS
+============================================================================ */
+@import url(https://fonts.googleapis.com/css?family=Gilda+Display);
 
-    --spacing-sm: 8px;
-    --spacing-md: 16px;
-    --spacing-lg: 32px;
-    --radius-md: 8px;
+/* === OCR-A Fontface === */
+@font-face {
+    font-family: OCR-A;
+    src: url('data:font/woff;base64,...') format('woff');
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-#background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+/* ============================================================================
+   BASE LAYOUT
+============================================================================ */
+html {
     background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: -1;
-}
-
-#background img {
-    max-width: 100%;
-    height: auto;
-    filter: brightness(0.5);
-    min-width: 100%;
-    min-height: 100%;
-
-}
-
-#content {
-    position: relative;
-    z-index: 1;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#glitch-text {
-    font-weight: bold;
-    margin-bottom: var(--spacing-lg);
+    color: white;
+    overflow: hidden;
+    height: 100%;
     user-select: none;
+    font-size: medium;
 }
 
-#terminal {
-    background: var(--color-bg-alt);
-    padding: var(--spacing-md);
-    border: 1px solid var(--color-primary);
+body:before,
+body:after {
+    content: 'error 404';
+    font-family: 'OCR-A', monospace;
+    font-size: 200px;
+    text-align: center;
     width: 100%;
-    max-width: 800px;
-    color: var(--color-primary);
-    font-size: var(--font-size-base);
-    overflow-y: auto;
-    max-height: 600px;
-    border-radius: var(--radius-md);
+    position: absolute;
+    top: 20%;
+    left: 0;
+    opacity: 0;
+    color: white;
+    animation: noise-1 0.2s linear infinite;
 }
 
-#commandInput {
-    background: var(--color-bg-alt);
+.info:before,
+.info:after {
+    content: 'file not found';
+    font-family: 'OCR-A', monospace;
+    font-size: 100px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    opacity: 0;
+    color: white;
+    animation: noise-1 0.2s linear infinite;
+}
+
+/* ============================================================================
+   KODBLOCK (INGEN GLITCH)
+============================================================================ */
+.wrap {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+}
+
+.wrap pre {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: white;
+    font-family: 'OCR-A', monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.wrap code {
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+
+/* ============================================================================
+   TERMINAL
+============================================================================ */
+.terminal {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 50px;
+    /* ← flytta upp från botten */
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px 8px 0 0;
+    font-family: 'OCR-A', monospace;
+    color: #33cc33;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.terminal span {
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-family: 'OCR-A', monospace;
+    color: #33cc33;
+    font-size: 30px;
+}
+
+.terminal input {
+    width: calc(100% - 1.4ch);
+    margin-top: 0.2rem;
+    background: transparent;
     border: none;
-    color: var(--color-text);
-    font-family: var(--font-family-mono);
-    font-size: var(--font-size-base);
-    padding: var(--spacing-sm);
-    width: 100%;
+    outline: none;
+    font-family: 'OCR-A', monospace;
+    font-size: 30px;
+    color: white;
+}
+
+/* ============================================================================
+   TERMINAL OUTPUT (SUCCESS / ERROR)
+============================================================================ */
+.terminal-line,
+.terminal-success,
+.terminal-error {
+    font-family: 'OCR-A', monospace;
+    font-size: 30px;
+    color: #33cc33;
+    /* Standard terminaltext (grön) */
+    margin-top: 5px;
+}
+
+/* Success (grön text) */
+.terminal-success {
+    color: #33cc33;
+}
+
+/* Error (röd text) */
+.terminal-error {
+    color: #ff4d4d;
+}
+
+/* ============================================================================
+   SYNTAX COLORS
+============================================================================ */
+span.green {
+    color: #33cc33;
+}
+
+span.orange {
+    color: #f39c12;
+}
+
+span.comment {
+    color: #7f8c8d;
+}
+
+span.blue {
+    color: #48beef;
+}
+
+/* ============================================================================
+   KEYFRAMES
+============================================================================ */
+@keyframes noise-1 {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    70%,
+    90% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: .1;
+    }
+
+    50% {
+        opacity: .5;
+        left: -6px;
+    }
+
+    80% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .6;
+        left: 2px;
+    }
+}
+
+/* ============================================================================
+   MEDIA QUERIES - MOBILANPASSNING
+============================================================================ */
+@media screen and (max-width: 768px) {
+
+    /* Glitch text mindre */
+    body:before,
+    body:after {
+        font-size: 80px;
+        top: 10%;
+    }
+
+    /* Endast file not found glitchar */
+    .info:before,
+    .info:after {
+        font-size: 80px;
+        bottom: 5%;
+    }
+
+    /* Kodblock justerat */
+    .wrap {
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+
+    .wrap pre {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+    /* Terminal mobilvänlig */
+    .terminal {
+        padding: 1.2rem;
+        font-size: 1.2rem;
+        bottom: 30px;
+        /* ännu bättre avstånd */
+    }
+
+    .terminal span {
+        font-size: 1.2rem;
+    }
+
+    .terminal input, .terminal-line,
+    .terminal-success,
+    .terminal-error {
+        font-size: 1.2rem;
+    }
 }

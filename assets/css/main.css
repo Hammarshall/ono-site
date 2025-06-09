@@ -2693,3 +2693,5 @@ Skapas med :before, syns vid hover/aktiv */
 #main-slide .carousel-control i:hover {
   background: rgba(255, 255, 255, 0.2); color: var(--text-light); border-color: var(--text-light);
 }
+
+

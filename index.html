@@ -1,35 +1,57 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
-  <title>ONO Terminal - Homepage</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ONO - 404 Page</title>
   <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
-  <!-- Bakgrundsdiv som visar ONO-loggan fullscreen -->
-  <!-- Bakgrundsdiv med GIF på svart bakgrund -->
-  <div id="background">
-    <img src="assets/img/ono_glitch.gif" alt="ONO Glitch" />
-  </div>
 
-  <div id="content">
-    <!-- Glitch-text -->
-    <h1 class="glith" data-text="ONO TERMINAL">ONO TERMINAL</h1>
-  
-    <!-- Terminalfönster -->
-    <div id="terminal">
-      <p>AUTHENTICATION REQUIRED</p>
-      <div id="output"></div>
-      <div>
-        <input type="text" id="commandInput" autofocus placeholder="Insert access code…" />
+  <!-- Error 404 glitch kommer från body::before / ::after -->
+
+  <div class="error">
+
+    <!-- KODBLOCK (INGEN GLITCH) -->
+    <div class="wrap">
+      <div class="404">
+        <pre><code>
+<span class="green">&lt;!</span><span>DOCTYPE html</span><span class="green">&gt;</span>
+<span class="orange">&lt;html&gt;</span>
+    <span class="orange">&lt;style&gt;</span>
+   * {
+        <span class="green">everything</span>:<span class="blue">awesome</span>;
+}
+    <span class="orange">&lt;/style&gt;</span>
+<span class="orange">&lt;body&gt;</span> 
+    ERROR 404!
+    FILE NOT FOUND!
+    <span class="comment">&lt;!--The file you are looking for, 
+    is not where you think it is.--&gt;</span>
+<span class="orange">&nbsp;&lt;/body&gt;</span>
+<span class="orange">&lt;/html&gt;</span>
+        </code></pre>
       </div>
     </div>
+
+    <!-- FILE NOT FOUND glitch via .info::before / ::after -->
+    <span class="info"></span>
+
+    <!-- Terminalen -->
+    <div class="terminal">
+      <div>
+        <span class="prompt">&gt;</span>
+        <span class="input">Welcome to ONO Terminal</span>
+      </div>
+      <div id="output" class="terminal-output"></div>
+
+      <input id="commandInput" placeholder="Skriv din kod här…" autofocus>
+    </div>
+
   </div>
 
-  <!-- JS för terminalfunktionalitet -->
   <script src="script.js"></script>
 </body>
 
