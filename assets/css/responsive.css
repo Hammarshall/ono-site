@@ -154,7 +154,7 @@
 }
 
 /* mobile or only mobile */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .section-title {
     font-size: 22px;
   }
@@ -251,6 +251,7 @@
   .padding-none:nth-child(5) {
     border-bottom: 1px solid #ddd;
   }
+  
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
