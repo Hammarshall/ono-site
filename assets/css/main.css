@@ -2607,14 +2607,18 @@ Skapas med :before, syns vid hover/aktiv */
   margin-right: 5px; /* Avstånd efter ikon */
 }
 
-/* HUVUDSLIDER KONTROLLER Dölj kontroller initialt, visa på hover */
+/* ============================================================================
+   HUVUDSLIDER (MAIN SLIDE) - KOMPLETT
+============================================================================ */
+
+/* Dölj kontroller initialt, visa på hover */
 #main-slide .carousel-control {
-  display: none; /* Dölj pilar */
-  transition: all 0.3s ease-in-out; /* Smidiga animationer */
+  display: none;
+  transition: all 0.3s ease-in-out;
 }
 
 #main-slide:hover .carousel-control {
-  display: block; /* Visa pilar vid hover */
+  display: block;
   transition: all 0.3s ease-in-out;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -2624,113 +2628,132 @@ Skapas med :before, syns vid hover/aktiv */
   animation-name: fadeIn;
 }
 
-/* INDICATORER FÖR CAROUSEL */
+/* INDICATORER */
 #main-slide .carousel-indicators {
-  cursor: pointer; /* Klickbar indikator */
-  bottom: 90px; /* Placering ovanför botten */
+  cursor: pointer;
+  bottom: 90px;
 }
 
-/* BILDER I CAROUSEL anpassa bredd */
+/* FIX: Alla slides exakt lika stora */
+#main-slide .carousel-item {
+  height: 100vh;
+  /* Gör så slides alltid tar full viewporthöjd */
+}
+
 #main-slide .carousel-item img {
-  position: relative;
-  width: 100%; /* Full bredd */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Beskär snyggt så alla bilder fyller boxen */
+  object-position: center;
 }
 
-/* Overlay över bild i aktivt läge */
+/* Overlay på bild i aktivt läge (om du vill lägga till någon overlay senare) */
 #main-slide .carousel-inner .carousel-item::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0; /* Täcker hela bilden */
+  bottom: 0;
 }
 
-/* CAPTION STLÄNGD Dölj caption tills aktiv */
+/* CAPTION - Dölj tills aktiv */
 #main-slide .carousel-item .carousel-caption {
-  opacity: 0; /* Osynlig initialt */
+  opacity: 0;
   transition: opacity 100ms ease;
   z-index: 0;
 }
 
 #main-slide .carousel-item.active .carousel-caption {
-  opacity: 1;  /* Synlig när aktiv */
+  opacity: 1;
   transition: opacity 100ms ease;
   z-index: 1;
 }
 
-/* CAPTION POSITION OCH STIL */
-#main-slide .carousel-caption { 
-  /* FÄRG (text) */
-  color: var(--text-light); /* Vit text */
+/* CAPTION - Position & stil */
+#main-slide .carousel-caption {
+  color: var(--text-light);
   position: absolute;
-  top: 35%; /* Vertikalt mittfält */
+  top: 35%;
+  /* Centrerad vertikalt */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  padding: 0 15px;
 }
 
 #main-slide .carousel-caption .heading {
-  font-size: 48px; /* Stor rubrik */
-  font-weight: 700; /* Fet stil */
-  text-transform: uppercase; /* Versaler */
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
   letter-spacing: 0.1rem;
   margin-top: 30px;
 }
 
-/* Beskrivning under rubrik */
+/* Beskrivning */
 #main-slide .carousel-item .carousel-caption p {
-  font-size: 20px; /* Textstorlek */
+  font-size: 20px;
 }
 
-/* Knappar i caption */
+/* Knappar */
 #main-slide .carousel-caption .btn {
-  margin: 25px 25px 0 0; /* Marginal höger och topp */
+  margin: 25px 25px 0 0;
 }
 
-/* PILAR I CAROUSEL */
+/* PILAR */
 #main-slide .carousel-control-next,
 #main-slide .carousel-control-prev {
-  opacity: 1;  /* Alltid synliga */
+  opacity: 1;
   box-shadow: none;
 }
 
 #main-slide .carousel-control-prev span,
 #main-slide .carousel-control-next span {
-  padding: 15px; /* Inre marginal */
+  padding: 15px;
 }
 
 #main-slide .carousel-control {
-  top: 45%; /* Vertikal placering */
+  top: 45%;
 }
 
 #main-slide .carousel-control .lni-chevron-left {
-  left: 15px; /* Placering vänsterpil */
+  left: 15px;
 }
 
 #main-slide .carousel-control .lni-chevron-right {
-  right: 15px; /* Placering högerpil */
+  right: 15px;
 }
 
 /* INDICATOR-CIRKLAR */
 .carousel-indicators li {
-  width: 12px; /* Cirkelstorlek */
+  width: 12px;
   height: 12px;
-  border-radius: 50%; /* Gör cirkeln rund */
+  border-radius: 50%;
 }
 
 /* IKONER I KONTROLLER */
 #main-slide .carousel-control i {
-  line-height: 40px; /* Vertikal centrering */
-  font-size: 18px; /* Ikonstorlek */
+  line-height: 40px;
+  font-size: 18px;
   width: 45px;
   height: 45px;
   display: block;
-  border: 2px solid var(--text-light);  /* Vit ram */
+  border: 2px solid var(--text-light);
   border-radius: 2px;
-  background: transparent;  color: var(--text-light);  transition: all 500ms ease;
+  background: transparent;
+  color: var(--text-light);
+  transition: all 500ms ease;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
 }
 
 #main-slide .carousel-control i:hover {
-  background: rgba(255, 255, 255, 0.2); color: var(--text-light); border-color: var(--text-light);
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--text-light);
+  border-color: var(--text-light);
 }
 
-
+/* ============================================================================
+   SLUT HUVUDSLIDER
+============================================================================ */
