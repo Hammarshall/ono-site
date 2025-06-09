@@ -94,6 +94,7 @@ a:hover {
 .schedule .schedule-tab-title .nav-tabs,
 .schedule .card-header {
   background: var(--gray-2);
+  max-width: 100%;
 }
 
 .schedule .nav-link.active,
@@ -1148,7 +1149,7 @@ Skapas med :before, syns vid hover/aktiv */
     /* FÄRG (text): */
     color: var(--accent-neon);
     /* FÄRG (bakgrund): */
-    background: var(--text-light);
+    background: var(--gray-2); /* Ljusgrå bakgrund */
   }
 
   .slicknav_nav .dropdown li a.active {
@@ -1156,6 +1157,16 @@ Skapas med :before, syns vid hover/aktiv */
     /* FÄRG (text): */
     color: var(--accent-neon);
   }
+    #schedules,
+    .schedule,
+    .schedule .schedule-tab-title .nav-tabs,
+    .schedule .nav-tabs .nav-item,
+    .schedule .nav-link,
+    .schedule .card-header {
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box;
+    }
 }
 
 /* EVENT SLIDES INTRO-BESKRIVNING Radavstånd och marginal under text */
