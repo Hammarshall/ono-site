@@ -31,10 +31,11 @@ const artistsdata = [
   {
     name: "Julius",
     desc: "Afro house / Keinemusik på TG.",
-    time: "21:00–22:00",
+    startTime: "21:00",
+    endTime: "22:00",
     genre: "Afro house / Keinemusik",
-    venueName:"Förfest",
-    venueLocation:"Teatergatan uteservering",
+    venueName: "Förfest",
+    venueLocation: "Teatergatan uteservering",
 
     img: "",
     social: {
@@ -48,10 +49,11 @@ const artistsdata = [
   {
     name: "Linnea Alfons",
     desc: "Afro house / Keinemusik på TG.",
-    time: "22:00–23:00",
+    startTime: "22:00",
+    endTime: "23:00",
     genre: "Afro house / Keinemusik",
-    venueName:"Förfest",
-    venueLocation:"Teatergatan uteservering",
+    venueName: "Förfest",
+    venueLocation: "Teatergatan uteservering",
 
     img: "",
     social: {
@@ -65,7 +67,8 @@ const artistsdata = [
   {
     name: "Kevine",
     desc: "Klubbig, global, rytmisk energi i Röda rummet.",
-    time: "23:00–00:00",
+    startTime: "23:00",
+    endTime: "00:00",
     genre: "Klubbig, global, rytmisk energi",
     venueName: "Röda Rummet",
     venueLocation: "Valand",
@@ -82,7 +85,8 @@ const artistsdata = [
   {
     name: "Kim Öhman",
     desc: "Klubbig, global, rytmisk energi i Röda rummet.",
-    time: "00:00–00:55",
+    startTime: "00:00",
+    endTime: "00:55",
     genre: "Klubbig, global, rytmisk energi",
     venueName: "Röda Rummet",
     venueLocation: "Valand",
@@ -100,7 +104,8 @@ const artistsdata = [
   {
     name: "Ingrid Borås",
     desc: "Hypnotiska beats och atmosfäriska ljudlandskap i Röda rummet.",
-    time: "01:10–02:00",
+    startTime: "01:10",
+    endTime: "02:00",
     genre: "Klubbig, global, rytmisk energi",
     venueName: "Röda Rummet",
     venueLocation: "Valand",
@@ -117,7 +122,8 @@ const artistsdata = [
   {
     name: "Thilly & Kimya",
     desc: "Hypnotiska beats och atmosfäriska ljudlandskap i Röda rummet.",
-    time: "02:00–03:00",
+    startTime: "02:00",
+    endTime: "03:00",
     genre: "Klubbig, global, rytmisk energi",
     venueName: "Röda Rummet",
     venueLocation: "Valand",
@@ -134,7 +140,8 @@ const artistsdata = [
   {
     name: "Milli DJ",
     desc: "Experimentellt, mainstream, elektroniskt i Övre baren.",
-    time: "23:00–00:00",
+    startTime: "23:00",
+    endTime: "00:00",
     genre: "Experimentellt, mainstream, elektroniskt",
     venueName: "Övre baren",
     venueLocation: "Valand",
@@ -151,7 +158,8 @@ const artistsdata = [
   {
     name: "Sara Appeli",
     desc: "Experimentellt, mainstream, elektroniskt i Övre baren.",
-    time: "00:00–01:00",
+    startTime: "00:00",
+    endTime: "01:00",
     genre: "Experimentellt, mainstream, elektroniskt",
     venueName: "Övre baren",
     venueLocation: "Valand",
@@ -168,7 +176,8 @@ const artistsdata = [
   {
     name: "Danne / Arvid",
     desc: "Experimentellt, mainstream, elektroniskt i Övre baren.",
-    time: "01:15–02:00",
+    startTime: "01:15",
+    endTime: "02:00",
     genre: "Experimentellt, mainstream, elektroniskt",
     venueName: "Övre baren",
     venueLocation: "Valand",
@@ -185,7 +194,8 @@ const artistsdata = [
   {
     name: "Benji Bastae",
     desc: "Experimentellt, mainstream, elektroniskt i Övre baren.",
-    time: "02:00–03:00",
+    startTime: "02:00",
+    endTime: "03:00",
     genre: "Experimentellt, mainstream, elektroniskt",
 
     venueName: "Övre baren",
@@ -202,7 +212,8 @@ const artistsdata = [
   {
     name: "Liv Andersson",
     desc: "Afro, baile, R&B, hiphop i Lilla London.",
-    time: "23:00–00:00",
+    startTime: "23:00",
+    endTime: "00:00",
     genre: "Afro, baile, R&B, hiphop",
     venueName: "Lilla London uteservering",
     venueLocation: "Lilla London",
@@ -219,7 +230,8 @@ const artistsdata = [
   {
     name: "Makki",
     desc: "Afro, baile, R&B, hiphop i Lilla London.",
-    time: "01:00–02:00",
+    startTime: "01:00",
+    endTime: "02:00",
     genre: "Afro, baile, R&B, hiphop",
     venueName: "Lilla London uteservering",
     venueLocation: "Lilla London",
@@ -236,7 +248,8 @@ const artistsdata = [
   {
     name: "Kajsa Nyström",
     desc: "Afro, baile, R&B, hiphop i Lilla London.",
-    time: "02:00–03:00",
+    startTime: "02:00",
+    endTime: "03:00",
     genre: "Afro, baile, R&B, hiphop",
     venueName: "Lilla London uteservering",
     venueLocation: "Lilla London",
@@ -253,7 +266,8 @@ const artistsdata = [
   {
     name: "Isabbel",
     desc: "Blandade uttryck, publikdrag på Teatergatan.",
-    time: "00:00–01:00",
+    startTime: "00:00",
+    endTime: "01:00",
     genre: "Blandade uttryck, curated vibe",
     venueName: "Teatergatan",
     venueLocation: "Teatergatan",
@@ -270,7 +284,8 @@ const artistsdata = [
   {
     name: "DJ Schysst",
     desc: "Blandade uttryck, publikdrag på Teatergatan.",
-    time: "01:00–02:00",
+    startTime: "01:00",
+    endTime: "02:00",
     genre: "Blandade uttryck, curated vibe",
     venueName: "Teatergatan",
     venueLocation: "Teatergatan",
@@ -287,7 +302,8 @@ const artistsdata = [
   {
     name: "DJ Mello",
     desc: "TBH",
-    time: "00:15–01:00",
+    startTime: "00:15",
+    endTime: "01:00",
     genre: "TBH",
     venueName: "Lilla London uteservering",
     venueLocation: "Lilla London",
@@ -303,7 +319,8 @@ const artistsdata = [
   {
     name: "Artistakt",
     desc: "Kort akt mellan DJs RÖDA.",
-    time: "00:55–01:10",
+    startTime: "00:55",
+    endTime: "01:10",
     genre: "Interlude",
     venueName: "Röda Rummet",
     venueLocation: "Valand",
@@ -319,7 +336,8 @@ const artistsdata = [
   {
     name: "Artistakt",
     desc: "Kort akt mellan DJs.",
-    time: "01:00–01:15",
+    startTime: "01:00",
+    endTime: "01:15",
     genre: "Interlude",
     venueName: "Övre baren",
     venueLocation: "Valand",
@@ -334,8 +352,9 @@ const artistsdata = [
   },
   {
     name: "Artistakt",
-    desc: "Kort akt mellan DJ (15min??)",
-    time: "00:00–00:15",
+    desc: "Kort akt mellan DJ",
+    startTime: "00:00",
+    endTime: "00:15",
     genre: "Interlude",
     venueName: "Lilla London uteservering",
     venueLocation: "Lilla London",
@@ -351,7 +370,8 @@ const artistsdata = [
   {
     name: "Inner Circle DJ #1",
     desc: "TBH",
-    time: "23:00–00:00",
+    startTime: "23:00",
+    endTime: "00:00",
     genre: "TBH",
     venueName: "Teatergatan",
     venueLocation: "Teatergatan",
@@ -367,7 +387,8 @@ const artistsdata = [
   {
     name: "Inner Circle DJ #2",
     desc: "TBH",
-    time: "02:15–03:00",
+    startTime: "02:15",
+    endTime: "03:00",
     genre: "TBH",
     venueName: "Teatergatan",
     venueLocation: "Teatergatan",
@@ -384,6 +405,8 @@ const artistsdata = [
     name: "Artistakt",
     desc: "TBH",
     time: "02:00–02:15",
+    startTime: "02:00",
+    endTime: "02:15",
     genre: "TBH",
     venueName: "Teatergatan",
     venueLocation: "Teatergatan",

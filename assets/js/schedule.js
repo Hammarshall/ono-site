@@ -48,7 +48,7 @@ venues.forEach((venue, i) => {
     .filter(
       (a) => a.venueName === venue.name && a.venueLocation === venue.location
     )
-    .sort((a, b) => parseTime(a.time) - parseTime(b.time)); // sortera efter tid
+    .sort((a, b) => parseTime(a.startTime) - parseTime(b.startTime)); // sortera efter tid
 
   const wrapper = document.createElement("div");
   wrapper.className = "accordion";
@@ -65,7 +65,7 @@ venues.forEach((venue, i) => {
         <div class="images-box">
           <img class="img-fluid" src="${artistImg}" alt="${artist.name}">
         </div>
-        <span class="time">${artist.time}</span>
+        <span class="time">${artist.startTime}–${artist.endTime}</span>
         <h4>${artist.name}</h4>
         <h5 class="name">${artist.genre}</h5>
       </div>
@@ -78,8 +78,7 @@ venues.forEach((venue, i) => {
 });
 
 // ▼ Hjälpfunktion: konvertera "hh:mm" till minuter sedan midnatt (för sortering)
-function parseTime(str) {
-  const hhmm = str.split("–")[0] || str;
-  const [h, m] = hhmm.split(":").map((n) => parseInt(n, 10));
+function parseTime(hhmm) {
+  const [h, m] = hhmm.split(":").map(Number);
   return h * 60 + m;
 }

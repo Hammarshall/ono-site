@@ -1098,81 +1098,11 @@ Skapas med :before, syns vid hover/aktiv */
   background: var(--accent-neon); /* streck */
 }
 
-/* Endast små tablets: justerad padding */
-@media (min-width: 768px) and (max-width: 991px) {
-  #nav-main li a.nav-link {
-    padding-top: 18px; /* Mer padding ovanför länktext */
-  }
-}
-
 /* Dölj toggler och mobilmenyer i desktop */
 .navbar-toggler,
 .mobile-menu,
 .slicknav_menu {
   display: none;
-}
-
-/* Mobillayout för skärm ≤ 768px */
-@media screen and (max-width: 768px) {
-  .navbar-header {
-    width: 100%; /* Full bredd */
-  }
-
-  .navbar-brand {
-    position: absolute;
-    padding: 15px; /* Inre marginal */
-    top: 0;
-  }
-
-  .navbar-brand img {
-    width: 75%; /* Bildbredd mobil */
-  }
-
-  #mobile-menu {
-    display: none;
-  }
-
-  .slicknav_menu {
-    display: block; /* Visa SlickNav-meny på mobil */
-  }
-
-  .slicknav_nav .active a {
-    /* FÄRG (bakgrund): */
-    background: var(--accent-neon); /* Illgrön bakgrund */
-    /* FÄRG (text): */
-    color: var(--text-light); /* text */
-  }
-
-  .slicknav_nav a:hover,
-  .slicknav_nav .active {
-    /* FÄRG (text): */
-    color: var(--accent-neon);
-    /* FÄRG (bakgrund): */
-    background: var(--gray-2); /* Ljusgrå bakgrund */
-  }
-
-  .slicknav_nav .dropdown li a.active {
-    background: var(--gray-2); /* FÄRG (bakgrund aktiv): */
-    /* FÄRG (text): */
-    color: var(--accent-neon);
-  }
-  
-  #schedules, .schedule, .schedule .schedule-tab-title .nav-tabs,
-  .schedule .nav-tabs .nav-item, .schedule .nav-link, .schedule .card-header {
-      width: 100% !important;
-      max-width: 100% !important;
-      box-sizing: border-box;
-    }
-    
-    @media screen and (max-width: 768px) {
-      #gallery .gallery-box .img-thumb {
-          height: 200px; /* Lite lägre i mobil */
-      }
-  
-      #gallery .gallery-box .img-thumb img {
-          object-fit: cover;
-      }
-    }
 }
 
 /* EVENT SLIDES INTRO-BESKRIVNING Radavstånd och marginal under text */
