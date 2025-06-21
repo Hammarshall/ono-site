@@ -37,7 +37,7 @@ const artistsdata = [
     venueName: "Förfest",
     venueLocation: "Teatergatan uteservering",
 
-    img: "",
+    img: "assets/img/Djs/Julius-Cesar/Julius-Cesar1.jpg",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_JULIUS",
       instagram: "julius.dj",
@@ -182,7 +182,7 @@ const artistsdata = [
     venueName: "Övre baren",
     venueLocation: "Valand",
 
-    img: "",
+    img: "assets/img/Djs/Danne:Arvid/Arvid2.jpg",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_DANNE",
       instagram: "soxcyted",
@@ -307,7 +307,7 @@ const artistsdata = [
     genre: "TBH",
     venueName: "Lilla London uteservering",
     venueLocation: "Lilla London",
-    img: "",
+    img: "assets/img/Djs/DJ-Mellow/Dj-Mellow1.jpg",
     social: {
       spotify: "#",
       instagram: "#",
