@@ -73,7 +73,7 @@ const artistsdata = [
     venueName: "Röda Rummet",
     venueLocation: "Valand",
 
-    img: "",
+    img: "assets/img/Djs/Kevine/Kevine1.jpeg",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_KEVINE",
       instagram: "kevine.dj",
@@ -91,7 +91,7 @@ const artistsdata = [
     venueName: "Röda Rummet",
     venueLocation: "Valand",
 
-    img: "",
+    img: "assets/img/Djs/Kim-Öhman/Kim-Öhman2.JPG",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_KIM",
       instagram: "kim.ohman",
@@ -128,7 +128,7 @@ const artistsdata = [
     venueName: "Röda Rummet",
     venueLocation: "Valand",
 
-    img: "",
+    img: "assets/img/Djs/ThillyKimya/ThillyKimya1.jpg",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_THILLY",
       instagram: "thillyandkimya",
@@ -164,7 +164,7 @@ const artistsdata = [
     venueName: "Övre baren",
     venueLocation: "Valand",
 
-    img: "",
+    img: "assets/img/Djs/Sara-Appeli/Sara-Appeli1.jpeg",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_SARA",
       instagram: "saraappeli",
@@ -228,7 +228,7 @@ const artistsdata = [
     spotifyEmbed: "https://open.spotify.com/embed/artist/ARTIST_ID_LIV",
   },
   {
-    name: "Makki",
+    name: "Dj Mäckyy",
     desc: "Afro, baile, R&B, hiphop i Lilla London.",
     startTime: "01:00",
     endTime: "02:00",
@@ -236,7 +236,7 @@ const artistsdata = [
     venueName: "Lilla London uteservering",
     venueLocation: "Lilla London",
 
-    img: "",
+    img: "assets/img/Djs/DJ-Mäckyy/Dj-Mäckyy1.png",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_MAKKI",
       instagram: "makki.dj",
