@@ -29,7 +29,7 @@
 
 const artistsdata = [
   {
-    name: "Julius",
+    name: "Julius Cesar",
     desc: "Afro house / Keinemusik på TG.",
     startTime: "21:00",
     endTime: "22:00",
@@ -300,7 +300,7 @@ const artistsdata = [
     spotifyEmbed: "https://open.spotify.com/embed/artist/ARTIST_ID_SCHYSST",
   },
   {
-    name: "DJ Mello",
+    name: "DJ Mellow",
     desc: "TBH",
     startTime: "00:15",
     endTime: "01:00",
@@ -317,7 +317,7 @@ const artistsdata = [
     spotifyEmbed: "#",
   },
   {
-    name: "Artistakt",
+    name: "Artistakt #1",
     desc: "Kort akt mellan DJs RÖDA.",
     startTime: "00:55",
     endTime: "01:10",
@@ -334,7 +334,7 @@ const artistsdata = [
     spotifyEmbed: "#",
   },
   {
-    name: "Artistakt",
+    name: "Artistakt #2",
     desc: "Kort akt mellan DJs.",
     startTime: "01:00",
     endTime: "01:15",
@@ -351,7 +351,7 @@ const artistsdata = [
     spotifyEmbed: "#",
   },
   {
-    name: "Artistakt",
+    name: "Artistakt #3",
     desc: "Kort akt mellan DJ",
     startTime: "00:00",
     endTime: "00:15",
@@ -402,7 +402,7 @@ const artistsdata = [
     spotifyEmbed: "#",
   },
   {
-    name: "Artistakt",
+    name: "Artistakt #4",
     desc: "TBH",
     time: "02:00–02:15",
     startTime: "02:00",
