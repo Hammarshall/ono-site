@@ -403,7 +403,7 @@ const artistsdata = [
     spotifyEmbed: "#",
   },
   {
-    name: "IssaGirl",
+    name: "ISSAgirl",
     desc: "Besk",
     startTime: "02:00",
     endTime: "03:00",
