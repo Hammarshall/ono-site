@@ -73,7 +73,7 @@ const artistsdata = [
     venueName: "Förfest",
     venueLocation: "Teatergatan uteservering",
 
-    img: "",
+    img: "assets/img/Djs/Philip-Antoni/Philip-Antoni-1.JPG",
     social: {
       spotify: "#",
       instagram: "#",
@@ -109,7 +109,7 @@ const artistsdata = [
     venueName: "Röda Rummet",
     venueLocation: "Valand",
 
-    img: "assets/img/Djs/Kevine/Kevine1.jpeg",
+    img: "assets/img/Djs/Kevine-Nkounga/Kevine1.jpeg",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_KEVINE",
       instagram: "kevine.dj",
@@ -181,10 +181,10 @@ const artistsdata = [
     venueName: "Övre baren",
     venueLocation: "Valand",
 
-    img: "",
+    img: "assets/img/Djs/William-Husmark/William-Husmark-1.jpeg",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_MILLI",
-      instagram: "millidj",
+      instagram: "",
     },
     track: "https://open.spotify.com/embed/track/TRACK_ID_MILLI",
     pressImage: "assets/press/milli-dj.jpg",
@@ -253,7 +253,7 @@ const artistsdata = [
     venueName: "Lilla London uteservering",
     venueLocation: "Lilla London",
 
-    img: "",
+    img: "assets/img/Djs/Liv-Andersson/Liv-Andersson-1.heic",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_LIV",
       instagram: "livandersson",
@@ -297,7 +297,7 @@ const artistsdata = [
     spotifyEmbed: "#",
   },
   {
-    name: "Dj Mäckyy",
+    name: "DJ Mäckyy",
     desc: "Afro, baile, R&B, hiphop i Lilla London.",
     startTime: "01:00",
     endTime: "02:00",
