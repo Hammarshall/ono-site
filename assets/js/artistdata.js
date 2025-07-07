@@ -253,7 +253,7 @@ const artistsdata = [
     venueName: "Lilla London uteservering",
     venueLocation: "Lilla London",
 
-    img: "assets/img/Djs/Liv-Andersson/Liv-Andersson-1.heic",
+    img: "assets/img/Djs/Liv-Andersson/Liv-Andersson-1.png",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_LIV",
       instagram: "livandersson",
@@ -270,7 +270,7 @@ const artistsdata = [
     genre: "Artist",
     venueName: "Lilla London uteservering",
     venueLocation: "Lilla London",
-    img: "",
+    img: "assets/img/Djs/Paulina/Paulina-1.PNG",
     social: {
       spotify: "#",
       instagram: "#",
@@ -323,7 +323,7 @@ const artistsdata = [
     venueName: "Lilla London uteservering",
     venueLocation: "Lilla London",
 
-    img: "",
+    img: "assets/img/Djs/DJ-Andy/DJ-Andy-1.jpeg",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_KAJSA",
       instagram: "kajsanystrom",
@@ -342,7 +342,7 @@ const artistsdata = [
     venueName: "Teatergatan",
     venueLocation: "Teatergatan - Inomhus",
 
-    img: "",
+    img: "assets/img/Djs/DJ-Schysst/DJ-Schysst-1.png",
     social: {
       spotify: "https://open.spotify.com/artist/ARTIST_ID_SCHYSST",
       instagram: "dj_schysst",
@@ -359,7 +359,7 @@ const artistsdata = [
     genre: "TBH",
     venueName: "Teatergatan",
     venueLocation: "Teatergatan - Inomhus",
-    img: "",
+    img: "assets/img/Djs/DJ-Sunraid/DJ-Sunraid-1.PNG",
     social: {
       spotify: "#",
       instagram: "#",
@@ -376,7 +376,7 @@ const artistsdata = [
     genre: "Artist",
     venueName: "Teatergatan",
     venueLocation: "Teatergatan - Inomhus",
-    img: "",
+    img: "assets/img/Djs/FAAKA/FAKKA-1.jpg",
     social: {
       spotify: "#",
       instagram: "#",
@@ -393,7 +393,7 @@ const artistsdata = [
     genre: "genre",
     venueName: "Teatergatan",
     venueLocation: "Teatergatan - Inomhus",
-    img: "",
+    img: "assets/img/Djs/SOXCYTED/SOXCYTED-1.jpeg",
     social: {
       spotify: "#",
       instagram: "#",
@@ -410,7 +410,7 @@ const artistsdata = [
     genre: "genre",
     venueName: "Teatergatan",
     venueLocation: "Teatergatan - Inomhus",
-    img: "",
+    img: "assets/img/Djs/ISSAgirl/ISSAgirl-1.jpeg",
     social: {
       spotify: "#",
       instagram: "#",
