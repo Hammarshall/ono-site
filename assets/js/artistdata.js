@@ -217,7 +217,7 @@ const artistsdata = [
     venueName: "Övre baren",
     venueLocation: "Valand",
 
-    img: "assets/img/Djs/DJ-6rv1d/DJ-6rv1d1.jpg",
+    img: "assets/img/Djs/DJ-6rv1d/Dj-6rv1d2.jpg",
     social: {
       spotify: "",
       instagram: "soxcyted",
