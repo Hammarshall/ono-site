@@ -78,7 +78,10 @@ venues.forEach((venue, i) => {
 });
 
 // ▼ Hjälpfunktion: konvertera "hh:mm" till minuter sedan midnatt (för sortering)
+// ▼ Hjälpfunktion: konvertera "hh:mm" till minuter sedan midnatt (för sortering)
 function parseTime(hhmm) {
   const [h, m] = hhmm.split(":").map(Number);
+  // Tider mellan 00:00 och 09:59 räknas som efter midnatt
+  if (h < 10) return (h + 24) * 60 + m;
   return h * 60 + m;
 }
